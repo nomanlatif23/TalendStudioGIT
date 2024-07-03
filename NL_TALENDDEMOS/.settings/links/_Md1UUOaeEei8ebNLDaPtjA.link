@@ -1,0 +1,44 @@
+{
+  "itemId" : "_Md1UUOaeEei8ebNLDaPtjA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_OdxjUEgREeqHwKUMan5ASw",
+    "parameterList" : [ {
+      "id" : "_SqNx8ZZaEeqFV47HKeFFSw",
+      "name" : "data_base_path"
+    }, {
+      "id" : "_SqNx8pZaEeqFV47HKeFFSw",
+      "name" : "reports_path"
+    } ]
+  }, {
+    "contextName" : "Cloud",
+    "repoId" : "_OdxjUEgREeqHwKUMan5ASw",
+    "parameterList" : [ {
+      "id" : "_8sD3AZrXEeqED88Oetn6jg",
+      "name" : "data_base_path"
+    }, {
+      "id" : "_8sD3AprXEeqED88Oetn6jg",
+      "name" : "reports_path"
+    } ]
+  }, {
+    "contextName" : "Hybrid",
+    "repoId" : "_OdxjUEgREeqHwKUMan5ASw",
+    "parameterList" : [ {
+      "id" : "__97RwZsWEeqED88Oetn6jg",
+      "name" : "data_base_path"
+    }, {
+      "id" : "__97RwpsWEeqED88Oetn6jg",
+      "name" : "reports_path"
+    } ]
+  }, {
+    "contextName" : "Local",
+    "repoId" : "_OdxjUEgREeqHwKUMan5ASw",
+    "parameterList" : [ {
+      "id" : "_b8ayYZsWEeqED88Oetn6jg",
+      "name" : "data_base_path"
+    }, {
+      "id" : "_b8ayYpsWEeqED88Oetn6jg",
+      "name" : "reports_path"
+    } ]
+  } ]
+}

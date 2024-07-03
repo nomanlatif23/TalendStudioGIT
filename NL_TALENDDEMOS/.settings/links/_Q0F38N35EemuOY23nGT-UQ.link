@@ -1,0 +1,38 @@
+{
+  "itemId" : "_Q0F38N35EemuOY23nGT-UQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_oqBWQCP0Eemu6dpNP9g8SA",
+    "parameterList" : [ {
+      "id" : "_VP9S0bRvEeqT0YPmRUNn1g",
+      "name" : "TC_TDP_password"
+    }, {
+      "id" : "_VP9S0rRvEeqT0YPmRUNn1g",
+      "name" : "TC_TDP_user"
+    }, {
+      "id" : "_VP9S07RvEeqT0YPmRUNn1g",
+      "name" : "TC_TDP_url"
+    }, {
+      "id" : "_VP9S1LRvEeqT0YPmRUNn1g",
+      "name" : "TC_TDS_url"
+    }, {
+      "id" : "_VP9S1bRvEeqT0YPmRUNn1g",
+      "name" : "TC_TDS_user"
+    }, {
+      "id" : "_VP9S1rRvEeqT0YPmRUNn1g",
+      "name" : "TC_TDS_password"
+    }, {
+      "id" : "_HhTikHBNEeupX_elKhdtyQ",
+      "name" : "TC_Bearer"
+    }, {
+      "id" : "_wgAeAKvpEeyvOtBUHfUZiQ",
+      "name" : "TC_RuleRepository_API_url"
+    }, {
+      "id" : "_KxGiQDOeEe-QYo5E7zcXhg",
+      "name" : "TC_User"
+    }, {
+      "id" : "_KxGiQTOeEe-QYo5E7zcXhg",
+      "name" : "TC_Password"
+    } ]
+  } ]
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Cloud" xmi:id="_uCP7UJqSEeqED88Oetn6jg">
+    <contextParameter comment="" name="demo_mysql_Database" prompt="demo_mysql_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo" xmi:id="_uCQiYJqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Server" prompt="demo_mysql_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dpelosimysql.cqlzcmezjruw.eu-central-1.rds.amazonaws.com" xmi:id="_uCQiYZqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_AdditionalParams" prompt="demo_mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" xmi:id="_uCQiYpqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:iWWMRGXgcuaScFfrHKdaY0XU/UBltvSnUmZxnFmVQcgaOm+1KPE+lmua5A==" xmi:id="_uCQiY5qSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Login" prompt="demo_mysql_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="admin" xmi:id="_uCQiZJqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Port" prompt="demo_mysql_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306" xmi:id="_uCQiZZqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_amc_database" prompt="demo_mysql_amc_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc" xmi:id="_J-oMwOplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_user" prompt="demo_mysql_amc_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc" xmi:id="_J-oMweplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_password" prompt="demo_mysql_amc_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc" xmi:id="_J-oMwuplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_dq_database" prompt="demo_mysql_dq_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dq" xmi:id="_kWKqgO_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_user" prompt="demo_mysql_dq_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dq" xmi:id="_kWKqge_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_password" prompt="demo_mysql_dq_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dq" xmi:id="_kWKqgu_yEe26P8YILkKPVg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_uCQiZpqSEeqED88Oetn6jg">
+    <contextParameter comment="" name="demo_mysql_Database" prompt="demo_mysql_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo" xmi:id="_uCQiZ5qSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Server" prompt="demo_mysql_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" xmi:id="_uCQiaJqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_AdditionalParams" prompt="demo_mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true" xmi:id="_uCQiaZqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RcLgReK/XpLATI7kQwXSChZlEQDL/sc1xo1HdEwJZLmyJRPs" xmi:id="_uCQiapqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Login" prompt="demo_mysql_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root" xmi:id="_uCQia5qSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Port" prompt="demo_mysql_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306" xmi:id="_uCQibJqSEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_amc_database" prompt="demo_mysql_amc_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc" xmi:id="_J-oMw-plEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_user" prompt="demo_mysql_amc_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc" xmi:id="_J-oMxOplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_password" prompt="demo_mysql_amc_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc" xmi:id="_J-oMxeplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_dq_database" prompt="demo_mysql_dq_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dq" xmi:id="_kWKqg-_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_user" prompt="demo_mysql_dq_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dq" xmi:id="_kWKqhO_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_password" prompt="demo_mysql_dq_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dq" xmi:id="_kWKqhe_yEe26P8YILkKPVg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Hybrid" xmi:id="_nnx3MJsfEeqED88Oetn6jg">
+    <contextParameter comment="" name="demo_mysql_Database" prompt="demo_mysql_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo" xmi:id="_nnx3MZsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Server" prompt="demo_mysql_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dpelosimysql.cqlzcmezjruw.eu-central-1.rds.amazonaws.com" xmi:id="_nnx3MpsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_AdditionalParams" prompt="demo_mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" xmi:id="_nnx3M5sfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:bQi5aI64JOD6KZiJnOxHAD534tBbjHICT2kaa35oGSXL/8thywYcfkZhWA==" xmi:id="_nnx3NJsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Login" prompt="demo_mysql_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="admin" xmi:id="_nnx3NZsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Port" prompt="demo_mysql_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306" xmi:id="_nnx3NpsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_amc_database" prompt="demo_mysql_amc_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_J-oMxuplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_user" prompt="demo_mysql_amc_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_J-oMx-plEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_password" prompt="demo_mysql_amc_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_J-oMyOplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_dq_database" prompt="demo_mysql_dq_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_kWKqhu_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_user" prompt="demo_mysql_dq_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_kWKqh-_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_password" prompt="demo_mysql_dq_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_kWKqiO_yEe26P8YILkKPVg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Local" xmi:id="_nnx3N5sfEeqED88Oetn6jg">
+    <contextParameter comment="" name="demo_mysql_Database" prompt="demo_mysql_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo" xmi:id="_nnx3OJsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Server" prompt="demo_mysql_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" xmi:id="_nnx3OZsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_AdditionalParams" prompt="demo_mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true" xmi:id="_nnx3OpsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:hOmQbVg1HFgktT2FsxZRtF/JocfFd8ZtsJOX2EwIvobteA==" xmi:id="_nnx3O5sfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Login" prompt="demo_mysql_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend" xmi:id="_nnx3PJsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_Port" prompt="demo_mysql_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306" xmi:id="_nnx3PZsfEeqED88Oetn6jg"/>
+    <contextParameter comment="" name="demo_mysql_amc_database" prompt="demo_mysql_amc_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_J-oMyeplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_user" prompt="demo_mysql_amc_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_J-oMyuplEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_amc_password" prompt="demo_mysql_amc_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_J-oMy-plEe2vBaVlTvne3w"/>
+    <contextParameter comment="" name="demo_mysql_dq_database" prompt="demo_mysql_dq_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_kWKqie_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_user" prompt="demo_mysql_dq_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_kWKqiu_yEe26P8YILkKPVg"/>
+    <contextParameter comment="" name="demo_mysql_dq_password" prompt="demo_mysql_dq_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_kWKqi-_yEe26P8YILkKPVg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f07b3ef6-59fa-4608-9d85-4288a19cd6a3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xdfy1wejwqGYqL9qHsUaDs5t9tH1o2o5joX6Hdu5BMcVTgrVnwyTNwARAR+7Sw0xVXHG3xR3YHNN&#13;
+9/A6SLOc6w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0685b3ee-03d6-46e2-aeca-e5d324063ea1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Cnx6oq27MjhB5K4C2c8g/uqULdf457eZ27qLfW7XMdiPxaciKgYWkfKeVGhHKAoTBF7/wbXv0RNL&#13;
+O1V64sp+Aw==</DigestValue></Reference></SignedInfo><SignatureValue>RKE6yPRCvy0XV05fuTVUf04gBUcSP5UTw5QAAdaT59LBIEQZGPYyhBQoIFAgAnaS2P7KOGwmYlVs&#13;
+wakZt23jbpCClDecMrOTGAQHYlg9tbA3qoldKKITBwVZMC1W4bltKheZYC1FDJAhPl2sagubUMWa&#13;
+1sxmO8OcCbkkNA99IAbuBihD1oPEoIbjxyey2/OdWj198js0egcVWNXDyxq5qNb6pPKpKQ1Ebdm6&#13;
+VdSTEzBz9mUn11uj0npDxN40unjK9zDwM1GDi6o7BdaeQNYzP/kH0ota2jcF+CsUGB6XLeFdK2cN&#13;
+9ImKI6eq7slCD03uHy0PfXRjaswGmEZY+1BT9Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0685b3ee-03d6-46e2-aeca-e5d324063ea1" Target="#_f07b3ef6-59fa-4608-9d85-4288a19cd6a3"><Timestamp>2024-07-03 10:34:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

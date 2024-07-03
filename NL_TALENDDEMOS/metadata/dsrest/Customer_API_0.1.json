@@ -1,0 +1,154 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "No description",
+    "version" : "1.0.0",
+    "title" : "Customer API",
+    "contact" : { }
+  },
+  "host" : "kuusbq0.us.api-mocks.com",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/customer/{id}/" : {
+      "get" : {
+        "summary" : "Get by Customer ID",
+        "description" : "Get Customers using the Customer ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "schema" : {
+              "$ref" : "#/definitions/Customer-JSON"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete Customer",
+        "description" : "Delete the customer by ID",
+        "parameters" : [ ],
+        "responses" : {
+          "202" : {
+            "description" : "Status 202"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ]
+    },
+    "/customer/" : {
+      "get" : {
+        "summary" : "Get Customers",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "firstName",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "description" : "Customer First Name"
+        }, {
+          "name" : "lastName",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "description" : "Customer Last Name"
+        }, {
+          "name" : "email",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "description" : "Customer Email"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Customer-JSON"
+              }
+            },
+            "examples" : {
+              "application/json" : "{  \n   \"customer\":[  \n      {  \n         \"customerId\":145003,\n         \"firstName\":\"Benjamin\",\n         \"middleName\":\"Woodrow\",\n         \"lastName\":\"Fillmore\",\n         \"applicantStatus\":\"withdraw\",\n         \"entryTerm\":201702,\n         \"address\":\"539 Cleveland Ave.\",\n         \"city\":\"Helena\",\n         \"state\":\"Mississippi\",\n         \"zip\":3657\n      },\n      {  \n         \"customerId\":145013,\n         \"firstName\":\"Andrew\",\n         \"middleName\":\"Warren\",\n         \"lastName\":\"Fillmore\",\n         \"applicantStatus\":\"accepted\",\n         \"entryTerm\":201701,\n         \"address\":\"1229 Bailard Avenue\",\n         \"city\":\"Trenton\",\n         \"state\":\"South Carolina\",\n         \"zip\":63959\n      },\n      {  \n         \"customerId\":145091,\n         \"firstName\":\"Millard\",\n         \"middleName\":\"Richard\",\n         \"lastName\":\"Fillmore\",\n         \"applicantStatus\":\"enrolled\",\n         \"entryTerm\":201701,\n         \"address\":\"1090 Carpinteria North\",\n         \"city\":\"Providence\",\n         \"state\":\"Maine\",\n         \"zip\":57472\n      }\n   ]\n}"
+            }
+          }
+        }
+      },
+      "post" : {
+        "summary" : "Add a new Customer",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Customer-JSON"
+          },
+          "x-examples" : {
+            "application/json" : "{\n  \"customer\": {\n    \"customerId\": 55555,\n    \"firstName\": \"Andrew\",\n    \"lastName\": \"Quincy\",\n    \"address\": \"1793 East Main Street\",\n    \"city\": \"Columbia\",\n    \"state\": \"Hawaii\",\n    \"zip\": 62433\n  }\n}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ ]
+    }
+  },
+  "definitions" : {
+    "Customer-JSON" : {
+      "type" : "object",
+      "properties" : {
+        "Customer" : {
+          "type" : "object",
+          "properties" : {
+            "customerId" : {
+              "type" : "number",
+              "example" : 145001.0
+            },
+            "civility" : {
+              "type" : "string"
+            },
+            "firstName" : {
+              "type" : "string"
+            },
+            "lastName" : {
+              "type" : "string"
+            },
+            "email" : {
+              "type" : "string"
+            },
+            "city" : {
+              "type" : "string"
+            },
+            "state" : {
+              "type" : "string"
+            },
+            "zip" : {
+              "type" : "number",
+              "description" : "US Postal Code"
+            },
+            "address" : {
+              "type" : "string"
+            },
+            "phone" : {
+              "type" : "string"
+            },
+            "twitter" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "description" : "Customer-JSON Structure",
+      "example" : "{\n  \"customer\": {\n    \"customerId\": 145025,\n    \"firstName\": \"Andrew\",\n    \"lastName\": \"Quincy\",\n    \"email:\"aquincy@acme.com\"\n    \"address\": \"1793 East Main Street\",\n    \"city\": \"Columbia\",\n    \"state\": \"Hawaii\",\n    \"zip\": 62433\n  }\n}"
+    }
+  }
+}

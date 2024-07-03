@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_VP9S0LRvEeqT0YPmRUNn1g">
+    <contextParameter comment="" name="TC_TDP_password" prompt="TC_TDP_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:BfzYKasNu3YBC2toZt2SyJB187hrUhXyoN5U6vNGbQzKcph9aZvlFeCLyzQezvdRtgFpi5Aw/PuwQ0Cn+iz06gIHF+Mg9JJl31Xi6bXnUjMAyiQmV4fWPtCgv3E=" xmi:id="_VP9S0bRvEeqT0YPmRUNn1g"/>
+    <contextParameter comment="" name="TC_TDP_user" prompt="TC_TDP_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noman.latif@se.southemea.talend.com" xmi:id="_VP9S0rRvEeqT0YPmRUNn1g"/>
+    <contextParameter comment="" name="TC_TDP_url" prompt="TC_TDP_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tdp.eu.cloud.talend.com" xmi:id="_VP9S07RvEeqT0YPmRUNn1g"/>
+    <contextParameter comment="" name="TC_TDS_url" prompt="TC_TDS_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.eu.cloud.talend.com/data-stewardship/" xmi:id="_VP9S1LRvEeqT0YPmRUNn1g"/>
+    <contextParameter comment="" name="TC_TDS_user" prompt="TC_TDS_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noman.latif@se.southemea.talend.com" xmi:id="_VP9S1bRvEeqT0YPmRUNn1g"/>
+    <contextParameter comment="" name="TC_TDS_password" prompt="TC_TDS_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:2HKP0RjBW6VKurF6rqywYEm6nHNnTxY3Uy6sYeUxg+aua3yXjtPD45MzfLHAM203I33MVUBqYXBqXxRKjwrbl/Ap1oMwU3sT27/0xDA6YT1ENcIi4teOE2Qtdy8=" xmi:id="_VP9S1rRvEeqT0YPmRUNn1g"/>
+    <contextParameter comment="" name="TC_Bearer" prompt="TC_Bearer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="wRCUhMJ0SgGvu4ohmK1jp--WfYokpHF-1lSF1_mgMPanbJdgTS5BWmwFdRwC7vrY" xmi:id="_HhTikHBNEeupX_elKhdtyQ"/>
+    <contextParameter comment="" name="TC_RuleRepository_API_url" prompt="TC_RuleRepository_API_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.eu.cloud.talend.com/rulerepository/api/v1" xmi:id="_wgAeAKvpEeyvOtBUHfUZiQ"/>
+    <contextParameter comment="" name="TC_User" prompt="TC_User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noman.latif@se.southemea.talend.com" xmi:id="_KxGiQDOeEe-QYo5E7zcXhg"/>
+    <contextParameter comment="" name="TC_Password" prompt="TC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="oTO_dmnZS3Gna2j6FiHG0FZik5OknjuBN5XYV6B0Erl5V6XYBEJcqlBrbNEBQSSB" xmi:id="_KxGiQTOeEe-QYo5E7zcXhg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="EAP" xmi:id="_12DpYHWdEeuGsPJu6Ybj8g">
+    <contextParameter comment="" name="TC_TDP_password" prompt="TC_TDP_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:KLjlYexTcEGz+p2QpAIYk0pwSBRglqB2fLO7qsBozKHIKY4aylk=" xmi:id="_12DpYXWdEeuGsPJu6Ybj8g"/>
+    <contextParameter comment="" name="TC_TDP_user" prompt="TC_TDP_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dpelosi@talendpseaptalendcom.talend.com" xmi:id="_12DpYnWdEeuGsPJu6Ybj8g"/>
+    <contextParameter comment="" name="TC_TDP_url" prompt="TC_TDP_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tdp.at.cloud.talend.com" xmi:id="_12DpY3WdEeuGsPJu6Ybj8g"/>
+    <contextParameter comment="" name="TC_TDS_url" prompt="TC_TDS_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.at.cloud.talend.com/data-stewardship/" xmi:id="_12DpZHWdEeuGsPJu6Ybj8g"/>
+    <contextParameter comment="" name="TC_TDS_user" prompt="TC_TDS_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dpelosi@talendpseaptalendcom.talend.com" xmi:id="_12DpZXWdEeuGsPJu6Ybj8g"/>
+    <contextParameter comment="" name="TC_TDS_password" prompt="TC_TDS_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:8OiYHmHgxoZYHR15ntUAhwZ6lbaOCJ8PFEVfj7V/0/+VCblUwRk=" xmi:id="_12DpZnWdEeuGsPJu6Ybj8g"/>
+    <contextParameter comment="" name="TC_Bearer" prompt="TC_Bearer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SPyDF9laRlGnDtV7WwDtJC4ovEBc-YgM-I7wR3rR1LfA-4IVuqQa3rbpJDeIgcgn" xmi:id="_12DpZ3WdEeuGsPJu6Ybj8g"/>
+    <contextParameter comment="" name="TC_RuleRepository_API_url" prompt="TC_RuleRepository_API_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_wgBFEKvpEeyvOtBUHfUZiQ"/>
+    <contextParameter comment="" name="TC_User" prompt="TC_User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_KxGiQjOeEe-QYo5E7zcXhg"/>
+    <contextParameter comment="" name="TC_Password" prompt="TC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_KxGiQzOeEe-QYo5E7zcXhg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_63af1666-296e-4a4b-a46c-2012f2935980"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zIrgoxNBd3mAFiQfaVt7twAti0a/S3vFysfgYEspJydDZDiepfpQmCskLV2K2Mb94TnnSYB98xDq&#13;
+MZz3BWpXVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f5eabb3d-5158-4319-a264-4d86c1d410bc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+oDDzz1aYeQ/ml+45Alzfpa66ss9bhAtbEFHLllNOFL1rsKad6kUcrY0dYM/fRR5W9333KzkXz04&#13;
+KjH+TkzJIA==</DigestValue></Reference></SignedInfo><SignatureValue>lbUV/2IMfTYMzgo5QqM6WaH/ZQ11ZaDIHSOfx1awV+r8lbGiwW3nx+jef5fNfgJqS9hiSTpxvNaj&#13;
+ICeGpaI4Y+e204jF/hySe2C8Cia+HZ+Gzjq01BsMCBPz+P3V14Pjn/A5ZMxAL4Nld0TQQQtwka/o&#13;
+r3iZLyftuqMf+RrqYSavVDtAssaqX34a18pZqa6obPvS0BN6r2jf7fAONBSE6UIyWDVy8kndNtyJ&#13;
+hAEKv3Rlj+f6Xe5JxNYT0AlrSnDrpcxDUCnexz99Cfjj+bzTsGa6V/ukoBdF9EsMlZSxDKPRSect&#13;
+L1PxMdtvfwvdfp9KZNmUMUqKiguCpjg8oGehLA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f5eabb3d-5158-4319-a264-4d86c1d410bc" Target="#_63af1666-296e-4a4b-a46c-2012f2935980"><Timestamp>2024-07-03 10:41:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
