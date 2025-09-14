@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_tZlYsPbMEd2c5L1gaJyUtQ" name="French date">
-  <taggedValue xmi:id="_tZlYsfbMEd2c5L1gaJyUtQ" tag="Author" value="Samir AZZA"/>
-  <taggedValue xmi:id="_tZlYsvbMEd2c5L1gaJyUtQ" tag="Description" value="Matches  &#x9;&#xA;12/01/2002 | 12/01/2002 12:32:10&#xA;Non-Matches &#x9;&#xA;32/12/2002 | 12/13/2001 | 12/02/06"/>
-  <taggedValue xmi:id="_tZlYs_bMEd2c5L1gaJyUtQ" tag="Purpose" value="Correct French DateTime(DD/MM/YYYY OR DD/MM/YYYY HH:MM:SS)"/>
-  <taggedValue xmi:id="_tZlYtPbMEd2c5L1gaJyUtQ" tag="Status" value="Draft"/>
-  <taggedValue xmi:id="_tZlYtfbMEd2c5L1gaJyUtQ" tag="Validation_Status" value="true"/>
-  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_tZlYtvbMEd2c5L1gaJyUtQ" expressionType="REGEXP">
-    <expression xmi:id="_tZlYt_bMEd2c5L1gaJyUtQ" body="'^(([0-2][[:digit:]]|[3][0-1])\/([0][[:digit:]]|[1][0-2])\/[2][0][[:digit:]]{2})$|^(([0-2][[:digit:]]|[3][0-1])\/([0][[:digit:]]|[1][0-2])\/[2][0][[:digit:]]{2}[[:blank:]]([0-1][[:digit:]]|[2][0-3])\:[0-5][[:digit:]]\:[0-5][[:digit:]])$'" language="Oracle"/>
-  </components>
-  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_5DxH4PbMEd2c5L1gaJyUtQ" expressionType="REGEXP">
-    <expression xmi:id="_5DxH4fbMEd2c5L1gaJyUtQ" body="'^(([0-2][[:digit:]]|[3][0-1])\\/([0][[:digit:]]|[1][0-2])\\/[2][0][[:digit:]]{2})$|^(([0-2][[:digit:]]|[3][0-1])\\/([0][[:digit:]]|[1][0-2])\\/[2][0][[:digit:]]{2}[[:blank:]]([0-1][[:digit:]]|[2][0-3])\\:[0-5][[:digit:]]\\:[0-5][[:digit:]])$'" language="MySQL"/>
-  </components>
-</dataquality.domain.pattern:Pattern>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_tZlYsPbMEd2c5L1gaJyUtQ" name="French date" supplierDependency="_Xlvi0miDEfCU3vKErBJPGQ">
+    <taggedValue xmi:id="_tZlYsfbMEd2c5L1gaJyUtQ" tag="Author" value="Samir AZZA"/>
+    <taggedValue xmi:id="_tZlYsvbMEd2c5L1gaJyUtQ" tag="Description" value="Matches  &#x9;&#xA;12/01/2002 | 12/01/2002 12:32:10&#xA;Non-Matches &#x9;&#xA;32/12/2002 | 12/13/2001 | 12/02/06"/>
+    <taggedValue xmi:id="_tZlYs_bMEd2c5L1gaJyUtQ" tag="Purpose" value="Correct French DateTime(DD/MM/YYYY OR DD/MM/YYYY HH:MM:SS)"/>
+    <taggedValue xmi:id="_tZlYtPbMEd2c5L1gaJyUtQ" tag="Status" value="Draft"/>
+    <taggedValue xmi:id="_tZlYtfbMEd2c5L1gaJyUtQ" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_tZlYtvbMEd2c5L1gaJyUtQ" expressionType="REGEXP">
+      <expression xmi:id="_tZlYt_bMEd2c5L1gaJyUtQ" body="'^(([0-2][[:digit:]]|[3][0-1])\/([0][[:digit:]]|[1][0-2])\/[2][0][[:digit:]]{2})$|^(([0-2][[:digit:]]|[3][0-1])\/([0][[:digit:]]|[1][0-2])\/[2][0][[:digit:]]{2}[[:blank:]]([0-1][[:digit:]]|[2][0-3])\:[0-5][[:digit:]]\:[0-5][[:digit:]])$'" language="Oracle"/>
+    </components>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_5DxH4PbMEd2c5L1gaJyUtQ" expressionType="REGEXP">
+      <expression xmi:id="_5DxH4fbMEd2c5L1gaJyUtQ" body="'^(([0-2][[:digit:]]|[3][0-1])\\/([0][[:digit:]]|[1][0-2])\\/[2][0][[:digit:]]{2})$|^(([0-2][[:digit:]]|[3][0-1])\\/([0][[:digit:]]|[1][0-2])\\/[2][0][[:digit:]]{2}[[:blank:]]([0-1][[:digit:]]|[2][0-3])\\:[0-5][[:digit:]]\\:[0-5][[:digit:]])$'" language="MySQL"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Xlvi0miDEfCU3vKErBJPGQ" kind="Usage" supplier="_tZlYsPbMEd2c5L1gaJyUtQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/Address/BasicCol_0.1.ana#_KQ1-QGiDEfCU3vKErBJPGQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/ColumnarAnalysis_0.1.ana#_-GZpAI9CEfCUJdmIxKCE3g"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/DBColumnarAnalysis_0.1.ana#_loM2II-BEfCDkKNBiYgKyA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010">
+  <softwaredeployment:TdSoftwareSystem xmi:id="_TsP4wE3_Ee-J0N8pSiLxLA" name="Teradata" subtype="Teradata" version="Teradata Database 17.20.03.26"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_4P1VwIudEe-6Pdu5wXLJZg" name="Apache Hive" subtype="Apache Hive" version="3.1.3000.7.1.4.0-203"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_7eDHsLXuEe-SNIepAR27aw" name="MySQL" subtype="MySQL" version="5.7.32"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_7fn1ALXuEe-SNIepAR27aw" name="Microsoft SQL Server" subtype="Microsoft SQL Server" version="14.00.2052"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_7h9-YLXuEe-SNIepAR27aw" name="MySQL" subtype="MySQL" version="8.0.35"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_7iBBsLXuEe-SNIepAR27aw" name="MySQL" subtype="MySQL" version="8.0.26"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_7iEsELXuEe-SNIepAR27aw" name="Oracle" subtype="Oracle" version="Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production&#xA;Version 19.3.0.0.0"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_7iHvYLXuEe-SNIepAR27aw" name="Apache Hive" subtype="Apache Hive" version="2.1.1-cdh6.3.2"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_rbU8gB6dEfCu2vMGsgPoGQ" name="DB2/LINUXX8664" subtype="DB2/LINUXX8664" version="SQL110580"/>
+</xmi:XMI>

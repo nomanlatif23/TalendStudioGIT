@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
   <model:JobletProcess defaultContext="Cloud" jobType="Standard">
-    <context confirmationNeeded="false" name="Default">
-      <contextParameter comment="" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="c:/data/demo"/>
-      <contextParameter comment="" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="c:/data/demo/out/reports"/>
+    <context confirmationNeeded="false" hide="false" name="Default">
+      <contextParameter comment="" internalId="_9MTWgH-6Ee-CK82oowkjSQ" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="D:\Talend\data\demo"/>
+      <contextParameter comment="" internalId="_9MTWgX-6Ee-CK82oowkjSQ" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="D:\Talend\data\demo\outD:\Talend\data\demo\out\report"/>
     </context>
-    <context confirmationNeeded="false" name="Cloud">
-      <contextParameter comment="" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="/home/ubuntu/data/demo"/>
-      <contextParameter comment="" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="/home/ubuntu/data/demo/out/reports"/>
+    <context confirmationNeeded="false" hide="false" name="Cloud">
+      <contextParameter comment="" internalId="_9MTWgn-6Ee-CK82oowkjSQ" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="/home/ubuntu/data/demo"/>
+      <contextParameter comment="" internalId="_9MTWg3-6Ee-CK82oowkjSQ" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="/home/ubuntu/data/demo/out/reports"/>
     </context>
-    <context confirmationNeeded="false" name="Hybrid">
-      <contextParameter comment="" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="c:/data/demo"/>
-      <contextParameter comment="" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="c:/data/demo/out/reports"/>
+    <context confirmationNeeded="false" hide="false" name="Hybrid">
+      <contextParameter comment="" internalId="_9MTWhH-6Ee-CK82oowkjSQ" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="D:\Talend\data\demo"/>
+      <contextParameter comment="" internalId="_9MTWhX-6Ee-CK82oowkjSQ" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="D:\Talend\data\demo\outD:\Talend\data\demo\out\report"/>
     </context>
-    <context confirmationNeeded="false" name="Local">
-      <contextParameter comment="" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="c:/data/demo"/>
-      <contextParameter comment="" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="c:/data/demo/out/reports"/>
+    <context confirmationNeeded="false" hide="false" name="Local">
+      <contextParameter comment="" internalId="_9MTWhn-6Ee-CK82oowkjSQ" name="data_base_path" prompt="data_base_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="D:\Talend\data\demo"/>
+      <contextParameter comment="" internalId="_9MTWh3-6Ee-CK82oowkjSQ" name="reports_path" prompt="reports_path?" promptNeeded="false" repositoryContextId="_OdxjUEgREeqHwKUMan5ASw" type="id_String" value="D:\Talend\data\demo\outD:\Talend\data\demo\out\report"/>
     </context>
     <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
       <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
@@ -80,27 +81,13 @@
       <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
       <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
       <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-      <elementParameter field="CLOSED_LIST" name="DATABRICKS_CLUSTER_TYPE" value="&quot;INTERACTIVE&quot;"/>
-      <routinesParameter id="_XqfOsKlZEemPO-V6uu29HQ" name="Mathematical"/>
-      <routinesParameter id="_XqU2oKlZEemPO-V6uu29HQ" name="SQLike"/>
-      <routinesParameter id="_Xq7TkKlZEemPO-V6uu29HQ" name="TalendDate"/>
-      <routinesParameter id="_XqkuQKlZEemPO-V6uu29HQ" name="Numeric"/>
-      <routinesParameter id="_Xp6m8KlZEemPO-V6uu29HQ" name="DataQuality"/>
-      <routinesParameter id="_Xi-RcKlZEemPO-V6uu29HQ" name="DataMasking"/>
-      <routinesParameter id="_XqGNIKlZEemPO-V6uu29HQ" name="DqStringHandling"/>
-      <routinesParameter id="_XqAGgKlZEemPO-V6uu29HQ" name="DataQualityDependencies"/>
-      <routinesParameter id="_XrAzIKlZEemPO-V6uu29HQ" name="TalendString"/>
-      <routinesParameter id="_Xq10AKlZEemPO-V6uu29HQ" name="TalendDataGenerator"/>
-      <routinesParameter id="_XrG5wKlZEemPO-V6uu29HQ" name="TalendStringUtil"/>
-      <routinesParameter id="_XqLFoKlZEemPO-V6uu29HQ" name="DQTechnical"/>
-      <routinesParameter id="_XqqN0KlZEemPO-V6uu29HQ" name="Relational"/>
-      <routinesParameter id="_XqvtYKlZEemPO-V6uu29HQ" name="StringHandling"/>
-      <routinesParameter id="_Xqa9QKlZEemPO-V6uu29HQ" name="DataOperation"/>
     </parameters>
     <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_2"/>
       <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
       <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_eiSNsOadEei8ebNLDaPtjA - metadata"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
       <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
       <elementParameter field="FILE" name="FILENAME" value="context.data_base_path + &quot;/twitter.csv&quot;"/>
       <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -159,6 +146,7 @@
         <elementValue elementRef="DECODE" value="false"/>
       </elementParameter>
       <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+      <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
       <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
       <elementParameter field="TEXT" name="LABEL" value="Twitter"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -210,13 +198,13 @@
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray innerContent="89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7AF40000027A49444154789CED964968136114C77B120415D71A97BA54DBE8CD830AE251054F823705372C78F5286EA0977A11A1F78AB656DB08AD0A2EA54A4D0571B7584F42963693C434191B6C4C52A3F6EFFB4F1BA9305FE64B0629481E7C649230EFFDDEFED56CBA3D82D93C3555802AC07F01E0F50D63CDAD3096DF08A156CEEA9B6134CA6FC5FF1BE4D93BE3BB16C05A5158DF69FFD2CC43E50BAE0571F279127D4616FE780ECDEFC750DB1EC22A0159269F5BBA23D83C0DAA0540E3A75F99D8FD208A3A51A2324E2FE9B599FF093B39EE4FA03F9645F86B018BDA82FA1120F5606AC252B2E3AE6185D58E7E495B082F12795BE345313205ECBA1FC5E1FE04EABB342340C5C3E3853F4ACEBE3631F76AC08A4C11A4A16B2AAF3AF2ADF00B1E8513B6000C6B6F24FB971286F98878315FF2CD88304AFBFBE28EC6DF25F39827EF349653842CBEED770CA5D2470277FE8D893352274E72F9431A2B3AD475A42CC213CF4671EA65CA39BE0E72F1ED17AB2DCB0260783FA5BF5B0A2627DD011C78F219EB3A2B88C0D1A709D7DE53587CAAFC2B01BCBE112CBC1E447730E3CAF89039617554A941A69C846C194EB3261926C99CFDA0719243D2358C6645000C1BBBA1522134DB4FB5031C0178EA84FEA0145125B2AD27A2B54B1CB7E14AE9618EE3C7D1AC78F543CB381793A7A374EE4B026C9431BB5EE8993F02CC690D60E73D43E6BA33C03919DB8B158B470B80C6F7C8163C26C5D734308A968F69A4348B705F6F1C4BDBF53C5702142F17176482E9CA95A1B4D56E4E155FC61C9882E0E2D92AC5C4B9EF0B8CC31FCB61402E1C3DA10C2E0D8E61EFC39855E94C53A961E3AA0837484A7829F14C5FB778F8CCDB0EABDCA9CD5C03FCEB5305A802CC3AC06F3911DF6BD3BB6EDF0000000049454E44AE426082"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8954a732-1c83-4d42-a9b5-df2681638ad0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>h1/yiJM8AzBFsb3er/dld3eJO5xlLlcdvATiQkB4Pj9y3jw32BEw+y0twSQW3j7esyMm7t4+oE97&#13;
-12grq/45Yw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d47024ab-9323-4333-ab5a-224d9f35b05f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lhXFh5Rs76fhIELSKTcXtmdbGZsp+MYPByxCTAPl+6uR91ZlwYBNq8Ma+pjeR6hi8w9xQKRbM+lN&#13;
-Uqsr+sI78Q==</DigestValue></Reference></SignedInfo><SignatureValue>XQHFVZYjz4QhWHUr/IDLvwiLeVxcvTypV8oUjnSP7KMn5XoVBgAQ/Qmtj5mHpzaBPxMYiAhTnFS8&#13;
-GtBn5dJMBPknqUofzWghc9wy8EORynBy2mHtK4KbsN/tBXAaCR5ro7LKd/PAXiI1Ud4eo1a0CBan&#13;
-Qc1iSZyEAdYbXoPCkpdi68OTtH07ZAdlhIIX5pbatuLyvC0xXMfuYqCMFgo+ovHTuXsgRpGjBJf5&#13;
-GAzVBwBqoLVwl+Gk9VRMk1OPhjIyPGq0SKLYkrUO824lBQs2utHYebnjgzuzw1C//EPDObyUEgUg&#13;
-6x2PnLfNkVUQshYswQAzDGbcXl5lwRoLPA4Vkw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_00817cd4-0da0-49d9-ac01-e278b67ae0d0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rzPrxEKefnHM58jVmJy3ZoP3lCYpxxriV1ZJA47vn8B4OUVCoExABmVR/fYiXH7ZYfviXGnRR6TH&#13;
+zGsuvd05XQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ce2d9a48-2827-4576-830c-c58c507dda85"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TqDQstgAtSGR1mF2DI4y7a4M5l0KHPB/GXB6jb5HFGt391yuVYrynCF15bzVeNkhAFnwegD3inwT&#13;
+uERY+vN8Yg==</DigestValue></Reference></SignedInfo><SignatureValue>HicI/1qPOoGbawWrp5OaXi5dn6VW2bAQuvfRMCdXX7bMLbWnLg4SFOLiKTNeczteBVjx8KMkuEhQ&#13;
+z9HtERob4/gpKA4WAjbRPz+kXd6Lj8lUbv/8T3JVIr9CIxn2ZXSgZb5LwsqLhrAxAnMgOmYiaYVQ&#13;
+jHXTe3lg87cjl9ivXtYsURZN10E+aJzKyqWbDtnxLim2wfzWMVYZLv7YIOKitEzkBgJaP12MUnV4&#13;
+ckAe+8qRot7i9EJPSsDa45TSy7M5seZVX5mF0c1afR6y9rfBjRlyc+P6m5li4D/dFHxLVuw/8ogs&#13;
+L4dfi6HLDb2P7Q03aawXEjvfBftpDMpqoeqALQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -238,4 +226,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d47024ab-9323-4333-ab5a-224d9f35b05f" Target="#_8954a732-1c83-4d42-a9b5-df2681638ad0"><Timestamp>2024-07-03 10:28:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ce2d9a48-2827-4576-830c-c58c507dda85" Target="#_00817cd4-0da0-49d9-ac01-e278b67ae0d0"><Timestamp>2024-10-01 06:04:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

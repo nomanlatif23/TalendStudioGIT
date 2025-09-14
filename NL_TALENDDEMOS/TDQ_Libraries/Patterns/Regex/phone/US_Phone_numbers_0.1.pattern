@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_bdjpwLr8Ed2z8Ya9pb9seQ" name="US Phone numbers">
-  <taggedValue xmi:id="_bdvP8Lr8Ed2z8Ya9pb9seQ" tag="Author" value="Dave Turner"/>
-  <taggedValue xmi:id="_bdvP8br8Ed2z8Ya9pb9seQ" tag="Description" value="Matches  &#x9;(604) 789-0136 | +123-45678-908 Non-Matches &#x9;01.12.23  http://regexlib.com/REDetails.aspx?regexp_id=642"/>
-  <taggedValue xmi:id="_bdvP8rr8Ed2z8Ya9pb9seQ" tag="Purpose" value="Telephone number filter"/>
-  <taggedValue xmi:id="_bdvP87r8Ed2z8Ya9pb9seQ" tag="Status" value="Draft"/>
-  <taggedValue xmi:id="_bdvP9Lr8Ed2z8Ya9pb9seQ" tag="Validation_Status" value="true"/>
-  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_bdvP9br8Ed2z8Ya9pb9seQ" expressionType="REGEXP">
-    <expression xmi:id="_bdvP9rr8Ed2z8Ya9pb9seQ" body="'(\\+)?([-\\._\\(\\) ]?[[:digit:]]{3,20}[-\\._\\(\\) ]?){2,10}'" language="MySQL"/>
-  </components>
-  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_hT6ZILr8Ed2z8Ya9pb9seQ">
-    <expression xmi:id="_hT6ZIbr8Ed2z8Ya9pb9seQ" body="'(\+)?([-\._\(\) ]?[\d]{3,20}[-\._\(\) ]?){2,10}'" language="Oracle"/>
-  </components>
-</dataquality.domain.pattern:Pattern>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_bdjpwLr8Ed2z8Ya9pb9seQ" name="US Phone numbers" supplierDependency="_XzKTwGiDEfCU3vKErBJPGQ">
+    <taggedValue xmi:id="_bdvP8Lr8Ed2z8Ya9pb9seQ" tag="Author" value="Dave Turner"/>
+    <taggedValue xmi:id="_bdvP8br8Ed2z8Ya9pb9seQ" tag="Description" value="Matches  &#x9;(604) 789-0136 | +123-45678-908 Non-Matches &#x9;01.12.23  http://regexlib.com/REDetails.aspx?regexp_id=642"/>
+    <taggedValue xmi:id="_bdvP8rr8Ed2z8Ya9pb9seQ" tag="Purpose" value="Telephone number filter"/>
+    <taggedValue xmi:id="_bdvP87r8Ed2z8Ya9pb9seQ" tag="Status" value="Draft"/>
+    <taggedValue xmi:id="_bdvP9Lr8Ed2z8Ya9pb9seQ" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_bdvP9br8Ed2z8Ya9pb9seQ" expressionType="REGEXP">
+      <expression xmi:id="_bdvP9rr8Ed2z8Ya9pb9seQ" body="'(\\+)?([-\\._\\(\\) ]?[[:digit:]]{3,20}[-\\._\\(\\) ]?){2,10}'" language="MySQL"/>
+    </components>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_hT6ZILr8Ed2z8Ya9pb9seQ">
+      <expression xmi:id="_hT6ZIbr8Ed2z8Ya9pb9seQ" body="'(\+)?([-\._\(\) ]?[\d]{3,20}[-\._\(\) ]?){2,10}'" language="Oracle"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_XzKTwGiDEfCU3vKErBJPGQ" kind="Usage" supplier="_bdjpwLr8Ed2z8Ya9pb9seQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/Address/BasicCol_0.1.ana#_KQ1-QGiDEfCU3vKErBJPGQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/ColumnarAnalysis_0.1.ana#_-GZpAI9CEfCUJdmIxKCE3g"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/DBColumnarAnalysis_0.1.ana#_loM2II-BEfCDkKNBiYgKyA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

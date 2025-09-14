@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Demos/DataFabric2</deletedFolders>
+  <deletedFolders>process/Demos/Test</deletedFolders>
+  <deletedFolders>resources/Test</deletedFolders>
+  <deletedFolders>route_resources/Test</deletedFolders>
+  <deletedItems id="_3xCyEEAcEe-raZ0BVtaChg" path="Databases" type="PROCESS"/>
+  <deletedItems id="_fEnjUEAWEe-raZ0BVtaChg" path="Databases" type="PROCESS"/>
+  <deletedItems id="_tE8wEDj7Ee-R_4Llyu_b5w" path="Databases" type="PROCESS"/>
+  <deletedItems id="__lTs4D3dEe-Vq7O1lHFgnA" path="Demos" type="PROCESS"/>
+  <deletedItems id="_IcXr0D3sEe-Vq7O1lHFgnA" path="Demos/Test" type="PROCESS"/>
+  <deletedItems id="_LLUgAFZDEe-iwuMyEqV3LA" path="Files" type="PROCESS"/>
+  <deletedItems id="_WaH8kOW6Ee6GL7stb-0A0A" path="WebServicesAPIs" type="PROCESS"/>
+  <deletedItems id="_bk41gHAYEe-U7q8uEFdHNA" path="WebServicesAPIs" type="PROCESS"/>
+  <deletedItems id="_i961YHAUEe-U7q8uEFdHNA" path="WebServicesAPIs" type="PROCESS"/>
+  <deletedItems id="_t8xH0OHmEe6NJ9IEmPGibg" path="WebServicesAPIs" type="PROCESS"/>
+  <deletedItems id="_y08VQHAQEe-U7q8uEFdHNA" path="WebServicesAPIs" type="PROCESS"/>
+  <deletedItems id="_YKkcwIuNEe-1-dpa5Qu-Kg" path="Demos/DataFabric" type="PROCESS_MR"/>
+  <deletedItems id="_-mBgkFNzEfCsv-O5x863NA" path="" type="RESOURCES"/>
+  <deletedItems id="_cBvEYP1rEe6ncpjM5pfL9Q" path="" type="ROUTE"/>
+  <deletedItems id="_-GZB8I9CEfCUJdmIxKCE3g" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
+  <deletedItems id="_QS2pMI-BEfCDkKNBiYgKyA" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
+  <deletedItems id="_loMPEI-BEfCDkKNBiYgKyA" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
+  <deletedItems id="_vETi0I9CEfCUJdmIxKCE3g" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
+  <deletedItems id="_A4YIIGiFEfCU3vKErBJPGQ" path="Regex/address" type="TDQ_PATTERN_ELEMENT"/>
+  <deletedItems id="_cwN5EGiCEfCU3vKErBJPGQ" path="" type="TDQ_RULES_MATCHER"/>
+  <deletedItems id="_hmtt8GiCEfCU3vKErBJPGQ" path="" type="TDQ_RULES_PARSER"/>
+  <deletedItems id="_-hChsGq6Ee-zgqKQ3D4_7w" path="" type="repository.metadata.tacokit.googleanalytics4.googleanalytics4datastore"/>
+</recyclebin:RecycleBin>

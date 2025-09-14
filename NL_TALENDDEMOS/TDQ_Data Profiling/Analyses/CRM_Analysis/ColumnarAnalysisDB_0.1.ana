@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_nO-2oI-VEfCDkKNBiYgKyA" name="ColumnarAnalysisDB" creationDate="2025-09-12T09:01:59.433+0400">
+  <taggedValue xmi:id="_nO-2oY-VEfCDkKNBiYgKyA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_nO-2oo-VEfCDkKNBiYgKyA" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+  <taggedValue xmi:id="_nO-2o4-VEfCDkKNBiYgKyA" tag="Purpose"/>
+  <taggedValue xmi:id="_nO-2pI-VEfCDkKNBiYgKyA" tag="Description"/>
+  <taggedValue xmi:id="_nO-2pY-VEfCDkKNBiYgKyA" tag="Version" value="0.1"/>
+  <context xmi:id="_nO-2po-VEfCDkKNBiYgKyA"/>
+  <results xmi:id="_nO-2p4-VEfCDkKNBiYgKyA">
+    <resultMetadata xmi:id="_nO-2qI-VEfCDkKNBiYgKyA"/>
+  </results>
+  <parameters xmi:id="_nO-2qY-VEfCDkKNBiYgKyA" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>

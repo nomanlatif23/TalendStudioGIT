@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_QS6TkI-BEfCDkKNBiYgKyA" name="Columnar Analysis" creationDate="2025-09-12T06:36:15.554+0400" defaultContext="Default">
+    <clientDependency href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_VrZTcI86EfCUJdmIxKCE3g"/>
+    <taggedValue xmi:id="_QS6TkY-BEfCDkKNBiYgKyA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_QS6Tko-BEfCDkKNBiYgKyA" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+    <taggedValue xmi:id="_QS6Tk4-BEfCDkKNBiYgKyA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_QS6TlI-BEfCDkKNBiYgKyA" tag="Description" value=""/>
+    <taggedValue xmi:id="_QS6TlY-BEfCDkKNBiYgKyA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_YlzW0Y-BEfCDkKNBiYgKyA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_Yl1MAI-BEfCDkKNBiYgKyA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_QS6Tlo-BEfCDkKNBiYgKyA">
+      <connection href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_HPJFQI86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1QHcY86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1cUsY86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1YDQY86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1f_EY86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1LO8I86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1nT0Y86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1kQgI86EfCUJdmIxKCE3g"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1UY4Y86EfCUJdmIxKCE3g"/>
+    </context>
+    <results xmi:id="_QS6Tl4-BEfCDkKNBiYgKyA">
+      <resultMetadata xmi:id="_QS6TmI-BEfCDkKNBiYgKyA" executionDate="2025-09-12T06:37:55.371+0400" executionDuration="69" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_YlzW0o-BEfCDkKNBiYgKyA" count="268" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1QHcY86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxfsI-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`country` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fHosII-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fHosIY-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fHosIo-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fHosI4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Yl0k8I-BEfCDkKNBiYgKyA" count="936" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1cUsY86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxfsY-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`address_master` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fKfy4I-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fKfy4Y-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fKfy4o-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fKfy44-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Yl0k8Y-BEfCDkKNBiYgKyA" count="100" computed="true">
+        <parameters xmi:id="_crVBwI-BEfCDkKNBiYgKyA"/>
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1YDQY86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxfso-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`claim` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fKiPII-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fKiPIY-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fKiPIo-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fKiPI4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Yl0k8o-BEfCDkKNBiYgKyA" count="330" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1f_EY86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxfs4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`customer_iban` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fKkrYI-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fKkrYY-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fKkrYo-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fKkrY4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Yl0k84-BEfCDkKNBiYgKyA" count="968" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1LO8I86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxftI-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`address` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fKnHoI-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fKnHoY-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fKnHoo-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fKnHo4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Yl0k9I-BEfCDkKNBiYgKyA" count="1003" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1nT0Y86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxftY-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`customer` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fKpj4I-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fKpj4Y-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fKpj4o-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fKpj44-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Yl0k9Y-BEfCDkKNBiYgKyA" count="975" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1kQgI86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxfto-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`customer_clean_country_codes` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fKsAII-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fKsAIY-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fKsAIo-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fKsAI4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Yl0k9o-BEfCDkKNBiYgKyA" count="800" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_I1UY4Y86EfCUJdmIxKCE3g"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_fKxft4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM `crm`.`contract` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_fKucYI-BEfCDkKNBiYgKyA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_fKucYY-BEfCDkKNBiYgKyA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_fKucYo-BEfCDkKNBiYgKyA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_fKucY4-BEfCDkKNBiYgKyA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_QS6TmY-BEfCDkKNBiYgKyA" dataFilter="_Yl2aII-BEfCDkKNBiYgKyA" analysisType="Table Analysis"/>
+    <contextType xmi:id="_YlzW0I-BEfCDkKNBiYgKyA" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_Yl2aII-BEfCDkKNBiYgKyA" name="Columnar Analysis">
+    <ranges xmi:id="_Yl2aIY-BEfCDkKNBiYgKyA">
+      <expressions xmi:id="_Yl2aIo-BEfCDkKNBiYgKyA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_Yl2aI4-BEfCDkKNBiYgKyA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

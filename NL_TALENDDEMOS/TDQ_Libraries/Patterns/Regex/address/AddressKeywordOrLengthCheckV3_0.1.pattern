@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_4t4d0GiCEfCU3vKErBJPGQ" name="AddressKeywordOrLengthCheckV3" supplierDependency="_R4RpsmiDEfCU3vKErBJPGQ">
+    <taggedValue xmi:id="_4t4d0WiCEfCU3vKErBJPGQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_4t4d0miCEfCU3vKErBJPGQ" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+    <taggedValue xmi:id="_4t4d02iCEfCU3vKErBJPGQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_4t4d1GiCEfCU3vKErBJPGQ" tag="Description" value="Checks if the Address column contains keywords like 'Street', 'Ave', 'Rd', 'Boulevard', 'Lane', and if not, ensures the length is at most 20 and at least 5 characters."/>
+    <taggedValue xmi:id="_4t4d1WiCEfCU3vKErBJPGQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_4t4d1miCEfCU3vKErBJPGQ" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_4t4d12iCEfCU3vKErBJPGQ" expressionType="REGEXP">
+      <expression xmi:id="_4t4d2GiCEfCU3vKErBJPGQ" body="'^(?=.{5,20}$)(?!.*\b(Street|Ave|Rd|Boulevard|Lane)\b).*'" language="SQL" modificationDate="2025-07-24 15:49:43"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_R4RpsmiDEfCU3vKErBJPGQ" kind="Usage" supplier="_4t4d0GiCEfCU3vKErBJPGQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/Address/BasicCol_0.1.ana#_KQ1-QGiDEfCU3vKErBJPGQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/ColumnarAnalysis_0.1.ana#_-GZpAI9CEfCUJdmIxKCE3g"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/DBColumnarAnalysis_0.1.ana#_loM2II-BEfCDkKNBiYgKyA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

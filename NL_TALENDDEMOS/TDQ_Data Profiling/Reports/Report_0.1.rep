@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.reports="http://dataquality.reports" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_h4d_MLXvEe-SNIepAR27aw" name="Report" creationDate="2024-12-09T09:36:24.726+0400" defaultContext="Default">
+  <clientDependency href="../Analyses/BasicColAnalysis_0.1.ana#_uripELXvEe-SNIepAR27aw"/>
+  <taggedValue xmi:id="_h4d_MbXvEe-SNIepAR27aw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_h4d_MrXvEe-SNIepAR27aw" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+  <taggedValue xmi:id="_h4d_M7XvEe-SNIepAR27aw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_h4d_NLXvEe-SNIepAR27aw" tag="Description" value=""/>
+  <taggedValue xmi:id="_h4d_NbXvEe-SNIepAR27aw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_h4d_NrXvEe-SNIepAR27aw" tag="OutputFolder" value="C:\Users\FNQ\Downloads"/>
+  <taggedValue xmi:id="_h4d_N7XvEe-SNIepAR27aw" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_h4d_OLXvEe-SNIepAR27aw" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_h4d_ObXvEe-SNIepAR27aw" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_h4d_OrXvEe-SNIepAR27aw" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_h4d_O7XvEe-SNIepAR27aw" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_h4d_PLXvEe-SNIepAR27aw" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_h4d_PbXvEe-SNIepAR27aw" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_h4d_PrXvEe-SNIepAR27aw" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_h4d_P7XvEe-SNIepAR27aw" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:kXr1ekJmFRLTYeq225tOF5OqE/fZ0whk9MW4qQ=="/>
+  <taggedValue xmi:id="_h4d_QLXvEe-SNIepAR27aw" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_h4d_QbXvEe-SNIepAR27aw" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/D:\Talend\Users\FNQ\workspacecloud\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_h4d_QrXvEe-SNIepAR27aw" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_h4d_Q7XvEe-SNIepAR27aw" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_h4d_RLXvEe-SNIepAR27aw" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_urflwLXvEe-SNIepAR27aw" tag="OutputFileName" value="Test"/>
+  <taggedValue xmi:id="_urflwbXvEe-SNIepAR27aw" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_urflwrXvEe-SNIepAR27aw" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_urflw7XvEe-SNIepAR27aw" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_urha8bXvEe-SNIepAR27aw" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <presentationParams xmi:id="_urgz4LXvEe-SNIepAR27aw" type="TOP_RIGHT_PRESENTATIONKEY">
+    <formula xmi:id="_urgz4bXvEe-SNIepAR27aw">
+      <expression xsi:type="relational:TdExpression" xmi:id="_urgz4rXvEe-SNIepAR27aw" body=""/>
+    </formula>
+  </presentationParams>
+  <analysisMap xmi:id="_uriCALXvEe-SNIepAR27aw" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/BasicColAnalysis_0.1.ana#_7bQSYLXuEe-SNIepAR27aw"/>
+  </analysisMap>
+  <context xmi:id="_urha8LXvEe-SNIepAR27aw" confirmationNeeded="false" hide="false" name="Default"/>
+</dataquality.reports:TdReport>

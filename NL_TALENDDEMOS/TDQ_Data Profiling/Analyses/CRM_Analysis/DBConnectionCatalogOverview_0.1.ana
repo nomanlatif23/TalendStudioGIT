@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:id="_ljX_II9CEfCUJdmIxKCE3g" name="DBConnectionCatalogOverview" creationDate="2025-09-11T23:07:39.920+0400">
+  <clientDependency href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_VrZTcI86EfCUJdmIxKCE3g"/>
+  <taggedValue xmi:id="_ljX_IY9CEfCUJdmIxKCE3g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_ljX_Io9CEfCUJdmIxKCE3g" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+  <taggedValue xmi:id="_ljX_I49CEfCUJdmIxKCE3g" tag="Purpose"/>
+  <taggedValue xmi:id="_ljX_JI9CEfCUJdmIxKCE3g" tag="Description"/>
+  <taggedValue xmi:id="_ljX_JY9CEfCUJdmIxKCE3g" tag="Version" value="0.1"/>
+  <context xmi:id="_ljX_Jo9CEfCUJdmIxKCE3g">
+    <connection href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_HPJFQI86EfCUJdmIxKCE3g"/>
+    <analysedElements xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_HQAA4I86EfCUJdmIxKCE3g"/>
+  </context>
+  <results xmi:id="_ljX_J49CEfCUJdmIxKCE3g">
+    <resultMetadata xmi:id="_ljX_KI9CEfCUJdmIxKCE3g" executionDate="2025-09-11T23:07:53.296+0400" executionDuration="57" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators.schema:CatalogIndicator" xmi:id="_ljX_KY9CEfCUJdmIxKCE3g" computed="true" tableCount="8" keyCount="7" indexCount="7" tableRowCount="5380">
+      <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../../metadata/connections/MySQL_CRM_Analysis_0.1.item#_HQAA4I86EfCUJdmIxKCE3g"/>
+      <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+      <tableIndicators xmi:id="_njBisI9CEfCUJdmIxKCE3g" rowCount="968" tableName="address" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_njF0II9CEfCUJdmIxKCE3g" rowCount="936" tableName="address_master" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_njI3cI9CEfCUJdmIxKCE3g" rowCount="100" tableName="claim">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_njNv8I9CEfCUJdmIxKCE3g" rowCount="800" tableName="contract" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_njQzQI9CEfCUJdmIxKCE3g" rowCount="268" tableName="country" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_njTPgI9CEfCUJdmIxKCE3g" rowCount="1003" tableName="customer" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_njWS0I9CEfCUJdmIxKCE3g" rowCount="975" tableName="customer_clean_country_codes" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_njYvEI9CEfCUJdmIxKCE3g" rowCount="330" tableName="customer_iban" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+    </indicators>
+  </results>
+  <parameters xmi:id="_ljX_Ko9CEfCUJdmIxKCE3g" analysisType="Catalog Analysis"/>
+</dataquality.analysis:Analysis>

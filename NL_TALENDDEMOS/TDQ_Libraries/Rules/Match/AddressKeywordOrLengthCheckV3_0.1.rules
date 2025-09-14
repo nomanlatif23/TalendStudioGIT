@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_cwRjcGiCEfCU3vKErBJPGQ" name="AddressKeywordOrLengthCheckV3">
+  <taggedValue xmi:id="_cwRjcWiCEfCU3vKErBJPGQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_cwRjcmiCEfCU3vKErBJPGQ" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+  <taggedValue xmi:id="_cwRjc2iCEfCU3vKErBJPGQ" tag="Purpose" value="Checks if the Address column contains keywords like 'Street', 'Ave', 'Rd', 'Boulevard', 'Lane', and if not, ensures the length is at most 20 and at least 5 characters."/>
+  <taggedValue xmi:id="_cwRjdGiCEfCU3vKErBJPGQ" tag="Description"/>
+  <taggedValue xmi:id="_cwRjdWiCEfCU3vKErBJPGQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_cwRjdmiCEfCU3vKErBJPGQ" tag="Validation_Status" value="true"/>
+</dataquality.rules:MatchRuleDefinition>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:ParserRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_hmtt8WiCEfCU3vKErBJPGQ" name="Checks if the Address column contains keywords like 'Street', 'Ave', 'Rd', 'Boulevard', 'Lane', and if not, ensures the length is at most 20 and at least 5 characters.">
+  <taggedValue xmi:id="_hmtt8miCEfCU3vKErBJPGQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_hmtt82iCEfCU3vKErBJPGQ" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+  <taggedValue xmi:id="_hmtt9GiCEfCU3vKErBJPGQ" tag="Purpose"/>
+  <taggedValue xmi:id="_hmtt9WiCEfCU3vKErBJPGQ" tag="Description"/>
+  <taggedValue xmi:id="_hmtt9miCEfCU3vKErBJPGQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_hmtt92iCEfCU3vKErBJPGQ" tag="Validation_Status" value="true"/>
+  <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+</dataquality.rules:ParserRule>

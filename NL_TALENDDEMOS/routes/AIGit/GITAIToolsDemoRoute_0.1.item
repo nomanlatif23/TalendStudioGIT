@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_iPGD4HMHEfCCWcKol86Gqw" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_iPGD4XMHEfCCWcKol86Gqw" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_iPGD4nMHEfCCWcKol86Gqw" comment="" name="OpenAIapi_key" prompt="OpenAIapi_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_p_ZLAGLuEfCZGtr5eGxGMg"/>
+  </context>
+  <parameters xmi:id="_iPGq8HMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHSAHMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_iPHSAXMHEfCCWcKol86Gqw" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHSAnMHEfCCWcKol86Gqw" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHSA3MHEfCCWcKol86Gqw" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSBHMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSBXMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSBnMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSB3MHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSCHMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSCXMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSCnMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSC3MHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSDHMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSDXMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSDnMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSD3MHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSEHMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSEXMHEfCCWcKol86Gqw" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_iPHSEnMHEfCCWcKol86Gqw" id="_uDi24CvPEemn7J3ssWShHg" name="r"/>
+  </parameters>
+  <node xmi:id="_iPHSE3MHEfCCWcKol86Gqw" componentName="cLangChainTools" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="320">
+    <elementParameter xmi:id="_iPHSFHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_1" show="false"/>
+    <elementParameter xmi:id="_iPHSFXMHEfCCWcKol86Gqw" field="TEXT" name="NAME" value="&quot;db-tools&quot;"/>
+    <elementParameter xmi:id="_iPHSFnMHEfCCWcKol86Gqw" field="TEXT" name="TAGS" value="&quot;store&quot;"/>
+    <elementParameter xmi:id="_iPHSF3MHEfCCWcKol86Gqw" field="TEXT" name="DESCRIPTION" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSGHMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="LANG_CHAIN_CONNECTION" value="cLangChainConnection_1"/>
+    <elementParameter xmi:id="_iPHSGXMHEfCCWcKol86Gqw" field="MEMO" name="SYSTEM_MESSAGE" value="You are an intelligent store assistant. Users will ask you questions about phones. &#xD;&#xA;Your task is to provide accurate and concise answers about stock, price of phones in store&#xD;&#xA;one tool is a search per brand, the other is a search per color, another one by phone name&#xD;&#xA;users can also ask avice on phone, you have reviews in a tool for that&#xD;&#xA;%s"/>
+    <elementParameter xmi:id="_iPHSGnMHEfCCWcKol86Gqw" field="TABLE" name="PARAMETERS"/>
+    <elementParameter xmi:id="_iPHSG3MHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Chat"/>
+    <elementParameter xmi:id="_iPHSHHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSHXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSHnMHEfCCWcKol86Gqw" componentName="cLangChainTools" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="440">
+    <elementParameter xmi:id="_iPHSH3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_2" show="false"/>
+    <elementParameter xmi:id="_iPHSIHMHEfCCWcKol86Gqw" field="TEXT" name="NAME" value="&quot;productsByBrand&quot;"/>
+    <elementParameter xmi:id="_iPHSIXMHEfCCWcKol86Gqw" field="TEXT" name="TAGS" value="&quot;store&quot;"/>
+    <elementParameter xmi:id="_iPHSInMHEfCCWcKol86Gqw" field="TEXT" name="DESCRIPTION" value="&quot;Query phones database by brand&quot;"/>
+    <elementParameter xmi:id="_iPHSI3MHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="LANG_CHAIN_CONNECTION" value="cLangChainConnection_1"/>
+    <elementParameter xmi:id="_iPHSJHMHEfCCWcKol86Gqw" field="MEMO" name="SYSTEM_MESSAGE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSJXMHEfCCWcKol86Gqw" field="TABLE" name="PARAMETERS">
+      <elementValue xmi:id="_iPHSJnMHEfCCWcKol86Gqw" elementRef="P_PARAMS" value="&quot;parameter.brand&quot;" id="0"/>
+      <elementValue xmi:id="_iPHSJ3MHEfCCWcKol86Gqw" elementRef="P_VALUE" value="&quot;string&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHSKHMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="TOOL1"/>
+    <elementParameter xmi:id="_iPHSKXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSKnMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSK3MHEfCCWcKol86Gqw" componentName="cLangChainTools" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="560">
+    <elementParameter xmi:id="_iPHSLHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_3" show="false"/>
+    <elementParameter xmi:id="_iPHSLXMHEfCCWcKol86Gqw" field="TEXT" name="NAME" value="&quot;productsByColor&quot;"/>
+    <elementParameter xmi:id="_iPHSLnMHEfCCWcKol86Gqw" field="TEXT" name="TAGS" value="&quot;store&quot;"/>
+    <elementParameter xmi:id="_iPHSL3MHEfCCWcKol86Gqw" field="TEXT" name="DESCRIPTION" value="&quot;Query_database_phones_by_color&quot;"/>
+    <elementParameter xmi:id="_iPHSMHMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="LANG_CHAIN_CONNECTION" value="cLangChainConnection_1"/>
+    <elementParameter xmi:id="_iPHSMXMHEfCCWcKol86Gqw" field="MEMO" name="SYSTEM_MESSAGE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSMnMHEfCCWcKol86Gqw" field="TABLE" name="PARAMETERS">
+      <elementValue xmi:id="_iPHSM3MHEfCCWcKol86Gqw" elementRef="P_PARAMS" value="&quot;parameter.color&quot;" id="0"/>
+      <elementValue xmi:id="_iPHSNHMHEfCCWcKol86Gqw" elementRef="P_VALUE" value="&quot;string&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHSNXMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="TOOL2"/>
+    <elementParameter xmi:id="_iPHSNnMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSN3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSOHMHEfCCWcKol86Gqw" componentName="cLangChainConnection" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="160">
+    <elementParameter xmi:id="_iPHSOXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainConnection_1" show="false"/>
+    <elementParameter xmi:id="_iPHSOnMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LANGUAGE_MODEL" value="OpenAi"/>
+    <elementParameter xmi:id="_iPHSO3MHEfCCWcKol86Gqw" field="TEXT" name="BASE_URL" value="&quot;https://api.openai.com/v1/&quot;"/>
+    <elementParameter xmi:id="_iPHSPHMHEfCCWcKol86Gqw" field="TEXT" name="API_KEY" value="context.OpenAIapi_key"/>
+    <elementParameter xmi:id="_iPHSPXMHEfCCWcKol86Gqw" field="TEXT" name="MODEL_NAME" value="&quot;gpt-4o-mini&quot;"/>
+    <elementParameter xmi:id="_iPHSPnMHEfCCWcKol86Gqw" field="TEXT" name="REGION" value="&quot;us-east-1&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSP3MHEfCCWcKol86Gqw" field="TEXT" name="END_POINT" value="&quot;endpoint&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSQHMHEfCCWcKol86Gqw" field="TEXT" name="DEPLOYMENT_NAME" value="&quot;deploymentName&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSQXMHEfCCWcKol86Gqw" field="TEXT" name="GITHUB_TOKEN" value="&quot;token&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSQnMHEfCCWcKol86Gqw" field="TEXT" name="SERVICE_VERSION" value="&quot;2023-05-15&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSQ3MHEfCCWcKol86Gqw" field="TEXT" name="TIME_OUT" value="3000"/>
+    <elementParameter xmi:id="_iPHSRHMHEfCCWcKol86Gqw" field="TEXT" name="TEMPERATURE" value="0.3"/>
+    <elementParameter xmi:id="_iPHSRXMHEfCCWcKol86Gqw" field="TEXT" name="MAX_RETRIES" value="100"/>
+    <elementParameter xmi:id="_iPHSRnMHEfCCWcKol86Gqw" field="TEXT" name="MAX_TOKENS" value="100"/>
+    <elementParameter xmi:id="_iPHSR3MHEfCCWcKol86Gqw" field="CHECK" name="APPLY_STREAMING" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHSSHMHEfCCWcKol86Gqw" field="CHECK" name="LOG_REQUESTS" value="true"/>
+    <elementParameter xmi:id="_iPHSSXMHEfCCWcKol86Gqw" field="CHECK" name="LOG_RESPONSES" value="true"/>
+    <elementParameter xmi:id="_iPHSSnMHEfCCWcKol86Gqw" field="CHECK" name="LOG_REQUESTS_RESPONSES" value="true" show="false"/>
+    <elementParameter xmi:id="_iPHSS3MHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="&lt;b>Open AI&lt;/b> Connection"/>
+    <elementParameter xmi:id="_iPHSTHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSTXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSTnMHEfCCWcKol86Gqw" componentName="cSQLConnection" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="160">
+    <elementParameter xmi:id="_iPHST3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQLConnection_1" show="false"/>
+    <elementParameter xmi:id="_iPHSUHMHEfCCWcKol86Gqw" field="TEXT" name="DRIVER_CLASS" value="&quot;org.h2.Driver&quot;"/>
+    <elementParameter xmi:id="_iPHSUXMHEfCCWcKol86Gqw" field="TABLE" name="DRIVER_JAR">
+      <elementValue xmi:id="_iPHSUnMHEfCCWcKol86Gqw" elementRef="JAR_NAME" value="mvn:com.h2database/h2/2.2.220/jar" id="0"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHSU3MHEfCCWcKol86Gqw" field="TEXT" name="URL" value="&quot;jdbc:h2:tcp://localhost/~/test&quot;"/>
+    <elementParameter xmi:id="_iPHSVHMHEfCCWcKol86Gqw" field="CHECK" name="AUTH_REQUIRED" value="true"/>
+    <elementParameter xmi:id="_iPHSVXMHEfCCWcKol86Gqw" field="TEXT" name="USER" value="&quot;sa&quot;"/>
+    <elementParameter xmi:id="_iPHSVnMHEfCCWcKol86Gqw" field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:YqvjSjxjLUmEuD1B0532OvmdRmarCtiuEw0Imuln"/>
+    <elementParameter xmi:id="_iPHSV3MHEfCCWcKol86Gqw" field="CHECK" name="USE_DATA_SOURCE_ALIAS" value="false"/>
+    <elementParameter xmi:id="_iPHSWHMHEfCCWcKol86Gqw" field="TEXT" name="DATA_SOURCE_ALIAS" value="&quot;jdbc/postgresds&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSWXMHEfCCWcKol86Gqw" field="CHECK" name="USE_TRANSACTION" value="false"/>
+    <elementParameter xmi:id="_iPHSWnMHEfCCWcKol86Gqw" field="TEXT" name="INITIAL_SIZE" value="0"/>
+    <elementParameter xmi:id="_iPHSW3MHEfCCWcKol86Gqw" field="TEXT" name="MAX_TOTAL" value="8"/>
+    <elementParameter xmi:id="_iPHSXHMHEfCCWcKol86Gqw" field="TEXT" name="MIN_IDLE" value="0"/>
+    <elementParameter xmi:id="_iPHSXXMHEfCCWcKol86Gqw" field="TEXT" name="MAX_IDLE" value="8"/>
+    <elementParameter xmi:id="_iPHSXnMHEfCCWcKol86Gqw" field="CHECK" name="SET_TIMEOUTS" value="false"/>
+    <elementParameter xmi:id="_iPHSX3MHEfCCWcKol86Gqw" field="TEXT" name="QUERY_TIMEOUT" value="-1" show="false"/>
+    <elementParameter xmi:id="_iPHSYHMHEfCCWcKol86Gqw" field="TEXT" name="MAX_CONNECTION_DURATION" value="-1" show="false"/>
+    <elementParameter xmi:id="_iPHSYXMHEfCCWcKol86Gqw" field="CHECK" name="USE_VALIDATION_QUERY" value="false"/>
+    <elementParameter xmi:id="_iPHSYnMHEfCCWcKol86Gqw" field="TEXT" name="VALIDATION_QUERY_TIMEOUT" value="-1" show="false"/>
+    <elementParameter xmi:id="_iPHSY3MHEfCCWcKol86Gqw" field="TEXT" name="VALIDATION_QUERY" value="&quot;SELECT 1&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSZHMHEfCCWcKol86Gqw" field="CHECK" name="USE_INIT_SQL" value="false"/>
+    <elementParameter xmi:id="_iPHSZXMHEfCCWcKol86Gqw" field="MEMO_SQL" name="INIT_QUERY" value="&quot;CREATE TABLE ....&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSZnMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSZ3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSaHMHEfCCWcKol86Gqw" componentName="cBeanRegister" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="160">
+    <elementParameter xmi:id="_iPHSaXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_1" show="false"/>
+    <elementParameter xmi:id="_iPHSanMHEfCCWcKol86Gqw" field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter xmi:id="_iPHSa3MHEfCCWcKol86Gqw" field="TEXT" name="ID" value="&quot;jacksonJSONDataFormat&quot;"/>
+    <elementParameter xmi:id="_iPHSbHMHEfCCWcKol86Gqw" field="RADIO" name="SIMPLE_CONFIG" value="false"/>
+    <elementParameter xmi:id="_iPHSbXMHEfCCWcKol86Gqw" field="RADIO" name="CONFIG_BY_CODE" value="true"/>
+    <elementParameter xmi:id="_iPHSbnMHEfCCWcKol86Gqw" field="TEXT" name="CLASS_QUALIFIED_NAME" value="java.lang.Object" show="false"/>
+    <elementParameter xmi:id="_iPHSb3MHEfCCWcKol86Gqw" field="CHECK" name="SPECIFY_ARGUMENTS" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHScHMHEfCCWcKol86Gqw" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_iPHScXMHEfCCWcKol86Gqw" field="LABEL" name="NOTE" value="Note: Provide own codes to specify *beanInstance* variable"/>
+    <elementParameter xmi:id="_iPHScnMHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="&#xA;GsonDataFormat jsonDataFormat = new GsonDataFormat();&#xA;jsonDataFormat.setPrettyPrint(true);&#xA;jsonDataFormat.setSerializeNulls(false);&#xA;beanInstance = jsonDataFormat;"/>
+    <elementParameter xmi:id="_iPHSc3MHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="import org.apache.camel.component.gson.GsonDataFormat;"/>
+    <elementParameter xmi:id="_iPHSdHMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Gson JSON"/>
+    <elementParameter xmi:id="_iPHSdXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSdnMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSd3MHEfCCWcKol86Gqw" componentName="cREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="320">
+    <elementParameter xmi:id="_iPHSeHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cREST_1" show="false"/>
+    <elementParameter xmi:id="_iPHSeXMHEfCCWcKol86Gqw" field="TEXT" name="API_ID" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSenMHEfCCWcKol86Gqw" field="TEXT" name="URL" value="&quot;/route/tools/chat&quot;"/>
+    <elementParameter xmi:id="_iPHSe3MHEfCCWcKol86Gqw" field="CLOSED_LIST" name="SERVICE_TYPE" value="MANUAL"/>
+    <elementParameter xmi:id="_iPHSfHMHEfCCWcKol86Gqw" field="TEXT" name="PATH" value="constant(&quot;/customers/&quot;)" show="false"/>
+    <elementParameter xmi:id="_iPHSfXMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="HTTP_METHOD" value="GET" show="false"/>
+    <elementParameter xmi:id="_iPHSfnMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter xmi:id="_iPHSf3MHEfCCWcKol86Gqw" field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml" show="false"/>
+    <elementParameter xmi:id="_iPHSgHMHEfCCWcKol86Gqw" field="TEXT" name="RESPONSE_BEAN" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSgXMHEfCCWcKol86Gqw" field="TABLE" name="SCHEMAS">
+      <elementValue xmi:id="_iPHSgnMHEfCCWcKol86Gqw" elementRef="SCHEMA" value="method" id="0"/>
+      <elementValue xmi:id="_iPHSg3MHEfCCWcKol86Gqw" elementRef="HTTP_VERB" value="POST" id="1"/>
+      <elementValue xmi:id="_iPHShHMHEfCCWcKol86Gqw" elementRef="URI_PATTERN" value="&quot;/&quot;" id="2"/>
+      <elementValue xmi:id="_iPHShXMHEfCCWcKol86Gqw" elementRef="CONSUMES" value="ANY" id="3"/>
+      <elementValue xmi:id="_iPHShnMHEfCCWcKol86Gqw" elementRef="PRODUCES" value="JSON" id="4"/>
+      <elementValue xmi:id="_iPHSh3MHEfCCWcKol86Gqw" elementRef="BEAN" value="" id="5"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHSiHMHEfCCWcKol86Gqw" field="TEXT" name="RESOURCE_CLASS" value="beans.ResourceClass" show="false"/>
+    <elementParameter xmi:id="_iPHSiXMHEfCCWcKol86Gqw" field="TEXT" name="RESOURCE_OPERATION" value="constant(&quot;operationName&quot;)" show="false"/>
+    <elementParameter xmi:id="_iPHSinMHEfCCWcKol86Gqw" field="CHECK" name="SKIP_UNMARSHALLING" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHSi3MHEfCCWcKol86Gqw" field="CHECK" name="ENABLE_SECURITY" value="false"/>
+    <elementParameter xmi:id="_iPHSjHMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="SECURITY_TYPE" value="BASIC" show="false"/>
+    <elementParameter xmi:id="_iPHSjXMHEfCCWcKol86Gqw" field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSjnMHEfCCWcKol86Gqw" field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v2:Aw4Lp5p9ggTFkr+wifYOLT/1VHT5twPGYKlh3FE2" show="false"/>
+    <elementParameter xmi:id="_iPHSj3MHEfCCWcKol86Gqw" field="CHECK" name="USE_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHSkHMHEfCCWcKol86Gqw" field="TEXT" name="ROLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSkXMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS" show="false"/>
+    <elementParameter xmi:id="_iPHSknMHEfCCWcKol86Gqw" field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSk3MHEfCCWcKol86Gqw" field="FILE" name="JWT_KEYSTORE_FILE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSlHMHEfCCWcKol86Gqw" field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v2:bUtpTUGFO43+6NG9++uJb4C+I1blNDXcTFwMDQty" show="false"/>
+    <elementParameter xmi:id="_iPHSlXMHEfCCWcKol86Gqw" field="TEXT" name="JWT_KEYSTORE_ALIAS" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSlnMHEfCCWcKol86Gqw" field="TEXT" name="JWT_AUDIENCE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHSl3MHEfCCWcKol86Gqw" field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter xmi:id="_iPHSmHMHEfCCWcKol86Gqw" field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSmXMHEfCCWcKol86Gqw" field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSmnMHEfCCWcKol86Gqw" field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter xmi:id="_iPHSm3MHEfCCWcKol86Gqw" field="CHECK" name="ENABLE_CORRELATION" value="false"/>
+    <elementParameter xmi:id="_iPHSnHMHEfCCWcKol86Gqw" field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHSnXMHEfCCWcKol86Gqw" field="CHECK" name="LOG_MESSAGES" value="true"/>
+    <elementParameter xmi:id="_iPHSnnMHEfCCWcKol86Gqw" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_iPHSn3MHEfCCWcKol86Gqw" field="TABLE" name="JAXRS_PROPS"/>
+    <elementParameter xmi:id="_iPHSoHMHEfCCWcKol86Gqw" field="TABLE" name="SL_META_DATA" show="false"/>
+    <elementParameter xmi:id="_iPHSoXMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="&lt;b>REST&lt;/b>"/>
+    <elementParameter xmi:id="_iPHSonMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSo3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSpHMHEfCCWcKol86Gqw" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1920" posY="320">
+    <elementParameter xmi:id="_iPHSpXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_iPHSpnMHEfCCWcKol86Gqw" field="TEXT" name="LOGGING_CATEGORY" value="&quot;TestLangchain4jRoute.cLog_2&quot;"/>
+    <elementParameter xmi:id="_iPHSp3MHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_iPHSqHMHEfCCWcKol86Gqw" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_iPHSqXMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_iPHSqnMHEfCCWcKol86Gqw" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHSq3MHEfCCWcKol86Gqw" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_iPHSrHMHEfCCWcKol86Gqw" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHSrXMHEfCCWcKol86Gqw" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHSrnMHEfCCWcKol86Gqw" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_iPHSr3MHEfCCWcKol86Gqw" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_iPHSsHMHEfCCWcKol86Gqw" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_iPHSsXMHEfCCWcKol86Gqw" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_iPHSsnMHEfCCWcKol86Gqw" field="TEXT" name="MESSAGE" value="&quot;${body}&quot;"/>
+    <elementParameter xmi:id="_iPHSs3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHStHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHStXMHEfCCWcKol86Gqw" componentName="cJavaDSLProcessor" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="440">
+    <elementParameter xmi:id="_iPHStnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_1" show="false"/>
+    <elementParameter xmi:id="_iPHSt3MHEfCCWcKol86Gqw" field="MEMO_JAVA" name="CODE" value=".convertHeaderTo(&quot;brand&quot;, String.class)"/>
+    <elementParameter xmi:id="_iPHSuHMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Prepare "/>
+    <elementParameter xmi:id="_iPHSuXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSunMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSu3MHEfCCWcKol86Gqw" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="440">
+    <elementParameter xmi:id="_iPHSvHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_iPHSvXMHEfCCWcKol86Gqw" field="TEXT" name="LOGGING_CATEGORY" value="&quot;TestLangchain4jRoute.cLog_1&quot;"/>
+    <elementParameter xmi:id="_iPHSvnMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_iPHSv3MHEfCCWcKol86Gqw" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_iPHSwHMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_iPHSwXMHEfCCWcKol86Gqw" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHSwnMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_iPHSw3MHEfCCWcKol86Gqw" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHSxHMHEfCCWcKol86Gqw" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHSxXMHEfCCWcKol86Gqw" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_iPHSxnMHEfCCWcKol86Gqw" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_iPHSx3MHEfCCWcKol86Gqw" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_iPHSyHMHEfCCWcKol86Gqw" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_iPHSyXMHEfCCWcKol86Gqw" field="TEXT" name="MESSAGE" value="&quot;${header.category}&quot;"/>
+    <elementParameter xmi:id="_iPHSynMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHSy3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHSzHMHEfCCWcKol86Gqw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="440">
+    <elementParameter xmi:id="_iPHSzXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_1" show="false"/>
+    <elementParameter xmi:id="_iPHSznMHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="String brand = (String)exchange.getMessage().getHeader(&quot;brand&quot;);&#xD;&#xA;if (null != brand) {&#xD;&#xA;&#x9;brand = brand.replaceAll(&quot;^\&quot;|\&quot;$&quot;, &quot;&quot;);&#xD;&#xA;&#x9;exchange.getMessage().setHeader(&quot;brand&quot;, brand);&#xD;&#xA;}&#xD;&#xA;"/>
+    <elementParameter xmi:id="_iPHSz3MHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_iPHS0HMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHS0XMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHS0nMHEfCCWcKol86Gqw" componentName="cSQL" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="440">
+    <elementParameter xmi:id="_iPHS03MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_1" show="false"/>
+    <elementParameter xmi:id="_iPHS1HMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cSQLConnection_1"/>
+    <elementParameter xmi:id="_iPHS1XMHEfCCWcKol86Gqw" field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter xmi:id="_iPHS1nMHEfCCWcKol86Gqw" field="CHECK" name="SQL_FROM_BODY" value="false"/>
+    <elementParameter xmi:id="_iPHS13MHEfCCWcKol86Gqw" field="MEMO_SQL" name="QUERY" value="&quot;select product_name, brand, color, price, stock from products where Lower(brand) = Lower(:#brand)&quot;"/>
+    <elementParameter xmi:id="_iPHS2HMHEfCCWcKol86Gqw" field="TABLE" name="URI_OPTIONS">
+      <elementValue xmi:id="_iPHS2XMHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;initialDelay&quot;" id="0"/>
+      <elementValue xmi:id="_iPHS2nMHEfCCWcKol86Gqw" elementRef="VALUE" value="3000" id="1"/>
+      <elementValue xmi:id="_iPHS23MHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;repeatCount&quot;" id="2"/>
+      <elementValue xmi:id="_iPHS3HMHEfCCWcKol86Gqw" elementRef="VALUE" value="1" id="3"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHS3XMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Query DB - Category"/>
+    <elementParameter xmi:id="_iPHS3nMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHS33MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+    <elementParameter xmi:id="_iPHS4HMHEfCCWcKol86Gqw" field="MEMO" name="COMMENT" value="Select *"/>
+  </node>
+  <node xmi:id="_iPHS4XMHEfCCWcKol86Gqw" componentName="cJsonWriter" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="440">
+    <elementParameter xmi:id="_iPHS4nMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_1" show="false"/>
+    <elementParameter xmi:id="_iPHS43MHEfCCWcKol86Gqw" field="CLOSED_LIST" name="JSON_LIBRARY" value="org.apache.camel.model.dataformat.JsonLibrary.Gson"/>
+    <elementParameter xmi:id="_iPHS5HMHEfCCWcKol86Gqw" field="CHECK" name="PRETTY_PRINT" value="true"/>
+    <elementParameter xmi:id="_iPHS5XMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CUSTOM_REFERENCE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHS5nMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="__UNIQUE_NAME__ &lt;br> &lt;b>logResponse&lt;/b>"/>
+    <elementParameter xmi:id="_iPHS53MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHS6HMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHS6XMHEfCCWcKol86Gqw" componentName="cJavaDSLProcessor" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="560">
+    <elementParameter xmi:id="_iPHS6nMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_2" show="false"/>
+    <elementParameter xmi:id="_iPHS63MHEfCCWcKol86Gqw" field="MEMO_JAVA" name="CODE" value=".convertHeaderTo(&quot;color&quot;, String.class)"/>
+    <elementParameter xmi:id="_iPHS7HMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Prepare 1"/>
+    <elementParameter xmi:id="_iPHS7XMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHS7nMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHS73MHEfCCWcKol86Gqw" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="560">
+    <elementParameter xmi:id="_iPHS8HMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_iPHS8XMHEfCCWcKol86Gqw" field="TEXT" name="LOGGING_CATEGORY" value="&quot;TestLangchain4jRoute.cLog_1&quot;"/>
+    <elementParameter xmi:id="_iPHS8nMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_iPHS83MHEfCCWcKol86Gqw" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_iPHS9HMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_iPHS9XMHEfCCWcKol86Gqw" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHS9nMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_iPHS93MHEfCCWcKol86Gqw" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHS-HMHEfCCWcKol86Gqw" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHS-XMHEfCCWcKol86Gqw" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_iPHS-nMHEfCCWcKol86Gqw" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_iPHS-3MHEfCCWcKol86Gqw" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_iPHS_HMHEfCCWcKol86Gqw" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_iPHS_XMHEfCCWcKol86Gqw" field="TEXT" name="MESSAGE" value="&quot;${header.color}&quot;"/>
+    <elementParameter xmi:id="_iPHS_nMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHS_3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTAHMHEfCCWcKol86Gqw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="560">
+    <elementParameter xmi:id="_iPHTAXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_2" show="false"/>
+    <elementParameter xmi:id="_iPHTAnMHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="String color = (String)exchange.getMessage().getHeader(&quot;color&quot;);&#xD;&#xA;if (null != color) {&#xD;&#xA;&#x9;color = color.replaceAll(&quot;^\&quot;|\&quot;$&quot;, &quot;&quot;);&#xD;&#xA;&#x9;exchange.getMessage().setHeader(&quot;color&quot;, color);&#xD;&#xA;}"/>
+    <elementParameter xmi:id="_iPHTA3MHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_iPHTBHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTBXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTBnMHEfCCWcKol86Gqw" componentName="cSQL" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="560">
+    <elementParameter xmi:id="_iPHTB3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_2" show="false"/>
+    <elementParameter xmi:id="_iPHTCHMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cSQLConnection_1"/>
+    <elementParameter xmi:id="_iPHTCXMHEfCCWcKol86Gqw" field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter xmi:id="_iPHTCnMHEfCCWcKol86Gqw" field="CHECK" name="SQL_FROM_BODY" value="false"/>
+    <elementParameter xmi:id="_iPHTC3MHEfCCWcKol86Gqw" field="MEMO_SQL" name="QUERY" value="&quot;select product_name, brand, color, price, stock from products where Lower(color) = Lower(:#color)&quot;"/>
+    <elementParameter xmi:id="_iPHTDHMHEfCCWcKol86Gqw" field="TABLE" name="URI_OPTIONS">
+      <elementValue xmi:id="_iPHTDXMHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;initialDelay&quot;" id="0"/>
+      <elementValue xmi:id="_iPHTDnMHEfCCWcKol86Gqw" elementRef="VALUE" value="3000" id="1"/>
+      <elementValue xmi:id="_iPHTD3MHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;repeatCount&quot;" id="2"/>
+      <elementValue xmi:id="_iPHTEHMHEfCCWcKol86Gqw" elementRef="VALUE" value="1" id="3"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHTEXMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Query DB Color"/>
+    <elementParameter xmi:id="_iPHTEnMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTE3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+    <elementParameter xmi:id="_iPHTFHMHEfCCWcKol86Gqw" field="MEMO" name="COMMENT" value="Select *"/>
+  </node>
+  <node xmi:id="_iPHTFXMHEfCCWcKol86Gqw" componentName="cJsonWriter" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="560">
+    <elementParameter xmi:id="_iPHTFnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_2" show="false"/>
+    <elementParameter xmi:id="_iPHTF3MHEfCCWcKol86Gqw" field="CLOSED_LIST" name="JSON_LIBRARY" value="org.apache.camel.model.dataformat.JsonLibrary.Gson"/>
+    <elementParameter xmi:id="_iPHTGHMHEfCCWcKol86Gqw" field="CHECK" name="PRETTY_PRINT" value="true"/>
+    <elementParameter xmi:id="_iPHTGXMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CUSTOM_REFERENCE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHTGnMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="__UNIQUE_NAME__ &lt;br> &lt;b>logResponse&lt;/b>"/>
+    <elementParameter xmi:id="_iPHTG3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTHHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTHXMHEfCCWcKol86Gqw" componentName="cLangChainTools" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="800">
+    <elementParameter xmi:id="_iPHTHnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_4" show="false"/>
+    <elementParameter xmi:id="_iPHTH3MHEfCCWcKol86Gqw" field="TEXT" name="NAME" value="&quot;getPhoneAdvice&quot;"/>
+    <elementParameter xmi:id="_iPHTIHMHEfCCWcKol86Gqw" field="TEXT" name="TAGS" value="&quot;store&quot;"/>
+    <elementParameter xmi:id="_iPHTIXMHEfCCWcKol86Gqw" field="TEXT" name="DESCRIPTION" value="&quot;phone_models_questions_about_advice&quot;"/>
+    <elementParameter xmi:id="_iPHTInMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="LANG_CHAIN_CONNECTION" value="cLangChainConnection_1"/>
+    <elementParameter xmi:id="_iPHTI3MHEfCCWcKol86Gqw" field="MEMO" name="SYSTEM_MESSAGE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHTJHMHEfCCWcKol86Gqw" field="TABLE" name="PARAMETERS">
+      <elementValue xmi:id="_iPHTJXMHEfCCWcKol86Gqw" elementRef="P_PARAMS" value="&quot;parameters.prompt&quot;" id="0"/>
+      <elementValue xmi:id="_iPHTJnMHEfCCWcKol86Gqw" elementRef="P_VALUE" value="&quot;string&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHTJ3MHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="TOOL 4"/>
+    <elementParameter xmi:id="_iPHTKHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTKXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTKnMHEfCCWcKol86Gqw" componentName="cTalendJob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="800">
+    <elementParameter xmi:id="_iPHTK3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cTalendJob_1" show="false"/>
+    <elementParameter xmi:id="_iPHTLHMHEfCCWcKol86Gqw" field="RADIO" name="FROM_REPOSITORY_JOB" value="true"/>
+    <elementParameter xmi:id="_iPHTLXMHEfCCWcKol86Gqw" field="RADIO" name="FROM_EXTERNAL_JAR" value="false"/>
+    <elementParameter xmi:id="_iPHTLnMHEfCCWcKol86Gqw" field="RADIO" name="USE_SELECTED_CONTEXT" value="true"/>
+    <elementParameter xmi:id="_iPHTL3MHEfCCWcKol86Gqw" field="RADIO" name="USE_ROUTE_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_iPHTMHMHEfCCWcKol86Gqw" field="RADIO" name="USE_JOB_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_iPHTMXMHEfCCWcKol86Gqw" field="ROUTE_INPUT_PROCESS_TYPE" name="SELECTED_JOB_NAME" value="AGENTIC_QUESTION_PHONE_REVIEWS"/>
+    <elementParameter xmi:id="_iPHTMnMHEfCCWcKol86Gqw" field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter xmi:id="_iPHTM3MHEfCCWcKol86Gqw" field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_PROCESS" value="_UhdO8GxTEfCR04LjzWCRoA"/>
+    <elementParameter xmi:id="_iPHTNHMHEfCCWcKol86Gqw" field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_VERSION" value="0.1"/>
+    <elementParameter xmi:id="_iPHTNXMHEfCCWcKol86Gqw" field="MODULE_LIST" name="LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_iPHTNnMHEfCCWcKol86Gqw" field="TEXT" name="JOB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHTN3MHEfCCWcKol86Gqw" field="TEXT" name="CONTEXT" value="&quot;Default&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHTOHMHEfCCWcKol86Gqw" field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter xmi:id="_iPHTOXMHEfCCWcKol86Gqw" field="TABLE" name="EXTERNAL_JAR_CONTEXTPARAMS" show="false"/>
+    <elementParameter xmi:id="_iPHTOnMHEfCCWcKol86Gqw" field="CHECK" name="PROPAGATE_HEADER" value="true"/>
+    <elementParameter xmi:id="_iPHTO3MHEfCCWcKol86Gqw" field="CHECK" name="STICKY_JOB" value="false"/>
+    <elementParameter xmi:id="_iPHTPHMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Query Phone &lt;b>RAG&lt;/b>"/>
+    <elementParameter xmi:id="_iPHTPXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTPnMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTP3MHEfCCWcKol86Gqw" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="800">
+    <elementParameter xmi:id="_iPHTQHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_4" show="false"/>
+    <elementParameter xmi:id="_iPHTQXMHEfCCWcKol86Gqw" field="TEXT" name="LOGGING_CATEGORY" value="&quot;AIToolsDemoRoute.cLog_4&quot;"/>
+    <elementParameter xmi:id="_iPHTQnMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_iPHTQ3MHEfCCWcKol86Gqw" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_iPHTRHMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_iPHTRXMHEfCCWcKol86Gqw" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHTRnMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_iPHTR3MHEfCCWcKol86Gqw" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHTSHMHEfCCWcKol86Gqw" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHTSXMHEfCCWcKol86Gqw" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_iPHTSnMHEfCCWcKol86Gqw" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_iPHTS3MHEfCCWcKol86Gqw" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_iPHTTHMHEfCCWcKol86Gqw" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_iPHTTXMHEfCCWcKol86Gqw" field="TEXT" name="MESSAGE" value="&quot;answer : ${in.headers}&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHTTnMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="__UNIQUE_NAME__ &lt;br> &lt;b>logResponse&lt;/b>"/>
+    <elementParameter xmi:id="_iPHTT3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTUHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTUXMHEfCCWcKol86Gqw" componentName="cSetHeader" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="800">
+    <elementParameter xmi:id="_iPHTUnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_2" show="false"/>
+    <elementParameter xmi:id="_iPHTU3MHEfCCWcKol86Gqw" field="TABLE" name="VALUES">
+      <elementValue xmi:id="_iPHTVHMHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;header&quot;" id="0"/>
+      <elementValue xmi:id="_iPHTVXMHEfCCWcKol86Gqw" elementRef="LANGUAGE" value="simple" id="1"/>
+      <elementValue xmi:id="_iPHTVnMHEfCCWcKol86Gqw" elementRef="EXPRESSION" value="&quot;${header.prompt}&quot;" id="2"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHTV3MHEfCCWcKol86Gqw" field="TABLE" name="CLEAN_VALUES"/>
+    <elementParameter xmi:id="_iPHTWHMHEfCCWcKol86Gqw" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHTWXMHEfCCWcKol86Gqw" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_iPHTWnMHEfCCWcKol86Gqw" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_iPHTW3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTXHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTXXMHEfCCWcKol86Gqw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="960">
+    <elementParameter xmi:id="_iPHTXnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_3" show="false"/>
+    <elementParameter xmi:id="_iPHTX3MHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="/*&#xA;* Provide own codes to consume or translate the message exchanges.&#xA;* @param org.apache.camel.Exchange exchange&#xA;*&#xA;* Needed import statements must be added in Advanced settings&#xA;*/&#xA;//boolean no_tools_called &#xD;&#xA;System.out.println(exchange.getMessage().getBody());&#xD;&#xA;&#xD;&#xA;Map&lt;String, Object> headers=exchange.getMessage().getHeaders();&#xD;&#xA;System.out.println(&quot;Headers in exchange:&quot;);&#xD;&#xA;for (Map.Entry&lt;String, Object> entry : headers.entrySet()) {&#xD;&#xA;    System.out.println(&quot;Header:&quot;+entry.getKey() + &quot; = &quot; + entry.getValue());&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//getHeader(org.apache.camel.component.langchain4j.tools.LangChain4jTools.NO_TOOLS_CALLED_HEADER;&#xD;&#xA;"/>
+    <elementParameter xmi:id="_iPHTYHMHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import org.apache.camel.component.langchain4j.tools.LangChain4jTools;"/>
+    <elementParameter xmi:id="_iPHTYXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTYnMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTY3MHEfCCWcKol86Gqw" componentName="cOnException" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="960">
+    <elementParameter xmi:id="_iPHTZHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cOnException_1" show="false"/>
+    <elementParameter xmi:id="_iPHTZXMHEfCCWcKol86Gqw" field="TABLE" name="EXCEPTIONS">
+      <elementValue xmi:id="_iPHTZnMHEfCCWcKol86Gqw" elementRef="EXCEPTION" value="org.apache.camel.RuntimeCamelException" id="0"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHTZ3MHEfCCWcKol86Gqw" field="CHECK" name="SET_MAX_REDELIVERY" value="false"/>
+    <elementParameter xmi:id="_iPHTaHMHEfCCWcKol86Gqw" field="TEXT" name="MAX_REDELIVERY" value="2" show="false"/>
+    <elementParameter xmi:id="_iPHTaXMHEfCCWcKol86Gqw" field="CHECK" name="ASYNC_REDELIVERY" value="false"/>
+    <elementParameter xmi:id="_iPHTanMHEfCCWcKol86Gqw" field="RADIO" name="NONE" value="false"/>
+    <elementParameter xmi:id="_iPHTa3MHEfCCWcKol86Gqw" field="RADIO" name="HANDLE" value="true"/>
+    <elementParameter xmi:id="_iPHTbHMHEfCCWcKol86Gqw" field="RADIO" name="CONTINUE" value="false"/>
+    <elementParameter xmi:id="_iPHTbXMHEfCCWcKol86Gqw" field="CHECK" name="USE_ORIGINAL_MESSAGE" value="false"/>
+    <elementParameter xmi:id="_iPHTbnMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTb3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTcHMHEfCCWcKol86Gqw" componentName="cLangChainChat" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="960">
+    <elementParameter xmi:id="_iPHTcXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainChat_1" show="false"/>
+    <elementParameter xmi:id="_iPHTcnMHEfCCWcKol86Gqw" field="CHECK" name="CHAT_WITH_MEMORY" value="false"/>
+    <elementParameter xmi:id="_iPHTc3MHEfCCWcKol86Gqw" field="CLOSED_LIST" name="CHAT_MEMORY_TYPE" value="MessageWindowChatMemory" show="false"/>
+    <elementParameter xmi:id="_iPHTdHMHEfCCWcKol86Gqw" field="TEXT" name="MAX_MESSAGES" value="20" show="false"/>
+    <elementParameter xmi:id="_iPHTdXMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="LANG_CHAIN_CONNECTION" value="cLangChainConnection_1"/>
+    <elementParameter xmi:id="_iPHTdnMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Generic Model"/>
+    <elementParameter xmi:id="_iPHTd3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTeHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTeXMHEfCCWcKol86Gqw" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="960">
+    <elementParameter xmi:id="_iPHTenMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_6" show="false"/>
+    <elementParameter xmi:id="_iPHTe3MHEfCCWcKol86Gqw" field="TEXT" name="LOGGING_CATEGORY" value="&quot;AIToolsDemoRoute.cLog_6&quot;"/>
+    <elementParameter xmi:id="_iPHTfHMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_iPHTfXMHEfCCWcKol86Gqw" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_iPHTfnMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_iPHTf3MHEfCCWcKol86Gqw" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHTgHMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_iPHTgXMHEfCCWcKol86Gqw" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHTgnMHEfCCWcKol86Gqw" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHTg3MHEfCCWcKol86Gqw" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_iPHThHMHEfCCWcKol86Gqw" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_iPHThXMHEfCCWcKol86Gqw" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_iPHThnMHEfCCWcKol86Gqw" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_iPHTh3MHEfCCWcKol86Gqw" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_iPHTiHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTiXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTinMHEfCCWcKol86Gqw" componentName="cSetHeader" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="320">
+    <elementParameter xmi:id="_iPHTi3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_3" show="false"/>
+    <elementParameter xmi:id="_iPHTjHMHEfCCWcKol86Gqw" field="TABLE" name="VALUES">
+      <elementValue xmi:id="_iPHTjXMHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;initialquery&quot;" id="0"/>
+      <elementValue xmi:id="_iPHTjnMHEfCCWcKol86Gqw" elementRef="LANGUAGE" value="simple" id="1"/>
+      <elementValue xmi:id="_iPHTj3MHEfCCWcKol86Gqw" elementRef="EXPRESSION" value="&quot;${body}&quot;" id="2"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHTkHMHEfCCWcKol86Gqw" field="TABLE" name="CLEAN_VALUES"/>
+    <elementParameter xmi:id="_iPHTkXMHEfCCWcKol86Gqw" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHTknMHEfCCWcKol86Gqw" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_iPHTk3MHEfCCWcKol86Gqw" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_iPHTlHMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Save Initial Prompt"/>
+    <elementParameter xmi:id="_iPHTlXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTlnMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTl3MHEfCCWcKol86Gqw" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="960">
+    <elementParameter xmi:id="_iPHTmHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetBody_1" show="false"/>
+    <elementParameter xmi:id="_iPHTmXMHEfCCWcKol86Gqw" field="LANGUAGE_CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_iPHTmnMHEfCCWcKol86Gqw" field="TEXT" name="EXPRESSION" value="&quot;${header.initialquery}&quot;"/>
+    <elementParameter xmi:id="_iPHTm3MHEfCCWcKol86Gqw" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHTnHMHEfCCWcKol86Gqw" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_iPHTnXMHEfCCWcKol86Gqw" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                 *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                 *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_iPHTnnMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Reset to initial Query"/>
+    <elementParameter xmi:id="_iPHTn3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHToHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHToXMHEfCCWcKol86Gqw" componentName="cSQL" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="320">
+    <elementParameter xmi:id="_iPHTonMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_3" show="false"/>
+    <elementParameter xmi:id="_iPHTo3MHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cSQLConnection_1"/>
+    <elementParameter xmi:id="_iPHTpHMHEfCCWcKol86Gqw" field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter xmi:id="_iPHTpXMHEfCCWcKol86Gqw" field="CHECK" name="SQL_FROM_BODY" value="false"/>
+    <elementParameter xmi:id="_iPHTpnMHEfCCWcKol86Gqw" field="MEMO_SQL" name="QUERY" value="&quot;select context from context where userid=:#userid;&quot;"/>
+    <elementParameter xmi:id="_iPHTp3MHEfCCWcKol86Gqw" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_iPHTqHMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Retrieve context"/>
+    <elementParameter xmi:id="_iPHTqXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTqnMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTq3MHEfCCWcKol86Gqw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="320">
+    <elementParameter xmi:id="_iPHTrHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_4" show="false"/>
+    <elementParameter xmi:id="_iPHTrXMHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="String userid = (String)exchange.getMessage().getHeader(&quot;http_query&quot;,String.class);&#xD;&#xA;if (null != userid) {&#xD;&#xA;&#x9;userid = userid.substring(userid.indexOf('=') + 2, userid.indexOf(']'));&#xD;&#xA;&#x9;System.out.println(&quot;UserID:&quot;+userid);&#xD;&#xA;&#x9;exchange.getMessage().setHeader(&quot;userid&quot;, userid);&#xD;&#xA;}&#xD;&#xA;"/>
+    <elementParameter xmi:id="_iPHTrnMHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_iPHTr3MHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Prepare context retrieval"/>
+    <elementParameter xmi:id="_iPHTsHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTsXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTsnMHEfCCWcKol86Gqw" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="320">
+    <elementParameter xmi:id="_iPHTs3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetBody_2" show="false"/>
+    <elementParameter xmi:id="_iPHTtHMHEfCCWcKol86Gqw" field="LANGUAGE_CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_iPHTtXMHEfCCWcKol86Gqw" field="TEXT" name="EXPRESSION" value="&quot;${body} ${headers.initialquery}&quot;"/>
+    <elementParameter xmi:id="_iPHTtnMHEfCCWcKol86Gqw" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_iPHTt3MHEfCCWcKol86Gqw" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_iPHTuHMHEfCCWcKol86Gqw" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                 *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                 *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_iPHTuXMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTunMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTu3MHEfCCWcKol86Gqw" componentName="cSQL" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1800" posY="320">
+    <elementParameter xmi:id="_iPHTvHMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_4" show="false"/>
+    <elementParameter xmi:id="_iPHTvXMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cSQLConnection_1"/>
+    <elementParameter xmi:id="_iPHTvnMHEfCCWcKol86Gqw" field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter xmi:id="_iPHTv3MHEfCCWcKol86Gqw" field="CHECK" name="SQL_FROM_BODY" value="false"/>
+    <elementParameter xmi:id="_iPHTwHMHEfCCWcKol86Gqw" field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO context (userid, context) VALUES (:#userid, :#context);&quot;"/>
+    <elementParameter xmi:id="_iPHTwXMHEfCCWcKol86Gqw" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_iPHTwnMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Update context"/>
+    <elementParameter xmi:id="_iPHTw3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTxHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTxXMHEfCCWcKol86Gqw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="320">
+    <elementParameter xmi:id="_iPHTxnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_5" show="false"/>
+    <elementParameter xmi:id="_iPHTx3MHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="/*&#xA;* Provide own codes to consume or translate the message exchanges.&#xA;* @param org.apache.camel.Exchange exchange&#xA;*&#xA;* Needed import statements must be added in Advanced settings&#xA;*/&#xA;//boolean no_tools_called &#xD;&#xA;System.out.println(&quot;Body :&quot;+exchange.getMessage().getBody());&#xD;&#xA;&#xD;&#xA;Map&lt;String, Object> headers=exchange.getMessage().getHeaders();&#xD;&#xA;System.out.println(&quot;Headers in exchange:&quot;);&#xD;&#xA;for (Map.Entry&lt;String, Object> entry : headers.entrySet()) {&#xD;&#xA;    System.out.println(&quot;Header:&quot;+entry.getKey() + &quot; = &quot; + entry.getValue());&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//getHeader(org.apache.camel.component.langchain4j.tools.LangChain4jTools.NO_TOOLS_CALLED_HEADER;&#xD;&#xA;"/>
+    <elementParameter xmi:id="_iPHTyHMHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import org.apache.camel.component.langchain4j.tools.LangChain4jTools;"/>
+    <elementParameter xmi:id="_iPHTyXMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Debug"/>
+    <elementParameter xmi:id="_iPHTynMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHTy3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHTzHMHEfCCWcKol86Gqw" componentName="cLangChainTools" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="680">
+    <elementParameter xmi:id="_iPHTzXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_5" show="false"/>
+    <elementParameter xmi:id="_iPHTznMHEfCCWcKol86Gqw" field="TEXT" name="NAME" value="&quot;productsByName&quot;"/>
+    <elementParameter xmi:id="_iPHTz3MHEfCCWcKol86Gqw" field="TEXT" name="TAGS" value="&quot;store&quot;"/>
+    <elementParameter xmi:id="_iPHT0HMHEfCCWcKol86Gqw" field="TEXT" name="DESCRIPTION" value="&quot;Query_database_phones_by_Name&quot;"/>
+    <elementParameter xmi:id="_iPHT0XMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="LANG_CHAIN_CONNECTION" value="cLangChainConnection_1"/>
+    <elementParameter xmi:id="_iPHT0nMHEfCCWcKol86Gqw" field="MEMO" name="SYSTEM_MESSAGE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHT03MHEfCCWcKol86Gqw" field="TABLE" name="PARAMETERS">
+      <elementValue xmi:id="_iPHT1HMHEfCCWcKol86Gqw" elementRef="P_PARAMS" value="&quot;parameter.name&quot;" id="0"/>
+      <elementValue xmi:id="_iPHT1XMHEfCCWcKol86Gqw" elementRef="P_VALUE" value="&quot;string&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHT1nMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="TOOL3"/>
+    <elementParameter xmi:id="_iPHT13MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHT2HMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHT2XMHEfCCWcKol86Gqw" componentName="cJavaDSLProcessor" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="680">
+    <elementParameter xmi:id="_iPHT2nMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_3" show="false"/>
+    <elementParameter xmi:id="_iPHT23MHEfCCWcKol86Gqw" field="MEMO_JAVA" name="CODE" value=".convertHeaderTo(&quot;name&quot;, String.class)"/>
+    <elementParameter xmi:id="_iPHT3HMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Prepare 2"/>
+    <elementParameter xmi:id="_iPHT3XMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHT3nMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHT33MHEfCCWcKol86Gqw" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="680">
+    <elementParameter xmi:id="_iPHT4HMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_5" show="false"/>
+    <elementParameter xmi:id="_iPHT4XMHEfCCWcKol86Gqw" field="TEXT" name="LOGGING_CATEGORY" value="&quot;TestLangchain4jRoute.cLog_1&quot;"/>
+    <elementParameter xmi:id="_iPHT4nMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_iPHT43MHEfCCWcKol86Gqw" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_iPHT5HMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_iPHT5XMHEfCCWcKol86Gqw" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHT5nMHEfCCWcKol86Gqw" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_iPHT53MHEfCCWcKol86Gqw" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_iPHT6HMHEfCCWcKol86Gqw" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_iPHT6XMHEfCCWcKol86Gqw" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_iPHT6nMHEfCCWcKol86Gqw" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_iPHT63MHEfCCWcKol86Gqw" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_iPHT7HMHEfCCWcKol86Gqw" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_iPHT7XMHEfCCWcKol86Gqw" field="TEXT" name="MESSAGE" value="&quot;${header.color}&quot;"/>
+    <elementParameter xmi:id="_iPHT7nMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHT73MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHT8HMHEfCCWcKol86Gqw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="680">
+    <elementParameter xmi:id="_iPHT8XMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_6" show="false"/>
+    <elementParameter xmi:id="_iPHT8nMHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="String name = (String)exchange.getMessage().getHeader(&quot;name&quot;);&#xD;&#xA;if (null != name) {&#xD;&#xA;&#x9;name = name.replaceAll(&quot;^\&quot;|\&quot;$&quot;, &quot;&quot;);&#xD;&#xA;&#x9;exchange.getMessage().setHeader(&quot;name&quot;, name);&#xD;&#xA;}"/>
+    <elementParameter xmi:id="_iPHT83MHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_iPHT9HMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHT9XMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHT9nMHEfCCWcKol86Gqw" componentName="cSQL" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="680">
+    <elementParameter xmi:id="_iPHT93MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_5" show="false"/>
+    <elementParameter xmi:id="_iPHT-HMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cSQLConnection_1"/>
+    <elementParameter xmi:id="_iPHT-XMHEfCCWcKol86Gqw" field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter xmi:id="_iPHT-nMHEfCCWcKol86Gqw" field="CHECK" name="SQL_FROM_BODY" value="false"/>
+    <elementParameter xmi:id="_iPHT-3MHEfCCWcKol86Gqw" field="MEMO_SQL" name="QUERY" value="&quot;select product_name, brand, color, price, stock from products where Lower(product_name) = Lower(:#name)&quot;"/>
+    <elementParameter xmi:id="_iPHT_HMHEfCCWcKol86Gqw" field="TABLE" name="URI_OPTIONS">
+      <elementValue xmi:id="_iPHT_XMHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;initialDelay&quot;" id="0"/>
+      <elementValue xmi:id="_iPHT_nMHEfCCWcKol86Gqw" elementRef="VALUE" value="3000" id="1"/>
+      <elementValue xmi:id="_iPHT_3MHEfCCWcKol86Gqw" elementRef="NAME" value="&quot;repeatCount&quot;" id="2"/>
+      <elementValue xmi:id="_iPHUAHMHEfCCWcKol86Gqw" elementRef="VALUE" value="1" id="3"/>
+    </elementParameter>
+    <elementParameter xmi:id="_iPHUAXMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Query DB Color"/>
+    <elementParameter xmi:id="_iPHUAnMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHUA3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+    <elementParameter xmi:id="_iPHUBHMHEfCCWcKol86Gqw" field="MEMO" name="COMMENT" value="Select *"/>
+  </node>
+  <node xmi:id="_iPHUBXMHEfCCWcKol86Gqw" componentName="cJsonWriter" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="680">
+    <elementParameter xmi:id="_iPHUBnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_3" show="false"/>
+    <elementParameter xmi:id="_iPHUB3MHEfCCWcKol86Gqw" field="CLOSED_LIST" name="JSON_LIBRARY" value="org.apache.camel.model.dataformat.JsonLibrary.Gson"/>
+    <elementParameter xmi:id="_iPHUCHMHEfCCWcKol86Gqw" field="CHECK" name="PRETTY_PRINT" value="true"/>
+    <elementParameter xmi:id="_iPHUCXMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CUSTOM_REFERENCE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHUCnMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="__UNIQUE_NAME__ &lt;br> &lt;b>logResponse&lt;/b>"/>
+    <elementParameter xmi:id="_iPHUC3MHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHUDHMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHUDXMHEfCCWcKol86Gqw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1640" posY="320">
+    <elementParameter xmi:id="_iPHUDnMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_7" show="false"/>
+    <elementParameter xmi:id="_iPHUD3MHEfCCWcKol86Gqw" field="MEMO_EDITOR_JAVA" name="CODE" value="/*&#xA;* Provide own codes to consume or translate the message exchanges.&#xA;* @param org.apache.camel.Exchange exchange&#xA;*&#xA;* Needed import statements must be added in Advanced settings&#xA;*/&#xA;//boolean no_tools_called &#xD;&#xA;System.out.println(&quot;Body :&quot;+exchange.getMessage().getBody());&#xD;&#xA;&#xD;&#xA;Map&lt;String, Object> headers=exchange.getMessage().getHeaders();&#xD;&#xA;System.out.println(&quot;Headers in exchange:&quot;);&#xD;&#xA;for (Map.Entry&lt;String, Object> entry : headers.entrySet()) {&#xD;&#xA;    System.out.println(&quot;Header:&quot;+entry.getKey() + &quot; = &quot; + entry.getValue());&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;exchange.getMessage().setHeader(&quot;context&quot;, exchange.getMessage().getHeader(&quot;initialquery&quot;)+&quot; &quot;+exchange.getMessage().getBody());&#xD;&#xA;&#xD;&#xA;//getHeader(org.apache.camel.component.langchain4j.tools.LangChain4jTools.NO_TOOLS_CALLED_HEADER;&#xD;&#xA;"/>
+    <elementParameter xmi:id="_iPHUEHMHEfCCWcKol86Gqw" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import org.apache.camel.component.langchain4j.tools.LangChain4jTools;"/>
+    <elementParameter xmi:id="_iPHUEXMHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="Debug"/>
+    <elementParameter xmi:id="_iPHUEnMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHUE3MHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHUFHMHEfCCWcKol86Gqw" componentName="cSQL" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1480" posY="960">
+    <elementParameter xmi:id="_iPHUFXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_6" show="false"/>
+    <elementParameter xmi:id="_iPHUFnMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cSQLConnection_1"/>
+    <elementParameter xmi:id="_iPHUF3MHEfCCWcKol86Gqw" field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter xmi:id="_iPHUGHMHEfCCWcKol86Gqw" field="CHECK" name="SQL_FROM_BODY" value="false"/>
+    <elementParameter xmi:id="_iPHUGXMHEfCCWcKol86Gqw" field="MEMO_SQL" name="QUERY" value="&quot;delete FROM CONTEXT where USERID IS NOT NULL;&quot;"/>
+    <elementParameter xmi:id="_iPHUGnMHEfCCWcKol86Gqw" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_iPHUG3MHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="delete context"/>
+    <elementParameter xmi:id="_iPHUHHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHUHXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHUHnMHEfCCWcKol86Gqw" componentName="cJsonWriter" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1480" posY="800">
+    <elementParameter xmi:id="_iPHUH3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_4" show="false"/>
+    <elementParameter xmi:id="_iPHUIHMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="JSON_LIBRARY" value="org.apache.camel.model.dataformat.JsonLibrary.Gson"/>
+    <elementParameter xmi:id="_iPHUIXMHEfCCWcKol86Gqw" field="CHECK" name="PRETTY_PRINT" value="true"/>
+    <elementParameter xmi:id="_iPHUInMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CUSTOM_REFERENCE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHUI3MHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="__UNIQUE_NAME__ &lt;br> &lt;b>logResponse&lt;/b>"/>
+    <elementParameter xmi:id="_iPHUJHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHUJXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_iPHUJnMHEfCCWcKol86Gqw" componentName="cJsonWriter" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="960">
+    <elementParameter xmi:id="_iPHUJ3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_5" show="false"/>
+    <elementParameter xmi:id="_iPHUKHMHEfCCWcKol86Gqw" field="CLOSED_LIST" name="JSON_LIBRARY" value="org.apache.camel.model.dataformat.JsonLibrary.Gson"/>
+    <elementParameter xmi:id="_iPHUKXMHEfCCWcKol86Gqw" field="CHECK" name="PRETTY_PRINT" value="true"/>
+    <elementParameter xmi:id="_iPHUKnMHEfCCWcKol86Gqw" field="ROUTE_COMPONENT_TYPE" name="CUSTOM_REFERENCE" value="" show="false"/>
+    <elementParameter xmi:id="_iPHUK3MHEfCCWcKol86Gqw" field="TEXT" name="LABEL" value="__UNIQUE_NAME__ &lt;br> &lt;b>logResponse&lt;/b>"/>
+    <elementParameter xmi:id="_iPHULHMHEfCCWcKol86Gqw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_iPHULXMHEfCCWcKol86Gqw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_iPHULnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route28" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLangChainTools_1" target="cProcessor_7">
+    <elementParameter xmi:id="_iPHUL3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route28" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUMHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route4" lineStyle="14" metaname="cLangChainTools_2" offsetLabelX="0" offsetLabelY="0" source="cLangChainTools_2" target="cJavaDSLProcessor_1">
+    <elementParameter xmi:id="_iPHUMXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route4" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUMnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route5" lineStyle="14" metaname="cLangChainTools_3" offsetLabelX="0" offsetLabelY="0" source="cLangChainTools_3" target="cJavaDSLProcessor_2">
+    <elementParameter xmi:id="_iPHUM3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route5" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUNHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cREST_1" offsetLabelX="0" offsetLabelY="0" source="cREST_1" target="cSetHeader_3">
+    <elementParameter xmi:id="_iPHUNXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUNnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route6" lineStyle="14" metaname="cJavaDSLProcessor_1" offsetLabelX="0" offsetLabelY="0" source="cJavaDSLProcessor_1" target="cLog_1">
+    <elementParameter xmi:id="_iPHUN3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route6" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUOHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route7" lineStyle="14" metaname="cLog_1" offsetLabelX="0" offsetLabelY="0" source="cLog_1" target="cProcessor_1">
+    <elementParameter xmi:id="_iPHUOXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route7" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUOnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route9" lineStyle="14" metaname="cProcessor_1" offsetLabelX="0" offsetLabelY="0" source="cProcessor_1" target="cSQL_1">
+    <elementParameter xmi:id="_iPHUO3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route9" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUPHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route3" lineStyle="14" metaname="cSQL_1" offsetLabelX="0" offsetLabelY="0" source="cSQL_1" target="cJsonWriter_1">
+    <elementParameter xmi:id="_iPHUPXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUPnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route10" lineStyle="14" metaname="cJavaDSLProcessor_2" offsetLabelX="0" offsetLabelY="0" source="cJavaDSLProcessor_2" target="cLog_2">
+    <elementParameter xmi:id="_iPHUP3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route10" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUQHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route11" lineStyle="14" metaname="cLog_2" offsetLabelX="0" offsetLabelY="0" source="cLog_2" target="cProcessor_2">
+    <elementParameter xmi:id="_iPHUQXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route11" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUQnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route12" lineStyle="14" metaname="cProcessor_2" offsetLabelX="0" offsetLabelY="0" source="cProcessor_2" target="cSQL_2">
+    <elementParameter xmi:id="_iPHUQ3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route12" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHURHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route13" lineStyle="14" metaname="cSQL_2" offsetLabelX="0" offsetLabelY="0" source="cSQL_2" target="cJsonWriter_2">
+    <elementParameter xmi:id="_iPHURXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route13" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHURnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route8" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLangChainTools_4" target="cSetHeader_2">
+    <elementParameter xmi:id="_iPHUR3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route8" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUSHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route15" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cTalendJob_1" target="cLog_4">
+    <elementParameter xmi:id="_iPHUSXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route15" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUSnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route33" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLog_4" target="cJsonWriter_4">
+    <elementParameter xmi:id="_iPHUS3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route33" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUTHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route16" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSetHeader_2" target="cTalendJob_1">
+    <elementParameter xmi:id="_iPHUTXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route16" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUTnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route18" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cProcessor_3" target="cLangChainChat_1">
+    <elementParameter xmi:id="_iPHUT3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route18" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUUHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route17" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cOnException_1" target="cSetBody_1">
+    <elementParameter xmi:id="_iPHUUXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route17" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUUnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route21" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLangChainChat_1" target="cLog_6">
+    <elementParameter xmi:id="_iPHUU3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route21" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUVHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route32" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLog_6" target="cJsonWriter_5">
+    <elementParameter xmi:id="_iPHUVXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route32" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUVnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route23" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSetHeader_3" target="cProcessor_4">
+    <elementParameter xmi:id="_iPHUV3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route23" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUWHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route24" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSetBody_1" target="cProcessor_3">
+    <elementParameter xmi:id="_iPHUWXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route24" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUWnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route25" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSQL_3" target="cSetBody_2">
+    <elementParameter xmi:id="_iPHUW3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route25" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUXHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route26" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cProcessor_4" target="cSQL_3">
+    <elementParameter xmi:id="_iPHUXXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route26" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUXnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route27" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSetBody_2" target="cProcessor_5">
+    <elementParameter xmi:id="_iPHUX3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route27" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUYHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route29" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSQL_4" target="cLog_3">
+    <elementParameter xmi:id="_iPHUYXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route29" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUYnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route2" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cProcessor_5" target="cLangChainTools_1">
+    <elementParameter xmi:id="_iPHUY3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUZHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route14" lineStyle="14" metaname="cLangChainTools_5" offsetLabelX="0" offsetLabelY="0" source="cLangChainTools_5" target="cJavaDSLProcessor_3">
+    <elementParameter xmi:id="_iPHUZXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route14" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUZnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route19" lineStyle="14" metaname="cJavaDSLProcessor_3" offsetLabelX="0" offsetLabelY="0" source="cJavaDSLProcessor_3" target="cLog_5">
+    <elementParameter xmi:id="_iPHUZ3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route19" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUaHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route20" lineStyle="14" metaname="cLog_5" offsetLabelX="0" offsetLabelY="0" source="cLog_5" target="cProcessor_6">
+    <elementParameter xmi:id="_iPHUaXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route20" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUanMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route22" lineStyle="14" metaname="cProcessor_6" offsetLabelX="0" offsetLabelY="0" source="cProcessor_6" target="cSQL_5">
+    <elementParameter xmi:id="_iPHUa3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route22" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUbHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route30" lineStyle="14" metaname="cSQL_5" offsetLabelX="0" offsetLabelY="0" source="cSQL_5" target="cJsonWriter_3">
+    <elementParameter xmi:id="_iPHUbXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route30" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUbnMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route31" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cProcessor_7" target="cSQL_4">
+    <elementParameter xmi:id="_iPHUb3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route31" show="false"/>
+  </connection>
+  <connection xmi:id="_iPHUcHMHEfCCWcKol86Gqw" connectorName="ROUTE" label="route34" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cJsonWriter_5" target="cSQL_6">
+    <elementParameter xmi:id="_iPHUcXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="route34" show="false"/>
+  </connection>
+  <note xmi:id="_iPHUcnMHEfCCWcKol86Gqw" opaque="false" posX="80" posY="440" sizeHeight="81" sizeWidth="201" text="Tool :Phones &#xD;&#xA;Inventory&#xD;&#xA;per Brand">
+    <elementParameter xmi:id="_iPHUc3MHEfCCWcKol86Gqw" field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note xmi:id="_iPHUdHMHEfCCWcKol86Gqw" opaque="true" posX="80" posY="560" sizeHeight="81" sizeWidth="201" text="Tool : Phones &#xD;&#xA;Inventory&#xD;&#xA;Per Color">
+    <elementParameter xmi:id="_iPHUdXMHEfCCWcKol86Gqw" field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note xmi:id="_iPHUdnMHEfCCWcKol86Gqw" opaque="true" posX="840" posY="120" sizeHeight="121" sizeWidth="641" text="This demo shows how to:&#xD;&#xA;- Connect with OpenAI LLM&#xD;&#xA;- Function calling to a Database system using cLangChainTools component">
+    <elementParameter xmi:id="_iPHUd3MHEfCCWcKol86Gqw" field="TEXT" name="NOTE_FONT" value="Arial"/>
+  </note>
+  <note xmi:id="_iPHUeHMHEfCCWcKol86Gqw" opaque="false" posX="80" posY="680" sizeHeight="80" sizeWidth="201" text="Tool : Phones&#xD;&#xA;per product &#xD;&#xA;name">
+    <elementParameter xmi:id="_iPHUeXMHEfCCWcKol86Gqw" field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note xmi:id="_iPHUenMHEfCCWcKol86Gqw" opaque="false" posX="80" posY="800" sizeHeight="80" sizeWidth="201" text="Tool : RAG Mobile &#xD;&#xA;Phones &#xD;&#xA;Reviews ">
+    <elementParameter xmi:id="_iPHUe3MHEfCCWcKol86Gqw" field="COLOR" name="NOTE_COLOR" value="155;199;204"/>
+    <elementParameter xmi:id="_iPHUfHMHEfCCWcKol86Gqw" field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note xmi:id="_iPHUfXMHEfCCWcKol86Gqw" opaque="true" posX="80" posY="920" sizeHeight="80" sizeWidth="201" text="No Tools Found">
+    <elementParameter xmi:id="_iPHUfnMHEfCCWcKol86Gqw" field="COLOR" name="NOTE_COLOR" value="155;199;204"/>
+    <elementParameter xmi:id="_iPHUf3MHEfCCWcKol86Gqw" field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note xmi:id="_iPHUgHMHEfCCWcKol86Gqw" opaque="false" posX="760" posY="280" sizeHeight="41" sizeWidth="641" text="Memory Hangling">
+    <elementParameter xmi:id="_iPHUgXMHEfCCWcKol86Gqw" field="COLOR" name="NOTE_COLOR" value="166;193;152"/>
+    <elementParameter xmi:id="_iPHUgnMHEfCCWcKol86Gqw" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_iPHUg3MHEfCCWcKol86Gqw" field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter xmi:id="_iPHUhHMHEfCCWcKol86Gqw" field="COLOR" name="NOTE_LINECOLOR" value="0;0;0"/>
+  </note>
+  <note xmi:id="_iPHUhXMHEfCCWcKol86Gqw" opaque="false" posX="1640" posY="280" sizeHeight="41" sizeWidth="321" text="Memory Hangling">
+    <elementParameter xmi:id="_iPHUhnMHEfCCWcKol86Gqw" field="COLOR" name="NOTE_COLOR" value="237;201;122"/>
+    <elementParameter xmi:id="_iPHUh3MHEfCCWcKol86Gqw" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_iPHUiHMHEfCCWcKol86Gqw" field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter xmi:id="_iPHUiXMHEfCCWcKol86Gqw" field="COLOR" name="NOTE_LINECOLOR" value="0;0;0"/>
+  </note>
+  <note xmi:id="_iPHUinMHEfCCWcKol86Gqw" opaque="false" posX="80" posY="320" sizeHeight="81" sizeWidth="201" text="Tool :Main Chat">
+    <elementParameter xmi:id="_iPHUi3MHEfCCWcKol86Gqw" field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <subjob xmi:id="_iPHUjHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUjXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUjnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUj3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUkHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUkXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUknMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUk3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainConnection_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUlHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUlXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQLConnection_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUlnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUl3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUmHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUmXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cREST_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUmnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUm3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUnHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUnXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUnnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUn3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUoHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUoXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUonMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUo3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUpHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUpXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUpnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUp3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUqHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUqXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUqnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUq3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUrHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUrXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUrnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUr3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUsHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUsXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_4" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUsnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUs3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cTalendJob_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUtHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUtXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_4" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUtnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUt3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUuHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUuXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUunMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUu3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cOnException_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUvHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUvXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainChat_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUvnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUv3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_6" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUwHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUwXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUwnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUw3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetBody_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUxHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUxXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUxnMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUx3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_4" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUyHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUyXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSetBody_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUynMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUy3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_4" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUzHMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUzXMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_5" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHUznMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHUz3MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLangChainTools_5" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU0HMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU0XMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU0nMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU03MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cLog_5" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU1HMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU1XMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_6" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU1nMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU13MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_5" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU2HMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU2XMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU2nMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU23MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_7" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU3HMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU3XMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cSQL_6" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU3nMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU33MHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_4" show="false"/>
+  </subjob>
+  <subjob xmi:id="_iPHU4HMHEfCCWcKol86Gqw">
+    <elementParameter xmi:id="_iPHU4XMHEfCCWcKol86Gqw" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_5" show="false"/>
+  </subjob>
+</talendfile:ProcessType>
