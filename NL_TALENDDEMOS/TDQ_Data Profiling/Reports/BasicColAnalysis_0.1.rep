@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_pUA30J3rEfCVRboqh3T48g" name="BasicColAnalysis" creationDate="2025-09-30T14:53:06.367+0400">
+  <clientDependency href="../Analyses/BasicColAnalysis_0.1.ana#_uripELXvEe-SNIepAR27aw"/>
+  <taggedValue xmi:id="_pUA30Z3rEfCVRboqh3T48g" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_pUA30p3rEfCVRboqh3T48g" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_pUA3053rEfCVRboqh3T48g" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_pUA31J3rEfCVRboqh3T48g" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_pUA31Z3rEfCVRboqh3T48g" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_pUA31p3rEfCVRboqh3T48g" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_pUA3153rEfCVRboqh3T48g" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_pUA32J3rEfCVRboqh3T48g" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_pUA32Z3rEfCVRboqh3T48g" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_pUA32p3rEfCVRboqh3T48g" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:q3jUy2mWRI630xhkbL9/DHsj42TvTSq2/wWhZw=="/>
+  <taggedValue xmi:id="_pUA3253rEfCVRboqh3T48g" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_pUA33J3rEfCVRboqh3T48g" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:D:\Talend\Users\FNQ\workspacecloud\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_pUA33Z3rEfCVRboqh3T48g" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_pUA33p3rEfCVRboqh3T48g" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_pUA3353rEfCVRboqh3T48g" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_pUA34J3rEfCVRboqh3T48g" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+  <analysisMap xmi:id="_pUA34Z3rEfCVRboqh3T48g" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/BasicColAnalysis_0.1.ana#_7bQSYLXuEe-SNIepAR27aw"/>
+  </analysisMap>
+</dataquality.reports:TdReport>

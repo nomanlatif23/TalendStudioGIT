@@ -105,9 +105,9 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="ASIN" id="0"/>
-      <elementValue elementRef="VALUE" value="&quot;B003CPPY777&quot;" id="1"/>
+      <elementValue elementRef="VALUE" value="&quot;B003CPPY798&quot;" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="title" id="2"/>
-      <elementValue elementRef="VALUE" value="&quot;NL&quot;" id="3"/>
+      <elementValue elementRef="VALUE" value="&quot;Virgin&quot;" id="3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="director" id="4"/>
       <elementValue elementRef="VALUE" value="&quot;Alain Resnais&quot;" id="5"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="releaseDate" id="6"/>
@@ -170,6 +170,12 @@
     <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
     <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
     <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
     <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
@@ -191,6 +197,8 @@
     <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
     <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
     <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
     <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
@@ -265,7 +273,7 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
 </talendfile:ProcessType>

@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "CustomerID": {
+      "type": "integer"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "Contact": {
+      "type": "object",
+      "properties": {
+        "ContactName": {
+          "type": "string"
+        },
+        "ContactTitle": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ContactName"
+      ]
+    },
+    "HQLocation": {
+      "type": "object",
+      "properties": {
+        "Address": {
+          "type": "string"
+        },
+        "City": {
+          "type": "string"
+        },
+        "Region": {
+          "type": "string"
+        },
+        "PostCode": {
+          "type": "string"
+        },
+        "Country": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Address",
+        "City",
+        "Region",
+        "PostCode",
+        "Country"
+      ]
+    },
+    "ElectronicCommuncation": {
+      "type": "object",
+      "properties": {
+        "Phone": {
+          "type": "string"
+        },
+        "Fax": {
+          "type": "string"
+        },
+        "Mobile": {
+          "type": "string"
+        },
+        "Email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Phone",
+        "Email"
+      ]
+    }
+  },
+  "required": [
+    "CompanyName",
+    "Contact",
+    "HQLocation",
+    "ElectronicCommuncation"
+  ]
+}

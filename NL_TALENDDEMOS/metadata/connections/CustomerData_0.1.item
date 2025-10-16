@@ -42,7 +42,7 @@
       </feature>
       <feature xsi:type="relational:TdColumn" xmi:id="_NhFPYLXvEe-SNIepAR27aw" name="Email" id="Email" label="Email" length="29" sourceType="VARCHAR" talendType="id_String">
         <taggedValue xmi:id="_NhFPYbXvEe-SNIepAR27aw" tag="Comment" value=""/>
-        <taggedValue xmi:id="_OQ0DJbXvEe-SNIepAR27aw" tag="Content Type" value="Nominal"/>
+        <taggedValue xmi:id="_OQ0DJbXvEe-SNIepAR27aw" tag="Content Type" value="Interval"/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_NhFPYrXvEe-SNIepAR27aw" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="_NhFPY7XvEe-SNIepAR27aw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
       </feature>

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/AI_HANDS_ON_NEW_COMPONENTS</deletedFolders>
+  <deletedFolders>process/AI_HANDS_ON_NEW_COMPONENTS/AI_PHONE_REVIEWS_RAG</deletedFolders>
   <deletedFolders>process/Demos/DataFabric2</deletedFolders>
   <deletedFolders>process/Demos/Test</deletedFolders>
   <deletedFolders>resources/Test</deletedFolders>
   <deletedFolders>route_resources/Test</deletedFolders>
+  <deletedFolders>routes/AIGit</deletedFolders>
+  <deletedItems id="_POUE0J3sEfCVRboqh3T48g" path="" type="PROCESS"/>
+  <deletedItems id="_7AJicGxTEfCR04LjzWCRoA" path="AI_HANDS_ON_NEW_COMPONENTS/AI_PHONE_REVIEWS_RAG" type="PROCESS"/>
+  <deletedItems id="_UhdO8GxTEfCR04LjzWCRoA" path="AI_HANDS_ON_NEW_COMPONENTS/AI_PHONE_REVIEWS_RAG" type="PROCESS"/>
   <deletedItems id="_0OrfgJG_EfCk2bmFlFKW9A" path="Databases" type="PROCESS"/>
   <deletedItems id="_3xCyEEAcEe-raZ0BVtaChg" path="Databases" type="PROCESS"/>
   <deletedItems id="_fEnjUEAWEe-raZ0BVtaChg" path="Databases" type="PROCESS"/>
@@ -19,6 +25,7 @@
   <deletedItems id="_YKkcwIuNEe-1-dpa5Qu-Kg" path="Demos/DataFabric" type="PROCESS_MR"/>
   <deletedItems id="_-mBgkFNzEfCsv-O5x863NA" path="" type="RESOURCES"/>
   <deletedItems id="_cBvEYP1rEe6ncpjM5pfL9Q" path="" type="ROUTE"/>
+  <deletedItems id="_NCSkIGxSEfCR04LjzWCRoA" path="AIGit" type="ROUTE"/>
   <deletedItems id="_-GZB8I9CEfCUJdmIxKCE3g" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
   <deletedItems id="_QS2pMI-BEfCDkKNBiYgKyA" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
   <deletedItems id="_loMPEI-BEfCDkKNBiYgKyA" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>

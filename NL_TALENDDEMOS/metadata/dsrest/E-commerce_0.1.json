@@ -1,0 +1,493 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "E-commerce",
+    "description" : "E-commerce API",
+    "contact" : { },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "http://127.0.0.1:8090",
+    "description" : "endpoint when running studio"
+  }, {
+    "url" : "http://127.0.0.1:5070/services",
+    "description" : "Deployed endpoint running on local machine."
+  }, {
+    "url" : "http://172.21.20.182:5070/services",
+    "description" : "Deploys on QMI machine"
+  } ],
+  "paths" : {
+    "/customer/{id}" : {
+      "get" : {
+        "summary" : "Read customer by ID",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Customer"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Status 404"
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete customer by ID",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          },
+          "404" : {
+            "description" : "Status 404"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    },
+    "/customer" : {
+      "get" : {
+        "summary" : "Search for customers",
+        "description" : "Get customer list by query",
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "query",
+          "required" : false,
+          "schema" : {
+            "type" : "string"
+          },
+          "style" : "form",
+          "explode" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/Customer"
+                  }
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Status 404"
+          }
+        }
+      },
+      "put" : {
+        "summary" : "Update Customer",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "array",
+                "items" : {
+                  "$ref" : "#/components/schemas/Customer"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "202" : {
+            "description" : "Status 202",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Customer"
+                }
+              }
+            }
+          },
+          "304" : {
+            "description" : "Status 304"
+          },
+          "404" : {
+            "description" : "Status 404"
+          }
+        }
+      },
+      "post" : {
+        "summary" : "Create Customer",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Customer"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Status 201",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Customer"
+                }
+              }
+            }
+          },
+          "406" : {
+            "description" : "Status 406"
+          }
+        }
+      }
+    },
+    "/Advanced" : {
+      "get" : {
+        "summary" : "Search for matching customers",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/Customer"
+                  }
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Status 404"
+          }
+        }
+      }
+    },
+    "/order/{number}" : {
+      "get" : {
+        "summary" : "Get Order",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/SalesOrder"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Status 400",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete Order",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "number",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    },
+    "/order" : {
+      "post" : {
+        "summary" : "Create Order",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "SalesOrder" : {
+                    "$ref" : "#/components/schemas/SalesOrder"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Customer" : {
+        "type" : "object",
+        "required" : [ "ElectronicCommuncation" ],
+        "properties" : {
+          "CustomerID" : {
+            "type" : "string"
+          },
+          "CompanyName" : {
+            "type" : "string"
+          },
+          "Contact" : {
+            "type" : "object",
+            "properties" : {
+              "ContactName" : {
+                "type" : "string"
+              },
+              "ContactTitle" : {
+                "type" : "string"
+              }
+            }
+          },
+          "HQLocation" : {
+            "type" : "object",
+            "properties" : {
+              "Address" : {
+                "type" : "string"
+              },
+              "City" : {
+                "type" : "string"
+              },
+              "Region" : {
+                "type" : "string"
+              },
+              "PostCode" : {
+                "type" : "string"
+              },
+              "Country" : {
+                "type" : "string"
+              }
+            }
+          },
+          "ElectronicCommuncation" : {
+            "type" : "object",
+            "properties" : {
+              "Phone" : {
+                "type" : "string"
+              },
+              "Fax" : {
+                "type" : "string"
+              },
+              "email" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "example" : "{\n        \"CustomerID\": \"92\",\n        \"CompanyName\": \"Acme\",\n        \"Contact\": { \n            \"ContactName\": \"Roadrunner\",\n            \"ContactTitle\": \"Fast & Furious\"\n        },\n        \"HQLocation\": {\n            \"Address\": \"Sandroad 11\",\n            \"City\": \"Carson city\",\n            \"Region\": \"TX\",\n            \"PostCode\": \"100\",\n            \"Country\": \"US\"\n        },\n        \"ElectronicCommuncation\":[\n          {\n             \"Phone\": \"+44 54646576\",\n             \"Email\": \"info@qlik.com\"\n          }\n       ]\n}"
+      },
+      "ElectronicCommuncation" : {
+        "type" : "object",
+        "required" : [ "CommunicationType" ],
+        "properties" : {
+          "CommunicationType" : {
+            "type" : "string",
+            "enum" : [ "Fax, Phone, Mobile, Email" ]
+          },
+          "Endpoint" : {
+            "anyOf" : [ {
+              "$ref" : "#/components/schemas/Email"
+            }, {
+              "$ref" : "#/components/schemas/Phone"
+            } ]
+          }
+        }
+      },
+      "Email" : {
+        "type" : "string",
+        "pattern" : "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+        "example" : "info@qlik.com"
+      },
+      "Phone" : {
+        "type" : "object"
+      },
+      "Order_Header" : {
+        "type" : "object",
+        "properties" : {
+          "custId" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "employeeId" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "orderDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "requiredDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "shippedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "shipperid" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "freight" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "shipName" : {
+            "type" : "string",
+            "maxLength" : 40
+          },
+          "shipAddress" : {
+            "type" : "string",
+            "maxLength" : 60
+          },
+          "shipCity" : {
+            "type" : "string",
+            "maxLength" : 15
+          },
+          "shipRegion" : {
+            "type" : "string",
+            "maxLength" : 15
+          },
+          "shipPostalCode" : {
+            "type" : "string",
+            "maxLength" : 10
+          },
+          "shipCountry" : {
+            "type" : "string",
+            "maxLength" : 15
+          }
+        }
+      },
+      "Shipper" : {
+        "type" : "object",
+        "properties" : {
+          "shipperId" : {
+            "type" : "string"
+          },
+          "companyName" : {
+            "type" : "string"
+          },
+          "phone" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Order_Detail" : {
+        "type" : "object",
+        "properties" : {
+          "productId" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "unitPrice" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "quantity" : {
+            "type" : "integer",
+            "format" : "int32",
+            "maximum" : 65535
+          },
+          "discount" : {
+            "type" : "number",
+            "format" : "double",
+            "minimum" : 0,
+            "maximum" : 100
+          }
+        }
+      },
+      "SalesOrder" : {
+        "type" : "object",
+        "properties" : {
+          "order" : {
+            "$ref" : "#/components/schemas/Order_Header"
+          },
+          "detail" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Order_Detail"
+            }
+          }
+        }
+      }
+    },
+    "responses" : {
+      "StdResponse" : {
+        "description" : "StdResponse",
+        "content" : {
+          "application/json" : {
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "ele" : {
+                  "$ref" : "#/components/schemas/ElectronicCommuncation"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "parameters" : {
+      "aQueryparam" : {
+        "name" : "aQueryparam",
+        "in" : "query",
+        "required" : false,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "form",
+        "explode" : true
+      },
+      "Accept-Encoding" : {
+        "name" : "Accept-Encoding",
+        "in" : "header",
+        "required" : false,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      },
+      "apatchvar" : {
+        "name" : "apatchvar",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_mFuzwCaTEfCtRvQRAS9VEg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_mFuzwSaTEfCtRvQRAS9VEg" comment="" name="JDBC_Logging_jdbcClass" prompt="JDBC_Logging_jdbcClass?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="com.mysql.cj.jdbc.Driver"/>
+  <contextParameter xmi:id="_mFuzwiaTEfCtRvQRAS9VEg" comment="" name="JDBC_Logging_password" prompt="JDBC_Logging_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v2:TrGvMO779k29oLMMxibh9kmRIgtpqrQIUv+0yL6HG9sKxK5oY2t8Dw=="/>
+  <contextParameter xmi:id="_mFuzwyaTEfCtRvQRAS9VEg" comment="" name="JDBC_Logging_jdbcUrl" prompt="JDBC_Logging_jdbcUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="jdbc:mysql://172.21.20.6:3306/ control"/>
+  <contextParameter xmi:id="_mFuzxCaTEfCtRvQRAS9VEg" comment="" name="JDBC_Logging_userId" prompt="JDBC_Logging_userId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+</talendfile:ContextType>

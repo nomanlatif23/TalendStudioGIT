@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_bPYVQCaTEfCtRvQRAS9VEg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_bPYVQSaTEfCtRvQRAS9VEg" comment="" name="JDBC_MySQL_ecommerce_jdbcUrl" prompt="JDBC_MySQL_ecommerce_jdbcUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="jdbc:mysql://172.21.20.6:3306/ecommerce"/>
+  <contextParameter xmi:id="_bPYVQiaTEfCtRvQRAS9VEg" comment="" name="JDBC_MySQL_ecommerce_jdbcClass" prompt="JDBC_MySQL_ecommerce_jdbcClass?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="com.mysql.cj.jdbc.Driver"/>
+  <contextParameter xmi:id="_bPYVQyaTEfCtRvQRAS9VEg" comment="" name="JDBC_MySQL_ecommerce_userId" prompt="JDBC_MySQL_ecommerce_userId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+  <contextParameter xmi:id="_bPYVRCaTEfCtRvQRAS9VEg" comment="" name="JDBC_MySQL_ecommerce_password" prompt="JDBC_MySQL_ecommerce_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v2:/rz6p1LrOpRYH6VogWarkj07C8cNfMj1TPJaLsYTtNpsaZtckldFKg=="/>
+</talendfile:ContextType>

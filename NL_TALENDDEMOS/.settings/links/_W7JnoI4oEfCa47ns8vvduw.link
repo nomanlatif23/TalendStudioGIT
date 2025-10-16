@@ -1,0 +1,36 @@
+{
+  "itemId" : "_W7JnoI4oEfCa47ns8vvduw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_bPPLUCaTEfCtRvQRAS9VEg",
+    "parameterList" : [ {
+      "id" : "_bPYVQSaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_MySQL_ecommerce_jdbcUrl"
+    }, {
+      "id" : "_bPYVQiaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_MySQL_ecommerce_jdbcClass"
+    }, {
+      "id" : "_bPYVQyaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_MySQL_ecommerce_userId"
+    }, {
+      "id" : "_bPYVRCaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_MySQL_ecommerce_password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_mFhYYCaTEfCtRvQRAS9VEg",
+    "parameterList" : [ {
+      "id" : "_mFuzwiaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_Logging_password"
+    }, {
+      "id" : "_mFuzwyaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_Logging_jdbcUrl"
+    }, {
+      "id" : "_mFuzwSaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_Logging_jdbcClass"
+    }, {
+      "id" : "_mFuzxCaTEfCtRvQRAS9VEg",
+      "name" : "JDBC_Logging_userId"
+    } ]
+  } ]
+}

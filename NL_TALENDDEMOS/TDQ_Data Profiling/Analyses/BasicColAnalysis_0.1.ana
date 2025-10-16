@@ -27,7 +27,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/CustomerData_0.1.item#_NhFPfLXvEe-SNIepAR27aw"/>
     </context>
     <results xmi:id="_7bQSZ7XuEe-SNIepAR27aw">
-      <resultMetadata xmi:id="_7bQSaLXuEe-SNIepAR27aw" executionDate="2025-09-11T14:01:46.436+0400" executionDuration="3044" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="5"/>
+      <resultMetadata xmi:id="_7bQSaLXuEe-SNIepAR27aw" executionDate="2025-09-30T16:01:15.281+0400" executionDuration="2927" message="" executionNumber="10" lastRunOk="true" lastExecutionNumberOk="9"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Sdp3ALXvEe-SNIepAR27aw" count="48" computed="true">
         <parameters xmi:id="_Sdp3AbXvEe-SNIepAR27aw"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CustomerData_0.1.item#_NhFPULXvEe-SNIepAR27aw"/>
@@ -5856,5 +5856,6 @@
   </dataquality.domain:Domain>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_uripELXvEe-SNIepAR27aw" kind="Usage" supplier="_7bQSYLXuEe-SNIepAR27aw">
     <client xsi:type="dataquality.reports:TdReport" href="../Reports/Report_0.1.rep#_h4d_MLXvEe-SNIepAR27aw"/>
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/BasicColAnalysis_0.1.rep#_pUA30J3rEfCVRboqh3T48g"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
