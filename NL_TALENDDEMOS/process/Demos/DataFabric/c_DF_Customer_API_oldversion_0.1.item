@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard" framework="">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="REST_APIs_Password" prompt="REST_APIs_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:0+FjHSzL+jM7QrrfQ0QvF8NTr/3Mw0zBjabf82Drhcru/w==" internalId="_rVLEUCEiEeyRxdLL2nH71A"/>
+    <contextParameter comment="" name="REST_APIs_Password" prompt="REST_APIs_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v2:2tS7TYRiMsrr0r6nC4UeFQrZ4H9hyrZ9f560N2LPuRiqug==" internalId="_rVLEUCEiEeyRxdLL2nH71A"/>
     <contextParameter comment="" name="REST_APIs_Port" prompt="REST_APIs_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306" internalId="_rVLEUSEiEeyRxdLL2nH71A"/>
     <contextParameter comment="" name="REST_APIs_Login" prompt="REST_APIs_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend" internalId="_rVLEUiEiEeyRxdLL2nH71A"/>
     <contextParameter comment="" name="REST_APIs_Database" prompt="REST_APIs_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo" internalId="_rVLEUyEiEeyRxdLL2nH71A"/>
@@ -10,7 +10,7 @@
     <contextParameter comment="" name="demo_mysql_Login" prompt="demo_mysql_Login?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="root" internalId="_0qw94CEmEeyRxdLL2nH71A"/>
     <contextParameter comment="" name="demo_mysql_AdditionalParams" prompt="demo_mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="noDatetimeStringSync=true" internalId="_0qw94SEmEeyRxdLL2nH71A"/>
     <contextParameter comment="" name="demo_mysql_Database" prompt="demo_mysql_Database?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="demo" internalId="_0qw94iEmEeyRxdLL2nH71A"/>
-    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v1:dq6NgErlJf5KyqqCXh567MSzxBgoyoTuYX+x/7jfY7nyf7n8" internalId="_0qxk8CEmEeyRxdLL2nH71A"/>
+    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v2:Ncmsr6hgUSxgY7HONGuW7TFGCEa3a8gRp0gXBoUfuh6uJT6H" internalId="_0qxk8CEmEeyRxdLL2nH71A"/>
     <contextParameter comment="" name="demo_mysql_Server" prompt="demo_mysql_Server?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="localhost" internalId="_0qxk8SEmEeyRxdLL2nH71A"/>
     <contextParameter comment="" name="demo_mysql_Port" prompt="demo_mysql_Port?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="3306" internalId="_0qxk8iEmEeyRxdLL2nH71A"/>
   </context>
@@ -200,68 +200,68 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="Get_Customers" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="firstName" type="id_String" xpath="Get_Customers/firstName" lookupOutgoingConnections="//@node.1/@nodeData/@connections.0"/>
-        <nodes name="lastName" type="id_String" xpath="Get_Customers/lastName" lookupOutgoingConnections="//@node.1/@nodeData/@connections.1"/>
-        <nodes name="email" type="id_String" xpath="Get_Customers/email" lookupOutgoingConnections="//@node.1/@nodeData/@connections.2"/>
+        <nodes name="firstName" type="id_String" xpath="Get_Customers/firstName" lookupOutgoingConnections="//@node.1/@nodeData/@connections.0" objID="n696184534"/>
+        <nodes name="lastName" type="id_String" xpath="Get_Customers/lastName" lookupOutgoingConnections="//@node.1/@nodeData/@connections.1" objID="n1721741494"/>
+        <nodes name="email" type="id_String" xpath="Get_Customers/email" lookupOutgoingConnections="//@node.1/@nodeData/@connections.2" objID="n2026285231"/>
       </inputTrees>
       <inputTrees activateCondensedTool="true" name="row7" lookup="true" matchingMode="ALL_ROWS" lookupMode="CACHE_OR_RELOAD" activateGlobalMap="true">
-        <nodes name="ID" expression="" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="row7/ID" nullable="false"/>
-        <nodes name="CIVILITY" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="row7/CIVILITY"/>
-        <nodes name="FIRST_NAME" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="row7/FIRST_NAME"/>
-        <nodes name="LAST_NAME" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.6" xpath="row7/LAST_NAME"/>
-        <nodes name="EMAIL" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.7" xpath="row7/EMAIL"/>
-        <nodes name="CITY" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.8" xpath="row7/CITY"/>
-        <nodes name="STATE" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.9" xpath="row7/STATE"/>
-        <nodes name="ZIP_CODE" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.10" xpath="row7/ZIP_CODE"/>
-        <nodes name="BUSINESS_REGION" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.11" xpath="row7/BUSINESS_REGION"/>
-        <nodes name="LASTUPDATE" type="id_Date" outgoingConnections="//@node.1/@nodeData/@connections.12" xpath="row7/LASTUPDATE"/>
-        <nodes name="CAMPAIGN" type="id_String" xpath="row7/CAMPAIGN"/>
-        <nodes name="PHONE" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.13" xpath="row7/PHONE"/>
-        <nodes name="TWITTERUSER" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.14" xpath="row7/TWITTERUSER"/>
-        <nodes name="SOURCEID" type="id_Integer" xpath="row7/SOURCEID"/>
-        <nodes name="SOURCE" type="id_String" xpath="row7/SOURCE"/>
-        <nodes name="MATCHING_DISTANCES" type="id_String" xpath="row7/MATCHING_DISTANCES"/>
-        <nodes name="MATCHING_WEIGHT" type="id_Double" xpath="row7/MATCHING_WEIGHT"/>
-        <globalMapKeysValues name="&quot;FirstName&quot;" expression=" Get_Customers.firstName" lookupIncomingConnections="//@node.1/@nodeData/@connections.0"/>
-        <globalMapKeysValues name="&quot;LastName&quot;" expression=" Get_Customers.lastName" lookupIncomingConnections="//@node.1/@nodeData/@connections.1"/>
-        <globalMapKeysValues name="&quot;Email&quot;" expression=" Get_Customers.email" lookupIncomingConnections="//@node.1/@nodeData/@connections.2"/>
+        <nodes name="ID" expression="" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="row7/ID" nullable="false" objID="n584697909"/>
+        <nodes name="CIVILITY" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="row7/CIVILITY" objID="n308449637"/>
+        <nodes name="FIRST_NAME" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="row7/FIRST_NAME" objID="n431598545"/>
+        <nodes name="LAST_NAME" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.6" xpath="row7/LAST_NAME" objID="n30128761"/>
+        <nodes name="EMAIL" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.7" xpath="row7/EMAIL" objID="n1434474006"/>
+        <nodes name="CITY" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.8" xpath="row7/CITY" objID="n465645228"/>
+        <nodes name="STATE" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.9" xpath="row7/STATE" objID="n189493523"/>
+        <nodes name="ZIP_CODE" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.10" xpath="row7/ZIP_CODE" objID="n722696868"/>
+        <nodes name="BUSINESS_REGION" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.11" xpath="row7/BUSINESS_REGION" objID="n900967730"/>
+        <nodes name="LASTUPDATE" type="id_Date" outgoingConnections="//@node.1/@nodeData/@connections.12" xpath="row7/LASTUPDATE" objID="n1595701038"/>
+        <nodes name="CAMPAIGN" type="id_String" xpath="row7/CAMPAIGN" objID="n1125048576"/>
+        <nodes name="PHONE" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.13" xpath="row7/PHONE" objID="n1844216806"/>
+        <nodes name="TWITTERUSER" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.14" xpath="row7/TWITTERUSER" objID="n194372481"/>
+        <nodes name="SOURCEID" type="id_Integer" xpath="row7/SOURCEID" objID="n1160895252"/>
+        <nodes name="SOURCE" type="id_String" xpath="row7/SOURCE" objID="n915429392"/>
+        <nodes name="MATCHING_DISTANCES" type="id_String" xpath="row7/MATCHING_DISTANCES" objID="n1342207480"/>
+        <nodes name="MATCHING_WEIGHT" type="id_Double" xpath="row7/MATCHING_WEIGHT" objID="n1590879965"/>
+        <globalMapKeysValues name="&quot;FirstName&quot;" expression=" Get_Customers.firstName" lookupIncomingConnections="//@node.1/@nodeData/@connections.0" objID="n1013889952"/>
+        <globalMapKeysValues name="&quot;LastName&quot;" expression=" Get_Customers.lastName" lookupIncomingConnections="//@node.1/@nodeData/@connections.1" objID="n1463690521"/>
+        <globalMapKeysValues name="&quot;Email&quot;" expression=" Get_Customers.email" lookupIncomingConnections="//@node.1/@nodeData/@connections.2" objID="n224548243"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="out" allInOne="true">
-        <nodes name="body" expression="" type="id_Document" xpath="out/body" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out.body:/root" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="customers" expression="" type="id_String" xpath="out.body:/root/customers" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row7.ID" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="out.body:/root/customers/id"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="civility" expression="row7.CIVILITY" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="out.body:/root/customers/civility"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstName" expression="row7.FIRST_NAME" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="out.body:/root/customers/firstName"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastName" expression="row7.LAST_NAME" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="out.body:/root/customers/lastName"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="email" expression="row7.EMAIL" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.7" xpath="out.body:/root/customers/email"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="city" expression="row7.CITY" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.8" xpath="out.body:/root/customers/city"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="state" expression="row7.STATE" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="out.body:/root/customers/state"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="zipcode" expression="row7.ZIP_CODE" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.10" xpath="out.body:/root/customers/zipcode"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="businessRegion" expression="row7.BUSINESS_REGION" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.11" xpath="out.body:/root/customers/businessRegion"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastUpdate" expression="row7.LASTUPDATE" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.12" xpath="out.body:/root/customers/lastUpdate"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="phone" expression="row7.PHONE" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.13" xpath="out.body:/root/customers/phone"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="twitterUser" expression="row7.TWITTERUSER" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.14" xpath="out.body:/root/customers/twitterUser"/>
+        <nodes name="body" expression="" type="id_Document" xpath="out/body" pattern="" objID="n141967169">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out.body:/root" main="true" objID="n1692555027">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="customers" expression="" type="id_String" xpath="out.body:/root/customers" loop="true" main="true" objID="n1637946052">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row7.ID" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="out.body:/root/customers/id" objID="n303859503"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="civility" expression="row7.CIVILITY" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="out.body:/root/customers/civility" objID="n107532574"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstName" expression="row7.FIRST_NAME" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="out.body:/root/customers/firstName" objID="n71473317"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastName" expression="row7.LAST_NAME" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="out.body:/root/customers/lastName" objID="n273770843"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="email" expression="row7.EMAIL" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.7" xpath="out.body:/root/customers/email" objID="n1859294966"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="city" expression="row7.CITY" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.8" xpath="out.body:/root/customers/city" objID="n1454501693"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="state" expression="row7.STATE" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="out.body:/root/customers/state" objID="n961216736"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="zipcode" expression="row7.ZIP_CODE" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.10" xpath="out.body:/root/customers/zipcode" objID="n1515669574"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="businessRegion" expression="row7.BUSINESS_REGION" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.11" xpath="out.body:/root/customers/businessRegion" objID="n1023735994"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastUpdate" expression="row7.LASTUPDATE" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.12" xpath="out.body:/root/customers/lastUpdate" objID="n1152326810"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="phone" expression="row7.PHONE" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.13" xpath="out.body:/root/customers/phone" objID="n507836757"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="twitterUser" expression="row7.TWITTERUSER" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.14" xpath="out.body:/root/customers/twitterUser" objID="n932132484"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@inputTrees.1/@globalMapKeysValues.0"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@inputTrees.1/@globalMapKeysValues.1"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.2" target="//@node.1/@nodeData/@inputTrees.1/@globalMapKeysValues.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.1/@nodes.12" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="n696184534" target="n1013889952"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="n1721741494" target="n1463690521"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="n2026285231" target="n224548243"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n584697909" target="n303859503"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n308449637" target="n107532574"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n431598545" target="n71473317"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n30128761" target="n273770843"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1434474006" target="n1859294966"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n465645228" target="n1454501693"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n189493523" target="n961216736"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n722696868" target="n1515669574"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n900967730" target="n1023735994"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1595701038" target="n1152326810"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1844216806" target="n507836757"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n194372481" target="n932132484"/>
     </nodeData>
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
@@ -298,7 +298,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.demo_mysql_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.demo_mysql_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mncvjyYKIVCp+fuYYQhjYaLyap7raTlakJcnD4gL4ZvX+UMDtXVd/nNSa6VgCz9lifvajeEavA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.demo_mysql_Password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_master&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -524,69 +524,69 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="Get_by_Customer_ID" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="id" type="id_Integer" outgoingConnections="//@node.6/@nodeData/@connections.14" xpath="Get_by_Customer_ID/id" lookupOutgoingConnections="//@node.6/@nodeData/@connections.0 //@node.6/@nodeData/@connections.15"/>
+        <nodes name="id" type="id_Integer" outgoingConnections="//@node.6/@nodeData/@connections.14" xpath="Get_by_Customer_ID/id" lookupOutgoingConnections="//@node.6/@nodeData/@connections.0 //@node.6/@nodeData/@connections.15" objID="n1971514753"/>
       </inputTrees>
       <inputTrees activateCondensedTool="true" name="student" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="RELOAD" innerJoin="true" activateGlobalMap="true">
-        <nodes name="ID" expression=" Get_by_Customer_ID.id" type="id_Integer" outgoingConnections="//@node.6/@nodeData/@connections.1" xpath="student/ID" lookupIncomingConnections="//@node.6/@nodeData/@connections.0"/>
-        <nodes name="CIVILITY" expression="" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.2" xpath="student/CIVILITY"/>
-        <nodes name="FIRST_NAME" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.3" xpath="student/FIRST_NAME"/>
-        <nodes name="LAST_NAME" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.4" xpath="student/LAST_NAME"/>
-        <nodes name="EMAIL" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.5" xpath="student/EMAIL"/>
-        <nodes name="CITY" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.6" xpath="student/CITY"/>
-        <nodes name="STATE" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.7" xpath="student/STATE"/>
-        <nodes name="ZIP_CODE" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.8" xpath="student/ZIP_CODE"/>
-        <nodes name="BUSINESS_REGION" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.9" xpath="student/BUSINESS_REGION"/>
-        <nodes name="LASTUPDATE" type="id_Date" outgoingConnections="//@node.6/@nodeData/@connections.10" xpath="student/LASTUPDATE"/>
-        <nodes name="CAMPAIGN" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.11" xpath="student/CAMPAIGN"/>
-        <nodes name="PHONE" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.12" xpath="student/PHONE"/>
-        <nodes name="TWITTERUSER" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.13" xpath="student/TWITTERUSER"/>
-        <nodes name="SOURCEID" type="id_Integer" xpath="student/SOURCEID"/>
-        <nodes name="SOURCE" type="id_String" xpath="student/SOURCE"/>
-        <globalMapKeysValues name="&quot;Customer_ID&quot;" expression=" Get_by_Customer_ID.id" lookupIncomingConnections="//@node.6/@nodeData/@connections.15"/>
+        <nodes name="ID" expression=" Get_by_Customer_ID.id" type="id_Integer" outgoingConnections="//@node.6/@nodeData/@connections.1" xpath="student/ID" lookupIncomingConnections="//@node.6/@nodeData/@connections.0" objID="n1856925648"/>
+        <nodes name="CIVILITY" expression="" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.2" xpath="student/CIVILITY" objID="n301496324"/>
+        <nodes name="FIRST_NAME" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.3" xpath="student/FIRST_NAME" objID="n1706013225"/>
+        <nodes name="LAST_NAME" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.4" xpath="student/LAST_NAME" objID="n1357555039"/>
+        <nodes name="EMAIL" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.5" xpath="student/EMAIL" objID="n1720991158"/>
+        <nodes name="CITY" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.6" xpath="student/CITY" objID="n816565858"/>
+        <nodes name="STATE" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.7" xpath="student/STATE" objID="n764441011"/>
+        <nodes name="ZIP_CODE" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.8" xpath="student/ZIP_CODE" objID="n501439561"/>
+        <nodes name="BUSINESS_REGION" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.9" xpath="student/BUSINESS_REGION" objID="n1135151475"/>
+        <nodes name="LASTUPDATE" type="id_Date" outgoingConnections="//@node.6/@nodeData/@connections.10" xpath="student/LASTUPDATE" objID="n895939484"/>
+        <nodes name="CAMPAIGN" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.11" xpath="student/CAMPAIGN" objID="n1991026560"/>
+        <nodes name="PHONE" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.12" xpath="student/PHONE" objID="n223100417"/>
+        <nodes name="TWITTERUSER" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.13" xpath="student/TWITTERUSER" objID="n340768002"/>
+        <nodes name="SOURCEID" type="id_Integer" xpath="student/SOURCEID" objID="n94196431"/>
+        <nodes name="SOURCE" type="id_String" xpath="student/SOURCE" objID="n985181143"/>
+        <globalMapKeysValues name="&quot;Customer_ID&quot;" expression=" Get_by_Customer_ID.id" lookupIncomingConnections="//@node.6/@nodeData/@connections.15" objID="n1377593885"/>
       </inputTrees>
       <outputTrees expressionFilter="" activateCondensedTool="true" name="getByIDResponse" allInOne="true" enableEmptyElement="false">
-        <nodes name="body" expression="" type="id_Document" xpath="getByIDResponse/body" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="getByIDResponse.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="student.ID" type="id_Integer" incomingConnections="//@node.6/@nodeData/@connections.1" xpath="getByIDResponse.body:/root/ID"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CIVILITY" expression="student.CIVILITY" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.2" xpath="getByIDResponse.body:/root/CIVILITY"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="FIRST_NAME" expression="student.FIRST_NAME" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.3" xpath="getByIDResponse.body:/root/FIRST_NAME"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LAST_NAME" expression="student.LAST_NAME" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.4" xpath="getByIDResponse.body:/root/LAST_NAME"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMAIL" expression="student.EMAIL" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.5" xpath="getByIDResponse.body:/root/EMAIL"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CITY" expression="student.CITY" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.6" xpath="getByIDResponse.body:/root/CITY"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="STATE" expression="student.STATE" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.7" xpath="getByIDResponse.body:/root/STATE"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ZIP_CODE" expression="student.ZIP_CODE" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.8" xpath="getByIDResponse.body:/root/ZIP_CODE"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="BUSINESS_REGION" expression="student.BUSINESS_REGION" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.9" xpath="getByIDResponse.body:/root/BUSINESS_REGION"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LASTUPDATE" expression="student.LASTUPDATE" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.10" xpath="getByIDResponse.body:/root/LASTUPDATE"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CAMPAIGN" expression="student.CAMPAIGN" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.11" xpath="getByIDResponse.body:/root/CAMPAIGN"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="PHONE" expression="student.PHONE" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.12" xpath="getByIDResponse.body:/root/PHONE"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="TWITTERUSER" expression="student.TWITTERUSER" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.13" xpath="getByIDResponse.body:/root/TWITTERUSER"/>
+        <nodes name="body" expression="" type="id_Document" xpath="getByIDResponse/body" pattern="" objID="n1185703616">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="getByIDResponse.body:/root" loop="true" main="true" objID="n914364393">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="student.ID" type="id_Integer" incomingConnections="//@node.6/@nodeData/@connections.1" xpath="getByIDResponse.body:/root/ID" objID="n1724771959"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CIVILITY" expression="student.CIVILITY" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.2" xpath="getByIDResponse.body:/root/CIVILITY" objID="n1438544397"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="FIRST_NAME" expression="student.FIRST_NAME" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.3" xpath="getByIDResponse.body:/root/FIRST_NAME" objID="n598332895"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LAST_NAME" expression="student.LAST_NAME" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.4" xpath="getByIDResponse.body:/root/LAST_NAME" objID="n1704718006"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMAIL" expression="student.EMAIL" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.5" xpath="getByIDResponse.body:/root/EMAIL" objID="n1114802263"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CITY" expression="student.CITY" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.6" xpath="getByIDResponse.body:/root/CITY" objID="n1208962298"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="STATE" expression="student.STATE" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.7" xpath="getByIDResponse.body:/root/STATE" objID="n741467773"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ZIP_CODE" expression="student.ZIP_CODE" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.8" xpath="getByIDResponse.body:/root/ZIP_CODE" objID="n633750930"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="BUSINESS_REGION" expression="student.BUSINESS_REGION" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.9" xpath="getByIDResponse.body:/root/BUSINESS_REGION" objID="n105093338"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LASTUPDATE" expression="student.LASTUPDATE" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.10" xpath="getByIDResponse.body:/root/LASTUPDATE" objID="n991452587"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CAMPAIGN" expression="student.CAMPAIGN" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.11" xpath="getByIDResponse.body:/root/CAMPAIGN" objID="n212895808"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="PHONE" expression="student.PHONE" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.12" xpath="getByIDResponse.body:/root/PHONE" objID="n998849407"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="TWITTERUSER" expression="student.TWITTERUSER" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.13" xpath="getByIDResponse.body:/root/TWITTERUSER" objID="n1878166084"/>
           </children>
         </nodes>
       </outputTrees>
       <outputTrees activateCondensedTool="true" name="getByIDNotFound" reject="true" rejectInnerJoin="true" allInOne="true" enableEmptyElement="false">
-        <nodes name="body" expression="" type="id_Document" xpath="getByIDNotFound/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="error" expression="" type="id_String" xpath="getByIDNotFound.body:/error" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="&quot;Could not find customer ID '&quot; + Get_by_Customer_ID.id + &quot;'&quot; " type="id_String" incomingConnections="//@node.6/@nodeData/@connections.14" xpath="getByIDNotFound.body:/error/message"/>
+        <nodes name="body" expression="" type="id_Document" xpath="getByIDNotFound/body" objID="n847092367">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="error" expression="" type="id_String" xpath="getByIDNotFound.body:/error" loop="true" main="true" objID="n1232239509">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="&quot;Could not find customer ID '&quot; + Get_by_Customer_ID.id + &quot;'&quot; " type="id_String" incomingConnections="//@node.6/@nodeData/@connections.14" xpath="getByIDNotFound.body:/error/message" objID="n709338061"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.0" target="//@node.6/@nodeData/@inputTrees.1/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.4" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.1/@nodes.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.0" target="//@node.6/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.0" target="//@node.6/@nodeData/@inputTrees.1/@globalMapKeysValues.0"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="n1971514753" target="n1856925648"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1856925648" target="n1724771959"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n301496324" target="n1438544397"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1706013225" target="n598332895"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1357555039" target="n1704718006"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1720991158" target="n1114802263"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n816565858" target="n1208962298"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n764441011" target="n741467773"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n501439561" target="n633750930"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1135151475" target="n105093338"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n895939484" target="n991452587"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1991026560" target="n212895808"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n223100417" target="n998849407"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n340768002" target="n1878166084"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1971514753" target="n709338061"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="n1971514753" target="n1377593885"/>
     </nodeData>
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="-2" offsetLabelY="-44" posX="320" posY="0">
@@ -601,7 +601,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.demo_mysql_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.demo_mysql_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NBo2MX3yyToz6TaqJhgwuFenBwuTJZmz07EsxzzcRTwbmQ/+sq+Ci/hyJw6bckXFMa5wnv2hzQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.demo_mysql_Password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_master&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -724,50 +724,50 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="Add_a_new_Customer" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="body" expression="" type="id_Document" xpath="Add_a_new_Customer/body" pattern="">
-          <children name="customer" expression="" type="id_String" xpath="Add_a_new_Customer.body:/customer" loop="true" main="true">
-            <children name="address" type="id_String" xpath="Add_a_new_Customer.body:/customer/address"/>
-            <children name="city" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.4" xpath="Add_a_new_Customer.body:/customer/city"/>
-            <children name="civility" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.0" xpath="Add_a_new_Customer.body:/customer/civility"/>
-            <children name="customerId" type="id_Integer" outgoingConnections="//@node.10/@nodeData/@connections.9" xpath="Add_a_new_Customer.body:/customer/customerId"/>
-            <children name="email" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.3" xpath="Add_a_new_Customer.body:/customer/email"/>
-            <children name="firstName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.1" xpath="Add_a_new_Customer.body:/customer/firstName"/>
-            <children name="lastName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.2" xpath="Add_a_new_Customer.body:/customer/lastName"/>
-            <children name="phone" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.6" xpath="Add_a_new_Customer.body:/customer/phone"/>
-            <children name="state" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.5" xpath="Add_a_new_Customer.body:/customer/state"/>
-            <children name="twitter" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.7" xpath="Add_a_new_Customer.body:/customer/twitter"/>
-            <children name="zip" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.8" xpath="Add_a_new_Customer.body:/customer/zip"/>
+        <nodes name="body" expression="" type="id_Document" xpath="Add_a_new_Customer/body" pattern="" objID="n1654249800">
+          <children name="customer" expression="" type="id_String" xpath="Add_a_new_Customer.body:/customer" loop="true" main="true" objID="n94679028">
+            <children name="address" type="id_String" xpath="Add_a_new_Customer.body:/customer/address" objID="n1145422568"/>
+            <children name="city" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.4" xpath="Add_a_new_Customer.body:/customer/city" objID="n1213820301"/>
+            <children name="civility" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.0" xpath="Add_a_new_Customer.body:/customer/civility" objID="n2022989728"/>
+            <children name="customerId" type="id_Integer" outgoingConnections="//@node.10/@nodeData/@connections.9" xpath="Add_a_new_Customer.body:/customer/customerId" objID="n1455717796"/>
+            <children name="email" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.3" xpath="Add_a_new_Customer.body:/customer/email" objID="n1746708025"/>
+            <children name="firstName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.1" xpath="Add_a_new_Customer.body:/customer/firstName" objID="n552034098"/>
+            <children name="lastName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.2" xpath="Add_a_new_Customer.body:/customer/lastName" objID="n1832861672"/>
+            <children name="phone" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.6" xpath="Add_a_new_Customer.body:/customer/phone" objID="n1267930609"/>
+            <children name="state" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.5" xpath="Add_a_new_Customer.body:/customer/state" objID="n1493728930"/>
+            <children name="twitter" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.7" xpath="Add_a_new_Customer.body:/customer/twitter" objID="n1804596920"/>
+            <children name="zip" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.8" xpath="Add_a_new_Customer.body:/customer/zip" objID="n1301617296"/>
           </children>
         </nodes>
       </inputTrees>
       <outputTrees name="toRDBMS">
-        <nodes name="ID" expression="[Add_a_new_Customer.body:/customer/customerId]" type="id_Integer" incomingConnections="//@node.10/@nodeData/@connections.9" xpath="toRDBMS/ID" pattern="" key="true"/>
-        <nodes name="CIVILITY" expression=" [Add_a_new_Customer.body:/customer/civility]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.0" xpath="toRDBMS/CIVILITY" pattern=""/>
-        <nodes name="FIRST_NAME" expression=" [Add_a_new_Customer.body:/customer/firstName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.1" xpath="toRDBMS/FIRST_NAME" pattern=""/>
-        <nodes name="LAST_NAME" expression=" [Add_a_new_Customer.body:/customer/lastName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.2" xpath="toRDBMS/LAST_NAME" pattern=""/>
-        <nodes name="EMAIL" expression=" [Add_a_new_Customer.body:/customer/email]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.3" xpath="toRDBMS/EMAIL" pattern=""/>
-        <nodes name="CITY" expression=" [Add_a_new_Customer.body:/customer/city]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.4" xpath="toRDBMS/CITY" pattern=""/>
-        <nodes name="STATE" expression=" [Add_a_new_Customer.body:/customer/state]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.5" xpath="toRDBMS/STATE" pattern=""/>
-        <nodes name="ZIP_CODE" expression=" [Add_a_new_Customer.body:/customer/zip]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.8" xpath="toRDBMS/ZIP_CODE" pattern=""/>
-        <nodes name="BUSINESS_REGION" expression="&quot;&quot;" type="id_String" xpath="toRDBMS/BUSINESS_REGION" pattern=""/>
-        <nodes name="LASTUPDATE" expression="TalendDate.getCurrentDate() " type="id_Date" xpath="toRDBMS/LASTUPDATE" pattern="&quot;dd-MM-yyyy&quot;"/>
-        <nodes name="CAMPAIGN" expression="&quot;&quot;" type="id_String" xpath="toRDBMS/CAMPAIGN" pattern=""/>
-        <nodes name="PHONE" expression=" [Add_a_new_Customer.body:/customer/phone]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.6" xpath="toRDBMS/PHONE" pattern=""/>
-        <nodes name="TWITTERUSER" expression=" [Add_a_new_Customer.body:/customer/twitter]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.7" xpath="toRDBMS/TWITTERUSER" pattern=""/>
-        <nodes name="SOURCEID" expression="0" type="id_Integer" xpath="toRDBMS/SOURCEID" pattern=""/>
-        <nodes name="SOURCE" expression="&quot;MANUAL ENTRY&quot;" type="id_String" xpath="toRDBMS/SOURCE" pattern=""/>
+        <nodes name="ID" expression="[Add_a_new_Customer.body:/customer/customerId]" type="id_Integer" incomingConnections="//@node.10/@nodeData/@connections.9" xpath="toRDBMS/ID" pattern="" key="true" objID="n1171393695"/>
+        <nodes name="CIVILITY" expression=" [Add_a_new_Customer.body:/customer/civility]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.0" xpath="toRDBMS/CIVILITY" pattern="" objID="n3239520"/>
+        <nodes name="FIRST_NAME" expression=" [Add_a_new_Customer.body:/customer/firstName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.1" xpath="toRDBMS/FIRST_NAME" pattern="" objID="n1387564236"/>
+        <nodes name="LAST_NAME" expression=" [Add_a_new_Customer.body:/customer/lastName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.2" xpath="toRDBMS/LAST_NAME" pattern="" objID="n1591974434"/>
+        <nodes name="EMAIL" expression=" [Add_a_new_Customer.body:/customer/email]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.3" xpath="toRDBMS/EMAIL" pattern="" objID="n1338504173"/>
+        <nodes name="CITY" expression=" [Add_a_new_Customer.body:/customer/city]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.4" xpath="toRDBMS/CITY" pattern="" objID="n389998655"/>
+        <nodes name="STATE" expression=" [Add_a_new_Customer.body:/customer/state]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.5" xpath="toRDBMS/STATE" pattern="" objID="n1022271602"/>
+        <nodes name="ZIP_CODE" expression=" [Add_a_new_Customer.body:/customer/zip]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.8" xpath="toRDBMS/ZIP_CODE" pattern="" objID="n661597105"/>
+        <nodes name="BUSINESS_REGION" expression="&quot;&quot;" type="id_String" xpath="toRDBMS/BUSINESS_REGION" pattern="" objID="n238744608"/>
+        <nodes name="LASTUPDATE" expression="TalendDate.getCurrentDate() " type="id_Date" xpath="toRDBMS/LASTUPDATE" pattern="&quot;dd-MM-yyyy&quot;" objID="n677811591"/>
+        <nodes name="CAMPAIGN" expression="&quot;&quot;" type="id_String" xpath="toRDBMS/CAMPAIGN" pattern="" objID="n871540949"/>
+        <nodes name="PHONE" expression=" [Add_a_new_Customer.body:/customer/phone]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.6" xpath="toRDBMS/PHONE" pattern="" objID="n970671648"/>
+        <nodes name="TWITTERUSER" expression=" [Add_a_new_Customer.body:/customer/twitter]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.7" xpath="toRDBMS/TWITTERUSER" pattern="" objID="n1132168965"/>
+        <nodes name="SOURCEID" expression="0" type="id_Integer" xpath="toRDBMS/SOURCEID" pattern="" objID="n1762058953"/>
+        <nodes name="SOURCE" expression="&quot;MANUAL ENTRY&quot;" type="id_String" xpath="toRDBMS/SOURCE" pattern="" objID="n1946472973"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.10/@nodeData/@outputTrees.0/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.10/@nodeData/@outputTrees.0/@nodes.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.10/@nodeData/@outputTrees.0/@nodes.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.10/@nodeData/@outputTrees.0/@nodes.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.10/@nodeData/@outputTrees.0/@nodes.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.10/@nodeData/@outputTrees.0/@nodes.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.10/@nodeData/@outputTrees.0/@nodes.11"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.10/@nodeData/@outputTrees.0/@nodes.12"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.10/@nodeData/@outputTrees.0/@nodes.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2022989728" target="n3239520"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n552034098" target="n1387564236"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1832861672" target="n1591974434"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1746708025" target="n1338504173"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1213820301" target="n389998655"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1493728930" target="n1022271602"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1267930609" target="n970671648"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1804596920" target="n1132168965"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1301617296" target="n661597105"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1455717796" target="n1171393695"/>
     </nodeData>
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="544">
@@ -782,7 +782,7 @@
     <elementParameter field="TEXT" name="PORT" value="context.demo_mysql_Port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.demo_mysql_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.demo_mysql_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:g+uYR124jMmb9uAdeVp/hWQH4YAvX8LaYGdy2OdCt4bsRlmH816Xo+rzgAom5GE9NZ/YXhlnPg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.demo_mysql_Password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_master&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -991,7 +991,7 @@
     <elementParameter field="TEXT" name="PORT" value="context.demo_mysql_Port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.demo_mysql_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.demo_mysql_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0en02C2j6IqNW7SqjJSqvPulJWCtUvPXdSuyHdZusFAX5qjMiKbIDiJ84YkQiz/KvU88PGgUeQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.demo_mysql_Password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_master&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="DELETE"/>

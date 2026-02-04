@@ -9,4 +9,6 @@
   <softwaredeployment:TdSoftwareSystem xmi:id="_7iEsELXuEe-SNIepAR27aw" name="Oracle" subtype="Oracle" version="Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production&#xA;Version 19.3.0.0.0"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_7iHvYLXuEe-SNIepAR27aw" name="Apache Hive" subtype="Apache Hive" version="2.1.1-cdh6.3.2"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_rbU8gB6dEfCu2vMGsgPoGQ" name="DB2/LINUXX8664" subtype="DB2/LINUXX8664" version="SQL110580"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_3VmfMNvkEfCl4Pj17SW2tw" name="MySQL" subtype="MySQL" version="9.2.0"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_qS6-4PKUEfCYKKfBhllDNw" name="Oracle" subtype="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#xA;Version 21.3.0.0.0"/>
 </xmi:XMI>

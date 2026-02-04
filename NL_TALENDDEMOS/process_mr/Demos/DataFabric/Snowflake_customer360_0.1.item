@@ -11,7 +11,7 @@
     <contextParameter xmi:id="_mAIW2QV9EfCsQaD6d-WV7g" comment="" name="demo_snowflake_region" prompt="demo_snowflake_region?" promptNeeded="false" repositoryContextId="__r-qwJqVEeqED88Oetn6jg" type="id_String" value="AWS_EU_CENTRAL_1" internalId="_TppXN-6uEeuUwKN_CvuRDQ"/>
     <contextParameter xmi:id="_mAIW2gV9EfCsQaD6d-WV7g" comment="" name="demo_snowflake_role" prompt="demo_snowflake_role?" promptNeeded="false" repositoryContextId="__r-qwJqVEeqED88Oetn6jg" type="id_String" value="" internalId="_TppXOO6uEeuUwKN_CvuRDQ"/>
     <contextParameter xmi:id="_mAIW2wV9EfCsQaD6d-WV7g" comment="" name="demo_snowflake_schemaName" prompt="demo_snowflake_schemaName?" promptNeeded="false" repositoryContextId="__r-qwJqVEeqED88Oetn6jg" type="id_String" value="PUBLIC" internalId="_TppXOe6uEeuUwKN_CvuRDQ"/>
-    <contextParameter xmi:id="_mAIW3AV9EfCsQaD6d-WV7g" comment="" name="demo_snowflake_userPassword_password" prompt="demo_snowflake_userPassword_password?" promptNeeded="false" repositoryContextId="__r-qwJqVEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v1:+KgNpuDJ0p3VDAG8X1rlskzw60SnE0AflJFIowv+TYi1N7B3z8s=" internalId="_Tpp-QO6uEeuUwKN_CvuRDQ"/>
+    <contextParameter xmi:id="_mAIW3AV9EfCsQaD6d-WV7g" comment="" name="demo_snowflake_userPassword_password" prompt="demo_snowflake_userPassword_password?" promptNeeded="false" repositoryContextId="__r-qwJqVEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v2:9pv5myVfDW18oPcZowWF4OBKQMa1UkBd1x+k2rv9+J71xGwMdWc=" internalId="_Tpp-QO6uEeuUwKN_CvuRDQ"/>
     <contextParameter xmi:id="_mAIW3QV9EfCsQaD6d-WV7g" comment="" name="demo_snowflake_userPassword_userId" prompt="demo_snowflake_userPassword_userId?" promptNeeded="false" repositoryContextId="__r-qwJqVEeqED88Oetn6jg" type="id_String" value="DPELOSI" internalId="_Tpp-Qe6uEeuUwKN_CvuRDQ"/>
     <contextParameter xmi:id="_mAIW3gV9EfCsQaD6d-WV7g" comment="" name="demo_snowflake_warehouse" prompt="demo_snowflake_warehouse?" promptNeeded="false" repositoryContextId="__r-qwJqVEeqED88Oetn6jg" type="id_String" value="DPELOSI_WH" internalId="_Tpp-Qu6uEeuUwKN_CvuRDQ"/>
   </context>
@@ -682,7 +682,7 @@
     <elementParameter xmi:id="_mAIZSAV9EfCsQaD6d-WV7g" field="CLOSED_LIST" name="REGION" value="AWS_EU_FRANKFURT"/>
     <elementParameter xmi:id="_mAIZSQV9EfCsQaD6d-WV7g" field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
     <elementParameter xmi:id="_mAIZSgV9EfCsQaD6d-WV7g" field="TEXT" name="USER" value="context.demo_snowflake_userPassword_userId"/>
-    <elementParameter xmi:id="_mAIZSwV9EfCsQaD6d-WV7g" field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MC08L0uXLY25Ghu5PPJ0E6j3gBTSKqSaKJcKprGfo6LHlPdzC0WuAx2ZHWlJx7yFCdEd/7EJcrZITVzb6I3bES3bjkh3Ft1o"/>
+    <elementParameter xmi:id="_mAIZSwV9EfCsQaD6d-WV7g" field="PASSWORD" name="PASS" value="context.demo_snowflake_userPassword_password"/>
     <elementParameter xmi:id="_mAIZTAV9EfCsQaD6d-WV7g" field="TEXT" name="USER_ID" value="&quot;&quot;" show="false"/>
     <elementParameter xmi:id="_mAIZTQV9EfCsQaD6d-WV7g" field="TEXT" name="KEY_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter xmi:id="_mAIZTgV9EfCsQaD6d-WV7g" field="TEXT" name="DBNAME" value="context.demo_snowflake_db"/>

@@ -4,7 +4,7 @@
     <contextParameter comment="" name="demo_mysql_Login" prompt="demo_mysql_Login?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="root" internalId="_0BDpELt9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_AdditionalParams" prompt="demo_mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="noDatetimeStringSync=true" internalId="_0BDpEbt9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_Database" prompt="demo_mysql_Database?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="demo" internalId="_0BDpErt9Ee-VANV8z-ef5w"/>
-    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v1:UJZWZtTX24l1P0ui9BH5UJeUwFixm5UEI4BwDWPgDV6pD27C" internalId="_0BDpE7t9Ee-VANV8z-ef5w"/>
+    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v2:/CoLHdEBw/cG1SOYo2Tg/dXFlBjWJJqCsKHAHfEHRue+2iPS" internalId="_0BDpE7t9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_Server" prompt="demo_mysql_Server?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="localhost" internalId="_0BDpFLt9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_Port" prompt="demo_mysql_Port?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="3306" internalId="_0BDpFbt9Ee-VANV8z-ef5w"/>
   </context>
@@ -12,7 +12,7 @@
     <contextParameter comment="" name="demo_mysql_Database" prompt="demo_mysql_Database?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="demo" internalId="_0BDpFrt9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_Server" prompt="demo_mysql_Server?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="localhost" internalId="_0BDpF7t9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_AdditionalParams" prompt="demo_mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="noDatetimeStringSync=true" internalId="_0BDpGLt9Ee-VANV8z-ef5w"/>
-    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v1:VTJHMPe0x/rz4Lx06iIH7Wl5iCZbG3Fmk0aSLAPp1GZVK+uE" internalId="_0BEQILt9Ee-VANV8z-ef5w"/>
+    <contextParameter comment="" name="demo_mysql_Password" prompt="demo_mysql_Password?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_Password" value="enc:system.encryption.key.v2:yTMMwE5AXOHhVuQo36MBQHSU5pv4IUNNJ93oaG/Ho8Xy9SBC" internalId="_0BEQILt9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_Login" prompt="demo_mysql_Login?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="root" internalId="_0BEQIbt9Ee-VANV8z-ef5w"/>
     <contextParameter comment="" name="demo_mysql_Port" prompt="demo_mysql_Port?" promptNeeded="false" repositoryContextId="_uB4H4JqSEeqED88Oetn6jg" type="id_String" value="3306" internalId="_0BEQIrt9Ee-VANV8z-ef5w"/>
   </context>
@@ -59,7 +59,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:dHXJQZqlueGd0z/QxEKkEqBSyX7xVJe7pEJNtGoD" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v2:IeBuNnS4kxnDrBGr4Hr1VJ+AheW1vl6f55/mmmqt" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -94,7 +94,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:91ka9KAxP9/VMP55x+069jzCzJIf6rtAFqXf+VP/" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:23gKvWVVT7f+Tz5s68gBhiDLTUx/Mdx79xbOwbE/" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -130,7 +130,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;HR&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:400kzODRzAEdRE2F1SOngZQSUoJBeIN6khLwV4eP1Ovj3Rc6E4w="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:+9v0p14SSCkb+CS7oUzEIYNhBVxe0f/04UTLDxoVRrRnznv0Ilk="/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_7YgGUOD4Ee61PJSrCFFSbg - EMPLOYEES" show="false"/>
@@ -382,7 +382,7 @@
       <additionalProperties key="Comment" value="employees table. Contains 107 rows. References with departments,&#xA;jobs, job_history tables. Contains a self reference."/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="240" posY="200">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="240" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -529,7 +529,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;HR&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PbBQrNFIazkYIRwn1AijfI17/TGtNjPvanaywUj7nAXBTcUt6NA="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:8SIf4OVcEr1CLwUis0ep6PYc9qApVExJJWjRLWJxEw+3bWX5WHs="/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_7YgGUOD4Ee61PJSrCFFSbg - JOB_HISTORY" show="false"/>
@@ -598,7 +598,7 @@
       <elementValue elementRef="EXTRA_PARAMETER" value="&quot;&quot;" id="5"/>
       <elementValue elementRef="KEEP_FORMAT" value="false" id="6"/>
     </elementParameter>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:L0cnfUmUaO+nD5M9hMmlOkenR+og8gBFC69iAgTD"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v2:IAp34Sco6u4FRDlpKe1+tzOsVjw7keDiScuAnkSJ"/>
     <elementParameter field="CHECK" name="USE_TWEAK" value="false"/>
     <elementParameter field="CHECK" name="USE_COLUMN_AS_TWEAK" value="false" show="false"/>
     <elementParameter field="PREV_COLUMN_LIST" name="TWEAK_COLUMN" value="EMPLOYEE_ID" show="false"/>
@@ -724,15 +724,6 @@
   </node>
   <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tOracleOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/Oracle" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tOracleOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\Talend\8.0.1\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7YgGUOD4Ee61PJSrCFFSbg" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -747,7 +738,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;HR&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ddNbmmAD7YA8CHSo0aX+HwpYRW+/GJUrcmig8SWSahKQoij/U80="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:jWeyfaSIUnILo4QL8ytjMF2HJ9UbNBtr/uNINL9fWMcM8FqCq48="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;EMP12345&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
@@ -836,6 +827,7 @@
     <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
     <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="D" name="tDBOutput_2">
       <column comment="Primary key of employees table." key="true" length="6" name="EMPLOYEE_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value="Primary key of employees table."/>
@@ -921,7 +913,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="B" lineStyle="8" metaname="B" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tJoin_1">
+  <connection connectorName="FLOW" label="B" lineStyle="8" metaname="B" offsetLabelX="19" offsetLabelY="50" source="tMap_3" target="tJoin_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="B" show="false"/>
   </connection>

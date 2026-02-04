@@ -199,7 +199,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="embeddings"/>
-    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.token" value="enc:system.encryption.key.v1:gcdlmmxfik1K0GbXpIgP6q/QmWAazHBiuY3EWUhuBTmBApp3e8Syh/ZtUQ=="/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.token" value="context.OAI_KEY"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.configuration.model" value="text-embedding-ada-002"/>
     <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://api.openai.com"/>
     <elementParameter field="TEXT" name="configuration.dataset.configuration.endpoint" value="v1/embeddings"/>
@@ -283,7 +283,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="Upsert to Pinecone"/>
-    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.apiKey" value="enc:system.encryption.key.v1:dEJj/z82ZZoZ0Ys0J3iRHBUurCFzsfS6bxjl4zy7zQHGOMI39Sx0wLZCjkG9Mw=="/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.apiKey" value="context.PC_API_KEY"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.indexEndpoint" value="https://phones-dswkueq.svc.aped-4627-b74a.pinecone.io"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.operation" value="UPSERT"/>
     <elementParameter field="TEXT" name="configuration.dataset.queryConfig.topK" value="1" show="false"/>

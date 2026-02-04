@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_2dqykfKWEfCYKKfBhllDNw" name="School" creationDate="2026-01-16T08:50:16.248+0400" defaultContext="Default">
+    <clientDependency href="../../../metadata/connections/OracleSchool_0.1.item#_2kzVUPKWEfCYKKfBhllDNw"/>
+    <taggedValue xmi:id="_2dqykvKWEfCYKKfBhllDNw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2dqyk_KWEfCYKKfBhllDNw" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+    <taggedValue xmi:id="_2dqylPKWEfCYKKfBhllDNw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_2dqylfKWEfCYKKfBhllDNw" tag="Description" value=""/>
+    <taggedValue xmi:id="_2dqylvKWEfCYKKfBhllDNw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2kyHMfKWEfCYKKfBhllDNw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_2kyHMvKWEfCYKKfBhllDNw" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_2kzVUfKWEfCYKKfBhllDNw" tag="Is Use Sample Data" value="false"/>
+    <taggedValue xmi:id="_2kzVUvKWEfCYKKfBhllDNw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_2dqyl_KWEfCYKKfBhllDNw">
+      <connection href="../../../metadata/connections/OracleSchool_0.1.item#_p29boPKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngIfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngJfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngKfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngLfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngMfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngNfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngOfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngPfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngQfKUEfCYKKfBhllDNw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngRfKUEfCYKKfBhllDNw"/>
+    </context>
+    <results xmi:id="_2dqymPKWEfCYKKfBhllDNw">
+      <resultMetadata xmi:id="_2dqymfKWEfCYKKfBhllDNw"/>
+      <indicators xsi:type="dataquality.indicators.columnset:SimpleStatIndicator" xmi:id="_2dqymvKWEfCYKKfBhllDNw">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Multiple_Column_Simple_Statistics_0.1.definition#_JoeMkM-jEd6qN5aKpPNGTg"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngIfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngJfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngKfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngLfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngMfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngNfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngOfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngPfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngQfKUEfCYKKfBhllDNw"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/OracleSchool_0.1.item#_xNngRfKUEfCYKKfBhllDNw"/>
+        <rowCountIndicator xmi:id="_2dqym_KWEfCYKKfBhllDNw">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        </rowCountIndicator>
+        <uniqueCountIndicator xmi:id="_2dqynPKWEfCYKKfBhllDNw">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        </uniqueCountIndicator>
+        <distinctCountIndicator xmi:id="_2dqynfKWEfCYKKfBhllDNw">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        </distinctCountIndicator>
+        <duplicateCountIndicator xmi:id="_2dqynvKWEfCYKKfBhllDNw">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        </duplicateCountIndicator>
+      </indicators>
+    </results>
+    <parameters xmi:id="_2dqyn_KWEfCYKKfBhllDNw" dataFilter="_2kz8YPKWEfCYKKfBhllDNw" analysisType="Column Set Analysis"/>
+    <contextType xmi:id="_2kyHMPKWEfCYKKfBhllDNw" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_2kz8YPKWEfCYKKfBhllDNw" name="School">
+    <ranges xmi:id="_2kz8YfKWEfCYKKfBhllDNw">
+      <expressions xmi:id="_2kz8YvKWEfCYKKfBhllDNw">
+        <expression xsi:type="relational:TdExpression" xmi:id="_2kz8Y_KWEfCYKKfBhllDNw" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

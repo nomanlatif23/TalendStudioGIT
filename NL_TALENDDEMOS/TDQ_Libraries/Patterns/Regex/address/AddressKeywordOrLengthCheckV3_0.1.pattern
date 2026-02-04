@@ -15,5 +15,6 @@
     <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/Address/BasicCol_0.1.ana#_KQ1-QGiDEfCU3vKErBJPGQ"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/ColumnarAnalysis_0.1.ana#_-GZpAI9CEfCUJdmIxKCE3g"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/CRM_Analysis/DBColumnarAnalysis_0.1.ana#_loM2II-BEfCDkKNBiYgKyA"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/School/SchoolID_0.1.ana#_GivYsfKXEfCYKKfBhllDNw"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>

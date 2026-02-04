@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:SAPConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_YhHD8PKxEfCYKKfBhllDNw" Host="54.243.164.127" Username="fnq" Password="enc:system.encryption.key.v2:bz1DfqG8dqHYYDDixtf4iCdgCB37Rh9Vti+d1doYoPokItwZfL4=" Client="100" SystemNumber="00" Language="EN" jcoVersion="SAP2">
+  <taggedValue xmi:id="_YhHD8fKxEfCYKKfBhllDNw" tag="adsoConnectionType" value="SAP_JCO"/>
+</TalendMetadata:SAPConnection>

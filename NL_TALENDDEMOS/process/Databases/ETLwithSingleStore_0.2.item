@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:dHXJQZqlueGd0z/QxEKkEqBSyX7xVJe7pEJNtGoD" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v2:snWP9FHHSmYQlvTb0A/slAeR/o1lYXem+WygL5s5" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:91ka9KAxP9/VMP55x+069jzCzJIf6rtAFqXf+VP/" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:DXmCrmYgFwFhyzc+smGJt58Pg1KDjBQ68SPbJHXr" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -115,7 +115,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;HR&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IK+0S92q2wf7q6vtEAIkJuoUQIPz7NtXeVor/AqyJo+e/w9tg8g="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:7IwRifaVIJzJDbuhXVSgCmsbUs4NSm274AeZrcj6CQSA84yONXo="/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_7YgGUOD4Ee61PJSrCFFSbg - EMPLOYEES" show="false"/>
@@ -514,7 +514,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;HR&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oyvMtsiNPzs0w2LqWPjyh3FjlM7FORyUmwdtqSH6Rm/AfwfmWnY="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:e4yXIPmsQIgVWnyDbHeYmCqXftc//QjZcFSBFY+NDmosvtpR8tg="/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_7YgGUOD4Ee61PJSrCFFSbg - JOB_HISTORY" show="false"/>
@@ -577,13 +577,13 @@
     <elementParameter field="TABLE" name="MODIF_TABLE">
       <elementValue elementRef="INPUT_COLUMN" value="PHONE_NUMBER" id="0"/>
       <elementValue elementRef="CATEGORY" value="PHONE_GENERATION" id="1"/>
-      <elementValue elementRef="FUNCTION" value="GENERATE_PHONE_NUMBER_US" id="2"/>
+      <elementValue elementRef="FUNCTION" value="GENERATE_PHONE_NUMBER_FRENCH" id="2"/>
       <elementValue elementRef="METHOD" value="EMPTY" id="3"/>
       <elementValue elementRef="ALPHABET" value="" id="4"/>
-      <elementValue elementRef="EXTRA_PARAMETER" value="&quot;&quot;" id="5"/>
+      <elementValue elementRef="EXTRA_PARAMETER" value="" id="5"/>
       <elementValue elementRef="KEEP_FORMAT" value="false" id="6"/>
     </elementParameter>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:3tBrl+ZvMnwj+YVao8kJJxeW0KMnuEsSW5Yq5yi0"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v2:txKkSWjDtyZ1Rt7EO4Ht3AqzjcGCim20/9CV4uz3"/>
     <elementParameter field="CHECK" name="USE_TWEAK" value="false"/>
     <elementParameter field="CHECK" name="USE_COLUMN_AS_TWEAK" value="false" show="false"/>
     <elementParameter field="PREV_COLUMN_LIST" name="TWEAK_COLUMN" value="EMPLOYEE_ID" show="false"/>
@@ -804,7 +804,7 @@
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="org.mariadb.jdbc.Driver"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="root"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:L6r8RmkiLa85QtFFEd2t4B/gcMO6HkU0WKv9ETq7LR7LrbqwZ8bbjlClh5/uhF82NR9s+a118H3AIsJx7eo="/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v2:3HJyUxvw3ANXVc0X/5NiumXY0UR6zfudeuCAuGtUjSfxbwef0XzqugY7JDIqLGp5tznNilvho5PkJowPSI0="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
@@ -1004,14 +1004,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW_OUTPUT" label="row4" lineStyle="0" metaname="FLOW_OUTPUT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDataMasking_1" target="tDBOutput_1">
+  <connection connectorName="RAW" label="row5" lineStyle="0" metaname="RAW" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDataMasking_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW_OUTPUT" label="row4" lineStyle="0" metaname="FLOW_OUTPUT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDataMasking_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
-  </connection>
-  <connection connectorName="RAW" label="row5" lineStyle="0" metaname="RAW" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDataMasking_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>

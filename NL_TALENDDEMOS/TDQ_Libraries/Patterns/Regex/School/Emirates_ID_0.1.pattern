@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_P8u40PKVEfCYKKfBhllDNw" name="Emirates ID" supplierDependency="_KpoVkPKXEfCYKKfBhllDNw">
+    <taggedValue xmi:id="_P8u40fKVEfCYKKfBhllDNw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_P8u40vKVEfCYKKfBhllDNw" tag="Author" value="noman.latif@se.southemea.talend.com"/>
+    <taggedValue xmi:id="_P8u40_KVEfCYKKfBhllDNw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_P8u41PKVEfCYKKfBhllDNw" tag="Description" value=""/>
+    <taggedValue xmi:id="_P8u41fKVEfCYKKfBhllDNw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_P8u41vKVEfCYKKfBhllDNw" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_P8u41_KVEfCYKKfBhllDNw" expressionType="REGEXP">
+      <expression xmi:id="_P8u42PKVEfCYKKfBhllDNw" body="'^\d{3}-\d{4}-\d{7}-\d{1}$'" language="Oracle" modificationDate="2026-01-16 08:46:04"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_KpoVkPKXEfCYKKfBhllDNw" kind="Usage" supplier="_P8u40PKVEfCYKKfBhllDNw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/School/SchoolID_0.1.ana#_GivYsfKXEfCYKKfBhllDNw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_VOougAHDEfGpkO4ZkfYRMw" name="operationstype" dataPackage="_VOouhgHDEfGpkO4ZkfYRMw" JSONFilePath="C:/Temp/operationstype_output.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_VOougQHDEfGpkO4ZkfYRMw" LimitBoucle="50" AbsoluteXPathQuery="$.hits.hits[*]" flag="ROOT">
+      <schemaTargets xmi:id="_VOouggHDEfGpkO4ZkfYRMw" RelativeXPathQuery="_source.INCIDENT_TYPE" TagName="INCIDENT_TYPE"/>
+      <schemaTargets xmi:id="_VOougwHDEfGpkO4ZkfYRMw" RelativeXPathQuery="_source.INCIDENT_SUBTYPE" TagName="INCIDENT_SUBTYPE"/>
+      <schemaTargets xmi:id="_VOouhAHDEfGpkO4ZkfYRMw" RelativeXPathQuery="_source.CALLER_TYPE" TagName="CALLER_TYPE"/>
+      <schemaTargets xmi:id="_VOouhQHDEfGpkO4ZkfYRMw" RelativeXPathQuery="_source.IncidentTypeCount" TagName="IncidentTypeCount"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_VOouhgHDEfGpkO4ZkfYRMw" name="default" dataManager="_VOougAHDEfGpkO4ZkfYRMw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_VOouhwHDEfGpkO4ZkfYRMw" id="_Lsd0sAHDEfGpkO4ZkfYRMw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VOouiAHDEfGpkO4ZkfYRMw" label="INCIDENT_TYPE" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VOouiQHDEfGpkO4ZkfYRMw" label="INCIDENT_SUBTYPE" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VOouigHDEfGpkO4ZkfYRMw" label="CALLER_TYPE" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VOouiwHDEfGpkO4ZkfYRMw" label="IncidentTypeCount" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

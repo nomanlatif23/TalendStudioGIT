@@ -7,7 +7,10 @@
   <deletedFolders>resources/Test</deletedFolders>
   <deletedFolders>route_resources/Test</deletedFolders>
   <deletedFolders>routes/AIGit</deletedFolders>
+  <deletedItems id="_ddh8cHOCEfCCWcKol86Gqw" path="" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_2Uq64PLTEfC8W91-_usLBA" path="" type="PROCESS"/>
   <deletedItems id="_POUE0J3sEfCVRboqh3T48g" path="" type="PROCESS"/>
+  <deletedItems id="_xssRYP3PEfCIR8O9zMCi2A" path="" type="PROCESS"/>
   <deletedItems id="_7AJicGxTEfCR04LjzWCRoA" path="AI_HANDS_ON_NEW_COMPONENTS/AI_PHONE_REVIEWS_RAG" type="PROCESS"/>
   <deletedItems id="_UhdO8GxTEfCR04LjzWCRoA" path="AI_HANDS_ON_NEW_COMPONENTS/AI_PHONE_REVIEWS_RAG" type="PROCESS"/>
   <deletedItems id="_0OrfgJG_EfCk2bmFlFKW9A" path="Databases" type="PROCESS"/>
@@ -26,10 +29,12 @@
   <deletedItems id="_-mBgkFNzEfCsv-O5x863NA" path="" type="RESOURCES"/>
   <deletedItems id="_cBvEYP1rEe6ncpjM5pfL9Q" path="" type="ROUTE"/>
   <deletedItems id="_NCSkIGxSEfCR04LjzWCRoA" path="AIGit" type="ROUTE"/>
+  <deletedItems id="_-2KAYKstEfCAbaNkcSrgMA" path="Demonstration/Manel" type="ROUTE"/>
   <deletedItems id="_-GZB8I9CEfCUJdmIxKCE3g" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
   <deletedItems id="_QS2pMI-BEfCDkKNBiYgKyA" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
   <deletedItems id="_loMPEI-BEfCDkKNBiYgKyA" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
   <deletedItems id="_vETi0I9CEfCUJdmIxKCE3g" path="CRM_Analysis" type="TDQ_ANALYSIS_ELEMENT"/>
+  <deletedItems id="_2dqykPKWEfCYKKfBhllDNw" path="School" type="TDQ_ANALYSIS_ELEMENT"/>
   <deletedItems id="_A4YIIGiFEfCU3vKErBJPGQ" path="Regex/address" type="TDQ_PATTERN_ELEMENT"/>
   <deletedItems id="_cwN5EGiCEfCU3vKErBJPGQ" path="" type="TDQ_RULES_MATCHER"/>
   <deletedItems id="_hmtt8GiCEfCU3vKErBJPGQ" path="" type="TDQ_RULES_PARSER"/>

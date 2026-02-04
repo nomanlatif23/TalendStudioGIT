@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_pN_VsAG_EfGpkO4ZkfYRMw" name="elastic_search" dataPackage="_pN_VtAG_EfGpkO4ZkfYRMw" JSONFilePath="C:/Temp/elasticsearch_output.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_pN_VsQG_EfGpkO4ZkfYRMw" LimitBoucle="50" AbsoluteXPathQuery="$.hits.hits[*]">
+      <schemaTargets xmi:id="_pN_VsgG_EfGpkO4ZkfYRMw" RelativeXPathQuery="_source.name" TagName="name"/>
+      <schemaTargets xmi:id="_pN_VswG_EfGpkO4ZkfYRMw" RelativeXPathQuery="_source.title" TagName="title"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_pN_VtAG_EfGpkO4ZkfYRMw" name="default" dataManager="_pN_VsAG_EfGpkO4ZkfYRMw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_pN_VtQG_EfGpkO4ZkfYRMw" id="_acLuQAG_EfGpkO4ZkfYRMw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pN_VtgG_EfGpkO4ZkfYRMw" label="name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pN_VtwG_EfGpkO4ZkfYRMw" label="title" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

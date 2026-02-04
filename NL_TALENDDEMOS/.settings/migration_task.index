@@ -70,6 +70,11 @@
     "version" : "7.4.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.camel.designer.migration.AddSpringConfigurationPropertyMigrationTask",
+    "breaks" : "5.4.1",
+    "version" : "8.0.1.R2025-11",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.camel.designer.migration.AddSpringConfigurationPropertyMigrationTask.8.0.1-R2023-07",
     "breaks" : "5.4.1",
     "version" : "5.6.1",
@@ -190,12 +195,32 @@
     "version" : "7.4.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansDefaultLibrariesMigrationTask.8.0.1-R2025-10",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansDefaultLibrariesMigrationTask.8.0.1-R2025-11",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.7.3.1",
     "breaks" : "7.3.0",
     "version" : "7.3.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.8.0.1-R2025-04",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.8.0.1-R2025-09",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.8.0.1-R2025-11",
     "breaks" : "7.3.0",
     "version" : "7.3.1",
     "status" : "noimpact"
@@ -244,6 +269,16 @@
     "breaks" : "7.3.0",
     "version" : "7.4.1",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateRoutinesLibrariesMigrationTask.8.0.1-R2025-09",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateRoutinesLibrariesMigrationTask.8.0.1-R2025-11",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.camel.designer.migration.UpdatecJMSMigrationTask",
     "breaks" : "5.1.1",
@@ -335,6 +370,11 @@
     "version" : "8.0.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.designer.bigdata.repository.migration.RemoveDistributionFromHDFSComponentsMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.designer.core.generic.model.migration.ChangeDBConnectionToJDBCTypeMigrationTask",
     "breaks" : "8.0.0",
     "version" : "8.0.1",
@@ -405,6 +445,11 @@
     "version" : "8.0.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.designer.core.generic.model.migration.NewTckSnowflakeMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.designer.core.generic.model.migration.RevertJDBCContextModeMappingFileValueMigrationTask",
     "breaks" : "7.4.0",
     "version" : "7.4.1",
@@ -456,6 +501,11 @@
     "status" : "noimpact"
   }, {
     "id" : "org.talend.designer.dataprep.migration.ExcludeTechnicalColumnsMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.designer.dataprep.migration.UseDynamicColumnsLabelsMigrationTask",
     "breaks" : "8.0.1",
     "version" : "8.0.1",
     "status" : "ok"
@@ -670,6 +720,11 @@
     "version" : "8.0.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.designer.spark.repository.migration.UpdateIcebergOutputSetFormat",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.designer.spark.repository.migration.UpdateJDBCOutputAction",
     "breaks" : "7.3.1",
     "version" : "7.3.1",
@@ -808,6 +863,11 @@
     "id" : "org.talend.repository.hadoopcluster.migration.ChangeHadoopConfJarNameMigrationTask",
     "breaks" : "6.0.0",
     "version" : "6.1.2",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.hadoopcluster.migration.ChangeSparkDatabricksVersionToSpark3x",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.hadoopcluster.migration.ReviseInvalidContextNamesOfHadoopPropertiesMigrationTask",
@@ -2478,6 +2538,16 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.RestorePasswordContextInProjectSettingsMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.RestorePasswordContextValue4ProcessItemMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.ReviewPigLoadLayout",
     "breaks" : "6.1.0",
     "version" : "6.1.0",
@@ -2487,6 +2557,11 @@
     "breaks" : "6.0.0",
     "version" : "6.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.S3SQSAddComponentIdMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.S3toTCKMigrationTask",
     "breaks" : "8.0.1",
@@ -3030,10 +3105,20 @@
     "version" : "8.0.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.studio.components.tck.dataqualityRule.migration.ChangeComponentVersionTask",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.studio.components.tck.jdbc.migration.GenericJDBCConnectionToTacokitJDBCMigrationTask",
     "breaks" : "8.0.0",
     "version" : "8.0.1",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.studio.components.tck.snowflake.migration.GenericSnowflakeConnectionToTacokitMigrationTask",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.testcontainer.core.ui.migration.TestCaseParentVersionMigrationTask",
     "breaks" : "6.1.1",

@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:dHXJQZqlueGd0z/QxEKkEqBSyX7xVJe7pEJNtGoD" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v2:XtpsvVjBX3W6Garn64RErt3dGl8VUjpb5E/OMF9A" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:91ka9KAxP9/VMP55x+069jzCzJIf6rtAFqXf+VP/" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:NsvSbVhhvvQEYGgPxiBK7tCaHq9TJ4/fqn3KFhlt" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -112,7 +112,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;training&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wyjrbDxX41eV9lHsPviscmmtGqVfETNexCQ/uYN5NBeE5kPAkTY="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:LklTa+AjZXWOiIfKKmKTYkO+MAREzX1puIxC0JD5zleqPP0Q4IE="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kbUDUOQ8EeikOYcvBdv3Rg - movies" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;movies&quot;"/>
@@ -178,8 +178,8 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="SECRET_TYPE" value="CRYPTO_FILE"/>
     <elementParameter field="CLOSED_LIST" name="CRYPTO_METHOD" value="AES" show="false"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:D4Fnvxryk/QocA9eeu7L9zh251HKwx7xB1MhleCj" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v1:KuDZqpqFuYT6fCNASTAR4UOg1c3bxRTHl1ckFZ3lVDg7PzmUbgg="/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v2:neDRASDmKUIw8YO8YvU1JJgoXKPID5rggd6P8Bmj" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v2:IkjJWuKBQ7tnecNY3Nv/O20IgI8OI91fAfEzyxbiPmZZfpwwdLI="/>
     <elementParameter field="FILE" name="CRYPTO_FILE_PATH" value="&quot;C:/Users/FNQ/Downloads/v11.5.9_jdbc_sqlj/jdbc_sqlj/db2_db2driver_for_jdbc_sqlj/NlFile&quot;"/>
     <elementParameter field="GENERATE_CRYPTO_FILE_CONTROLLER" name="GEN_CRYPTO_FILE_CONTROLLER" value="false"/>
     <elementParameter field="TABLE" name="TABLE_CONFIG">
@@ -288,8 +288,8 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="SECRET_TYPE" value="CRYPTO_FILE"/>
     <elementParameter field="CLOSED_LIST" name="CRYPTO_METHOD" value="AES" show="false"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:YwQzetLab9gEVcAmQ2t/UtdguVZ+gX5Y8sbRQBos" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v1:GYIo5CAtUCDh0igbv9zKYeBj8e4qpqcXv4kANd556WHRJy+bX04="/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v2:tIzgRz+VLxjcDjrNzyZF4X83S/m+AsIvsWbodwlR" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v2:4vWnlVco0NseYn4+BQOPDAE8S2Q25AtlnBZg/ozY6X0uk8aSmAI="/>
     <elementParameter field="FILE" name="CRYPTO_FILE_PATH" value="&quot;C:/Users/FNQ/Downloads/v11.5.9_jdbc_sqlj/jdbc_sqlj/db2_db2driver_for_jdbc_sqlj/NlFile&quot;"/>
     <elementParameter field="TABLE" name="TABLE_CONFIG">
       <elementValue elementRef="SCHEMA_COLUMN" value="movieID" id="0"/>
@@ -405,7 +405,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;training&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fbjNnlSU5UX038D40JqPiJ9bb2UyIp0sXcDzX50/h8G5vIGTink="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v2:G6RLifRaRXJN541jicMH6LutpEuCGoMpvatO0kssr/lcqDsLuC0="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kbUDUOQ8EeikOYcvBdv3Rg - movies" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;movies&quot;"/>
@@ -470,8 +470,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataEncrypt_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="SECRET_TYPE" value="CRYPTO_FILE"/>
     <elementParameter field="CLOSED_LIST" name="CRYPTO_METHOD" value="AES" show="false"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:ciF0SgSK0qFN9hEuRE1XaaZs5S31PxgdSCRFDNzq" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v1:aeLPNFb1Ez5N652Ws+n/R7nPhEj1N3G2f0qQuI+C2V7OULAd7vI="/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v2:ZRbcXfSdLXkUDS01zuXQTKJtVwZAgCnGBavc90qG" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v2:g0P1kVgGdCe496Bds6J26IoMl/Tq+SszvCOOOj6WMwJrFfztZXE="/>
     <elementParameter field="FILE" name="CRYPTO_FILE_PATH" value="&quot;C:/Users/FNQ/Downloads/v11.5.9_jdbc_sqlj/jdbc_sqlj/db2_db2driver_for_jdbc_sqlj/NlFile&quot;"/>
     <elementParameter field="GENERATE_CRYPTO_FILE_CONTROLLER" name="GEN_CRYPTO_FILE_CONTROLLER" value="false"/>
     <elementParameter field="TABLE" name="TABLE_CONFIG">
@@ -578,8 +578,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataDecrypt_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="SECRET_TYPE" value="CRYPTO_FILE"/>
     <elementParameter field="CLOSED_LIST" name="CRYPTO_METHOD" value="AES" show="false"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:gY5luc6zsM65Wfot5oVjCEDntN4IYOLvmko5Ix5D" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v1:W8A5lI6HNQVnbwXpGgfytId4ZgUduhwoZDt36q8kO2HH/+aoLVI="/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v2:ppnkCW8vsRHeJf3KHKuTPz9e+gntX/KSMOtRzHRY" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD_M1" value="enc:system.encryption.key.v2:J/vQRdG5TGCWJo8U2xqU5ncpLDaWYIie3uZthoh3/A7QTnx+4lk="/>
     <elementParameter field="FILE" name="CRYPTO_FILE_PATH" value="&quot;C:/Users/FNQ/Downloads/v11.5.9_jdbc_sqlj/jdbc_sqlj/db2_db2driver_for_jdbc_sqlj/NlFile&quot;"/>
     <elementParameter field="TABLE" name="TABLE_CONFIG">
       <elementValue elementRef="SCHEMA_COLUMN" value="movieID" id="0"/>
@@ -707,7 +707,7 @@
       <elementValue elementRef="EXTRA_PARAMETER" value="&quot;&quot;" id="19"/>
       <elementValue elementRef="KEEP_FORMAT" value="false" id="20"/>
     </elementParameter>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:k8zy+My0Osz90/JfhG9H7jJio/m/Q+T2YfjkV7A4"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v2:cVIIIWZHjP21hZSpBp6OsFA3POHZJYFzeCry44/H"/>
     <elementParameter field="CHECK" name="USE_TWEAK" value="false"/>
     <elementParameter field="CHECK" name="USE_COLUMN_AS_TWEAK" value="false" show="false"/>
     <elementParameter field="PREV_COLUMN_LIST" name="TWEAK_COLUMN" value="movieID" show="false"/>
@@ -857,7 +857,6 @@
   </node>
   <node componentName="tDataUnmasking" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="920" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataUnmasking_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TABLE" name="MODIF_TABLE">
       <elementValue elementRef="INPUT_COLUMN" value="director" id="0"/>
       <elementValue elementRef="CATEGORY" value="CHARACTER_HANDLING" id="1"/>
@@ -867,7 +866,7 @@
       <elementValue elementRef="EXTRA_PARAMETER" value="&quot;&quot;" id="5"/>
       <elementValue elementRef="KEEP_FORMAT" value="false" id="6"/>
     </elementParameter>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:JvEyHNwG13Ffgfx70dSa8GWpu6JE0LHfq2RiimWm"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v2:T1WmZu5zO0EwTSgV1v1kXfv+GXv9BLFfkdkLQy2o"/>
     <elementParameter field="CHECK" name="USE_TWEAK" value="false"/>
     <elementParameter field="PREV_COLUMN_LIST" name="TWEAK_COLUMN" value="movieID" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ALGO_VERSION" value="2"/>
@@ -955,7 +954,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_6" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1060,12 +1058,10 @@
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tLogRow_5" offsetLabelX="0" offsetLabelY="0" source="tLogRow_5" target="tDataUnmasking_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
   </connection>
   <connection connectorName="FLOW_OUTPUT" label="row12" lineStyle="0" metaname="FLOW_OUTPUT" offsetLabelX="0" offsetLabelY="0" source="tDataUnmasking_1" target="tLogRow_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
   </connection>
   <subjob>
@@ -1075,11 +1071,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataUnmasking_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
